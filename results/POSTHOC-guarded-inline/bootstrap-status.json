@@ -1,0 +1,23 @@
+{
+  "attempts": 999,
+  "classification": "POSTHOC",
+  "failed": 2,
+  "intervals": {
+    "tier_D": {
+      "IRR_bootstrap95_high": 1.6638605466729581,
+      "IRR_bootstrap95_low": 0.971637707090893,
+      "IRR_point": 1.2978112395965176,
+      "defined_draws": 997,
+      "undefined_or_failed_draws": 2
+    },
+    "tier_W": {
+      "IRR_bootstrap95_high": 1.306916469424787,
+      "IRR_bootstrap95_low": 0.9769118229951579,
+      "IRR_point": 1.1403183244755788,
+      "defined_draws": 997,
+      "undefined_or_failed_draws": 2
+    }
+  },
+  "seed_integer": "15227979194481155698293624410021222323093764465755446558665676612723982642800",
+  "valid": 997
+}

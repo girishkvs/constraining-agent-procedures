@@ -1,0 +1,605 @@
+{
+  "O_words_segmentation_source_bytes_unchanged": true,
+  "added_exact_forms": [
+    "don't",
+    "shouldn't",
+    "can't",
+    "mustn't",
+    "shan't"
+  ],
+  "baseline_reproduction": {
+    "corpora": [
+      {
+        "N": 1495,
+        "O_unchanged_dual": 1864,
+        "P": 4080,
+        "P_O_ratio": 2.188841201716738,
+        "P_per_1000_prose_words": 4.992541778886688,
+        "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+        "band_N": 829,
+        "band_P": 2175,
+        "band_P_per_1000_prose_words": 5.171110255203207,
+        "band_prose_words": 420606,
+        "band_zero_P_documents": 169,
+        "band_zero_P_share": 0.20386007237635706,
+        "corpus": "direct",
+        "new_statements_only_because_contraction": 0,
+        "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+        "prose_words": 817219,
+        "top_decile_P": 1848,
+        "top_decile_P_share": 0.45294117647058824,
+        "top_decile_k": 150,
+        "variant": "original_broad",
+        "word_band": "250-999 inclusive",
+        "zero_P_documents": 462,
+        "zero_P_share": 0.30903010033444817
+      },
+      {
+        "N": 1540,
+        "O_unchanged_dual": 1512,
+        "P": 2403,
+        "P_O_ratio": 1.5892857142857142,
+        "P_per_1000_prose_words": 4.624907136175897,
+        "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+        "band_N": 667,
+        "band_P": 1397,
+        "band_P_per_1000_prose_words": 4.43976914471677,
+        "band_prose_words": 314656,
+        "band_zero_P_documents": 222,
+        "band_zero_P_share": 0.3328335832083958,
+        "corpus": "agent_context",
+        "new_statements_only_because_contraction": 0,
+        "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+        "prose_words": 519578,
+        "top_decile_P": 1179,
+        "top_decile_P_share": 0.49063670411985016,
+        "top_decile_k": 154,
+        "variant": "original_broad",
+        "word_band": "250-999 inclusive",
+        "zero_P_documents": 725,
+        "zero_P_share": 0.4707792207792208
+      },
+      {
+        "N": 833,
+        "O_unchanged_dual": 539,
+        "P": 799,
+        "P_O_ratio": 1.4823747680890538,
+        "P_per_1000_prose_words": 1.7329970003318504,
+        "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+        "band_N": 399,
+        "band_P": 334,
+        "band_P_per_1000_prose_words": 1.6436360773197907,
+        "band_prose_words": 203208,
+        "band_zero_P_documents": 222,
+        "band_zero_P_share": 0.556390977443609,
+        "corpus": "gitlab",
+        "new_statements_only_because_contraction": 0,
+        "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+        "prose_words": 461051,
+        "top_decile_P": 457,
+        "top_decile_P_share": 0.571964956195244,
+        "top_decile_k": 84,
+        "variant": "original_broad",
+        "word_band": "250-999 inclusive",
+        "zero_P_documents": 511,
+        "zero_P_share": 0.6134453781512605
+      },
+      {
+        "N": 288,
+        "O_unchanged_dual": 69,
+        "P": 229,
+        "P_O_ratio": 3.318840579710145,
+        "P_per_1000_prose_words": 3.296434380802948,
+        "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+        "band_N": 87,
+        "band_P": 92,
+        "band_P_per_1000_prose_words": 2.4521562983101446,
+        "band_prose_words": 37518,
+        "band_zero_P_documents": 39,
+        "band_zero_P_share": 0.4482758620689655,
+        "corpus": "openshift",
+        "new_statements_only_because_contraction": 0,
+        "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+        "prose_words": 69469,
+        "top_decile_P": 92,
+        "top_decile_P_share": 0.4017467248908297,
+        "top_decile_k": 29,
+        "variant": "original_broad",
+        "word_band": "250-999 inclusive",
+        "zero_P_documents": 148,
+        "zero_P_share": 0.5138888888888888
+      }
+    ],
+    "extended_matching_performed_yet": false,
+    "input_bindings": [
+      {
+        "bytes": 7813698,
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "d46ef25ba58df59c23cdbb1e4a3077ef2c23ceb92b8dad352f09a16d8f438bc7"
+      },
+      {
+        "bytes": 2356217,
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "6e14433e589972d96436e334963c39383fb09e9864d374e66034deffe1cf448b"
+      },
+      {
+        "bytes": 4997361,
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "00adc67029a18d8aadfa740b8249e6f14e674fb0eb1b4875e5f01007a665e131"
+      },
+      {
+        "bytes": 2998614,
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "93c2f9aa0589dcb60504e55e0e8a77bace428ee1e2e1e7500b38cd7cfe237539"
+      },
+      {
+        "bytes": 8104317,
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "34ed54c74cdb20fee393781d70b9672da97b5e7668def4bbe835a2b67628232b"
+      },
+      {
+        "bytes": 568167,
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "b6973b6c8937a9e8b1c8defadf12b1d4f3ad60e1a27a929af87d053c533d73b6"
+      },
+      {
+        "bytes": 8104317,
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "34ed54c74cdb20fee393781d70b9672da97b5e7668def4bbe835a2b67628232b"
+      },
+      {
+        "bytes": 190630,
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "b6e35db0347246359bd9ddc46b96ae08e76b6aa1e5e83d6879543172b5164da9"
+      }
+    ],
+    "new_source_acquisition": false,
+    "status": "PASS_ALL_FOUR_BEFORE_EXTENSION",
+    "verified_utc": "2026-10-17T04:30:25.135945+00:00"
+  },
+  "classification": "POSTHOC sensitivity; original results not replaced",
+  "configuration": [
+    "no_code_examples",
+    "sentence",
+    "broad extended only for P",
+    "dual"
+  ],
+  "new_only_by_form_nonexclusive": {
+    "agent_context": {
+      "can't": 20,
+      "don't": 354,
+      "shouldn't": 7
+    },
+    "direct": {
+      "can't": 94,
+      "don't": 582,
+      "shouldn't": 8
+    },
+    "gitlab": {
+      "can't": 63,
+      "don't": 177,
+      "shouldn't": 9
+    },
+    "openshift": {
+      "can't": 2,
+      "don't": 6
+    }
+  },
+  "new_statement_total_is_union_not_sum_of_forms": true,
+  "null_method_identity": {
+    "all_three_effective_global_null_loops_byte_identical": false,
+    "classification": "Read-only null-method identity check; no new null draws",
+    "differences": "Ops uses FastMetrics.resample; direct/context override it with RepositoryMetrics.resample. Loop source differs in variable names, zero-P handling and diagnostics. Repository-conditioned allocation is additional in RepositoryMetrics, not an Ops reference.",
+    "direct_and_context_RepositoryMetrics_byte_identical": true,
+    "effective_null_implementations": [
+      {
+        "class": "RepositoryMetrics",
+        "file_sha256": "fd48c1dcd352dedb624c3832a0f7674f8ce71a9ae0a5654b6e75c6d56d3a1dbd",
+        "global_null_loop_lines": [
+          60,
+          68
+        ],
+        "global_null_loop_sha256": "f9706865583caff7d13c466ec80caa457283a54e2fc31f40db34c3cc41b64a41",
+        "global_null_loop_source": "        for _ in range(self.protocol[\"length_null\"][\"replicates\"]):\r\n            allocation = (\r\n                global_rng.multivariate_hypergeometric(lengths, total_p, method=\"marginals\")\r\n                if total_p else np.zeros(n, dtype=np.int64)\r\n            )\r\n            if int(allocation.sum()) != total_p or np.any(allocation > lengths) or np.any(allocation < 0):\r\n                raise ValueError(\"Global finite-slot integrity failure\")\r\n            global_draws[\"top_decile_P_share\"].append(self.top_share(allocation, k, total_p))\r\n            global_draws[\"zero_P_document_share\"].append(float(np.count_nonzero(allocation == 0) / n))\r\n",
+        "method": "resample",
+        "method_source_sha256": "cb9b03e30010a7f6679dcce315b53295bb0d78415cce2966625d973a39f91dc0",
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv."
+      },
+      {
+        "class": "FastMetrics",
+        "file_sha256": "cfe8dc14713ef5b7608a04e60f76a984d3026183f9164bf0eed000a40ba78c30",
+        "global_null_loop_lines": [
+          56,
+          61
+        ],
+        "global_null_loop_sha256": "79d9fd19dbb83996b8fcfe3a8bd4058cbd69a90379ef9cb71571613a19d6aefe",
+        "global_null_loop_source": "        for _ in range(self.protocol[\"length_null\"][\"replicates\"]):\r\n            allocation = null_rng.multivariate_hypergeometric(lengths, total_p, method=\"marginals\")\r\n            if int(allocation.sum()) != total_p or np.any(allocation > lengths) or np.any(allocation < 0):\r\n                raise ValueError(\"Finite-slot null allocation failed\")\r\n            null_values[\"top_decile_P_share\"].append(self.top_share(allocation, k, total_p))\r\n            null_values[\"zero_P_document_share\"].append(float(np.count_nonzero(allocation == 0) / n))\r\n",
+        "method": "resample",
+        "method_source_sha256": "2e92e2528409a86421cd478b7f0bf3083192ab0e8586c61698ebc8b491ea6f3f",
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv."
+      },
+      {
+        "class": "RepositoryMetrics",
+        "file_sha256": "fd48c1dcd352dedb624c3832a0f7674f8ce71a9ae0a5654b6e75c6d56d3a1dbd",
+        "global_null_loop_lines": [
+          60,
+          68
+        ],
+        "global_null_loop_sha256": "f9706865583caff7d13c466ec80caa457283a54e2fc31f40db34c3cc41b64a41",
+        "global_null_loop_source": "        for _ in range(self.protocol[\"length_null\"][\"replicates\"]):\r\n            allocation = (\r\n                global_rng.multivariate_hypergeometric(lengths, total_p, method=\"marginals\")\r\n                if total_p else np.zeros(n, dtype=np.int64)\r\n            )\r\n            if int(allocation.sum()) != total_p or np.any(allocation > lengths) or np.any(allocation < 0):\r\n                raise ValueError(\"Global finite-slot integrity failure\")\r\n            global_draws[\"top_decile_P_share\"].append(self.top_share(allocation, k, total_p))\r\n            global_draws[\"zero_P_document_share\"].append(float(np.count_nonzero(allocation == 0) / n))\r\n",
+        "method": "resample",
+        "method_source_sha256": "cb9b03e30010a7f6679dcce315b53295bb0d78415cce2966625d973a39f91dc0",
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv."
+      }
+    ],
+    "global_nonzero_P_allocation_law_same": "All call NumPy Generator.multivariate_hypergeometric(lengths,total_P,method='marginals') and check totals/capacities.",
+    "null_means": null,
+    "plain_sentence": "The global reference redistributes a fixed P total uniformly over finite statement slots; the repository-conditioned reference does so separately within each repository, also preserving each repository's P total.",
+    "primary_arm_null_means_reported": false,
+    "producer_call_sites": [
+      {
+        "call_sites": [
+          {
+            "line": 515,
+            "text": "            metrics = RepositoryMetrics(self.protocol)"
+          }
+        ],
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "850114cf40ed55583e6e0e677b51749b8b4c8444534e86baf65fb0fddbc1ed7c"
+      },
+      {
+        "call_sites": [
+          {
+            "line": 63,
+            "text": "        self.metrics = FastMetrics(self.protocol)"
+          }
+        ],
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "93f78e92c3784a110304819964e7c88d629b0d97b3f769dd712f6b30ec61ee56"
+      },
+      {
+        "call_sites": [
+          {
+            "line": 23,
+            "text": "        self.metrics = RepositoryMetrics(self.protocol)"
+          }
+        ],
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "3f96eef390d5daff009d0df9b922718e5a4d58321f37c93d6110e5b42e897977"
+      }
+    ],
+    "reason_means_withheld": "The byte-identity condition across all three effective implementations is not met; identical shared base-file bytes alone do not establish identity of an overriding method.",
+    "shared_FastMetrics_file_byte_identical": true,
+    "shared_base_files": [
+      {
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "cfe8dc14713ef5b7608a04e60f76a984d3026183f9164bf0eed000a40ba78c30"
+      },
+      {
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "cfe8dc14713ef5b7608a04e60f76a984d3026183f9164bf0eed000a40ba78c30"
+      },
+      {
+        "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+        "sha256": "cfe8dc14713ef5b7608a04e60f76a984d3026183f9164bf0eed000a40ba78c30"
+      }
+    ]
+  },
+  "parser_fixture_tests": [
+    {
+      "extended_match": true,
+      "text": "don't"
+    },
+    {
+      "extended_match": true,
+      "text": "DON'T"
+    },
+    {
+      "extended_match": true,
+      "text": "don’t"
+    },
+    {
+      "extended_match": true,
+      "text": "shouldn't"
+    },
+    {
+      "extended_match": true,
+      "text": "SHOULDN'T"
+    },
+    {
+      "extended_match": true,
+      "text": "shouldn’t"
+    },
+    {
+      "extended_match": true,
+      "text": "can't"
+    },
+    {
+      "extended_match": true,
+      "text": "CAN'T"
+    },
+    {
+      "extended_match": true,
+      "text": "can’t"
+    },
+    {
+      "extended_match": true,
+      "text": "mustn't"
+    },
+    {
+      "extended_match": true,
+      "text": "MUSTN'T"
+    },
+    {
+      "extended_match": true,
+      "text": "mustn’t"
+    },
+    {
+      "extended_match": true,
+      "text": "shan't"
+    },
+    {
+      "extended_match": true,
+      "text": "SHAN'T"
+    },
+    {
+      "extended_match": true,
+      "text": "shan’t"
+    }
+  ],
+  "recorded_utc": "2026-10-17T04:31:03.293920+00:00",
+  "rows": [
+    {
+      "N": 1495,
+      "O_unchanged_dual": 1864,
+      "P": 4080,
+      "P_O_ratio": 2.188841201716738,
+      "P_per_1000_prose_words": 4.992541778886688,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 829,
+      "band_P": 2175,
+      "band_P_per_1000_prose_words": 5.171110255203207,
+      "band_prose_words": 420606,
+      "band_zero_P_documents": 169,
+      "band_zero_P_share": 0.20386007237635706,
+      "corpus": "direct",
+      "new_statements_only_because_contraction": 0,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 817219,
+      "top_decile_P": 1848,
+      "top_decile_P_share": 0.45294117647058824,
+      "top_decile_k": 150,
+      "variant": "original_broad",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 462,
+      "zero_P_share": 0.30903010033444817
+    },
+    {
+      "N": 1495,
+      "O_unchanged_dual": 1864,
+      "P": 4759,
+      "P_O_ratio": 2.5531115879828326,
+      "P_per_1000_prose_words": 5.823408413167095,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 829,
+      "band_P": 2470,
+      "band_P_per_1000_prose_words": 5.872479232345711,
+      "band_prose_words": 420606,
+      "band_zero_P_documents": 137,
+      "band_zero_P_share": 0.1652593486127865,
+      "corpus": "direct",
+      "new_statements_only_because_contraction": 679,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 817219,
+      "top_decile_P": 2102,
+      "top_decile_P_share": 0.4416894305526371,
+      "top_decile_k": 150,
+      "variant": "broad_plus_exact_five_contractions",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 397,
+      "zero_P_share": 0.2655518394648829
+    },
+    {
+      "N": 1540,
+      "O_unchanged_dual": 1512,
+      "P": 2403,
+      "P_O_ratio": 1.5892857142857142,
+      "P_per_1000_prose_words": 4.624907136175897,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 667,
+      "band_P": 1397,
+      "band_P_per_1000_prose_words": 4.43976914471677,
+      "band_prose_words": 314656,
+      "band_zero_P_documents": 222,
+      "band_zero_P_share": 0.3328335832083958,
+      "corpus": "agent_context",
+      "new_statements_only_because_contraction": 0,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 519578,
+      "top_decile_P": 1179,
+      "top_decile_P_share": 0.49063670411985016,
+      "top_decile_k": 154,
+      "variant": "original_broad",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 725,
+      "zero_P_share": 0.4707792207792208
+    },
+    {
+      "N": 1540,
+      "O_unchanged_dual": 1512,
+      "P": 2784,
+      "P_O_ratio": 1.8412698412698412,
+      "P_per_1000_prose_words": 5.358194534795546,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 667,
+      "band_P": 1617,
+      "band_P_per_1000_prose_words": 5.138945387979254,
+      "band_prose_words": 314656,
+      "band_zero_P_documents": 194,
+      "band_zero_P_share": 0.2908545727136432,
+      "corpus": "agent_context",
+      "new_statements_only_because_contraction": 381,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 519578,
+      "top_decile_P": 1353,
+      "top_decile_P_share": 0.4859913793103448,
+      "top_decile_k": 154,
+      "variant": "broad_plus_exact_five_contractions",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 670,
+      "zero_P_share": 0.43506493506493504
+    },
+    {
+      "N": 833,
+      "O_unchanged_dual": 539,
+      "P": 799,
+      "P_O_ratio": 1.4823747680890538,
+      "P_per_1000_prose_words": 1.7329970003318504,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 399,
+      "band_P": 334,
+      "band_P_per_1000_prose_words": 1.6436360773197907,
+      "band_prose_words": 203208,
+      "band_zero_P_documents": 222,
+      "band_zero_P_share": 0.556390977443609,
+      "corpus": "gitlab",
+      "new_statements_only_because_contraction": 0,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 461051,
+      "top_decile_P": 457,
+      "top_decile_P_share": 0.571964956195244,
+      "top_decile_k": 84,
+      "variant": "original_broad",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 511,
+      "zero_P_share": 0.6134453781512605
+    },
+    {
+      "N": 833,
+      "O_unchanged_dual": 539,
+      "P": 1047,
+      "P_O_ratio": 1.9424860853432282,
+      "P_per_1000_prose_words": 2.2708984472433635,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 399,
+      "band_P": 443,
+      "band_P_per_1000_prose_words": 2.1800322821936144,
+      "band_prose_words": 203208,
+      "band_zero_P_documents": 173,
+      "band_zero_P_share": 0.43358395989974935,
+      "corpus": "gitlab",
+      "new_statements_only_because_contraction": 248,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 461051,
+      "top_decile_P": 546,
+      "top_decile_P_share": 0.5214899713467048,
+      "top_decile_k": 84,
+      "variant": "broad_plus_exact_five_contractions",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 441,
+      "zero_P_share": 0.5294117647058824
+    },
+    {
+      "N": 288,
+      "O_unchanged_dual": 69,
+      "P": 229,
+      "P_O_ratio": 3.318840579710145,
+      "P_per_1000_prose_words": 3.296434380802948,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 87,
+      "band_P": 92,
+      "band_P_per_1000_prose_words": 2.4521562983101446,
+      "band_prose_words": 37518,
+      "band_zero_P_documents": 39,
+      "band_zero_P_share": 0.4482758620689655,
+      "corpus": "openshift",
+      "new_statements_only_because_contraction": 0,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 69469,
+      "top_decile_P": 92,
+      "top_decile_P_share": 0.4017467248908297,
+      "top_decile_k": 29,
+      "variant": "original_broad",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 148,
+      "zero_P_share": 0.5138888888888888
+    },
+    {
+      "N": 288,
+      "O_unchanged_dual": 69,
+      "P": 237,
+      "P_O_ratio": 3.4347826086956523,
+      "P_per_1000_prose_words": 3.4115936604816537,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 87,
+      "band_P": 97,
+      "band_P_per_1000_prose_words": 2.5854256623487393,
+      "band_prose_words": 37518,
+      "band_zero_P_documents": 37,
+      "band_zero_P_share": 0.42528735632183906,
+      "corpus": "openshift",
+      "new_statements_only_because_contraction": 8,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 69469,
+      "top_decile_P": 96,
+      "top_decile_P_share": 0.4050632911392405,
+      "top_decile_k": 29,
+      "variant": "broad_plus_exact_five_contractions",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 144,
+      "zero_P_share": 0.5
+    },
+    {
+      "N": 1121,
+      "O_unchanged_dual": 608,
+      "P": 1028,
+      "P_O_ratio": 1.6907894736842106,
+      "P_per_1000_prose_words": 1.9377214808112795,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 486,
+      "band_P": 426,
+      "band_P_per_1000_prose_words": 1.7696468183744174,
+      "band_prose_words": 240726,
+      "band_zero_P_documents": 261,
+      "band_zero_P_share": 0.5370370370370371,
+      "corpus": "runbooks_pooled",
+      "new_statements_only_because_contraction": 0,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 530520,
+      "top_decile_P": 557,
+      "top_decile_P_share": 0.541828793774319,
+      "top_decile_k": 113,
+      "variant": "original_broad",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 659,
+      "zero_P_share": 0.5878679750223015
+    },
+    {
+      "N": 1121,
+      "O_unchanged_dual": 608,
+      "P": 1284,
+      "P_O_ratio": 2.111842105263158,
+      "P_per_1000_prose_words": 2.4202669079393804,
+      "analysis": "POSTHOC_CONTRACTIONS_ONLY",
+      "band_N": 486,
+      "band_P": 540,
+      "band_P_per_1000_prose_words": 2.2432142768126417,
+      "band_prose_words": 240726,
+      "band_zero_P_documents": 210,
+      "band_zero_P_share": 0.43209876543209874,
+      "corpus": "runbooks_pooled",
+      "new_statements_only_because_contraction": 256,
+      "null_means": "withheld unless the effective null implementation is byte-identical across all three workspaces",
+      "prose_words": 530520,
+      "top_decile_P": 651,
+      "top_decile_P_share": 0.5070093457943925,
+      "top_decile_k": 113,
+      "variant": "broad_plus_exact_five_contractions",
+      "word_band": "250-999 inclusive",
+      "zero_P_documents": 585,
+      "zero_P_share": 0.5218554861730598
+    }
+  ],
+  "scope": "POSTHOC sensitivity only; no primary result replaced",
+  "unexpected_forms_and_boundary_tests_passed": true
+}

@@ -1,0 +1,241 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+This is the **Cortex CLI** (`cortexapps-cli`), a command-line interface for interacting with the Cortex API (https://cortex.io). The CLI is built with Python 3.11+ using the Typer framework and provides commands for managing catalog entities, scorecards, teams, workflows, integrations, and other Cortex resources.
+
+## Development Commands
+
+### Setup
+```bash
+# Install dependencies
+poetry install
+
+# Set required environment variables for testing
+export CORTEX_API_KEY=<your-api-key>
+export CORTEX_BASE_URL=https://api.getcortexapp.com  # optional, defaults to this
+export CORTEX_API_KEY_VIEWER=<viewer-api-key>  # for viewer permission tests
+```
+
+### Testing
+The project uses [just](https://just.systems/) for task automation:
+
+```bash
+# Run all available recipes
+just
+
+# Run all tests (requires prior test-import)
+just test-all
+
+# Run import test (prerequisite for other tests - loads test data)
+just test-import
+
+# Run a single test file
+just test tests/test_catalog.py
+```
+
+### Manual Testing
+```bash
+# Run the CLI locally
+poetry run cortex <command>
+
+# Examples:
+poetry run cortex catalog list
+poetry run cortex -t my-tenant catalog list
+```
+
+### Linting & Formatting
+Not currently configured in this project.
+
+## Architecture
+
+### Entry Point & CLI Structure
+- **Main entry point**: `cortexapps_cli/cli.py` - Defines the main Typer app and global options
+- **Command structure**: Each major resource has its own command module in `cortexapps_cli/commands/`
+- **Subcommands**: Some commands have nested subcommands in subdirectories (e.g., `backup_commands/`, `integrations_commands/`, `packages_commands/`, `scorecards_commands/`)
+
+### Global Options
+All commands inherit global options defined in `cli.py:global_callback()`:
+- `-k, --api-key`: API key (or `CORTEX_API_KEY` env var)
+- `-u, --url`: Base URL (or `CORTEX_BASE_URL` env var)
+- `-c, --config`: Config file path (defaults to `~/.cortex/config`)
+- `-t, --tenant`: Tenant alias (defaults to "default")
+- `-l, --log-level`: Logging level (defaults to INFO)
+
+### Configuration
+The CLI supports two authentication methods:
+1. **Config file** (`~/.cortex/config`): INI-style file with sections per tenant
+2. **Environment variables**: `CORTEX_API_KEY` and `CORTEX_BASE_URL`
+
+Environment variables take precedence over config file values.
+
+### Client Architecture
+- **`CortexClient`** (`cortexapps_cli/cortex_client.py`): Core HTTP client that handles all API requests
+  - Provides `get()`, `post()`, `put()`, `patch()`, `delete()` methods
+  - `fetch()`: Auto-paginated fetch for list endpoints
+  - `fetch_or_get()`: Conditionally fetches all pages or single page based on parameters
+  - Error handling with formatted error output using Rich
+
+### Command Patterns
+Each command module follows a similar pattern:
+1. Creates a Typer app instance
+2. Defines command-specific option classes (following `CommandOptions` pattern in `command_options.py`)
+3. Implements command functions decorated with `@app.command()`
+4. Commands receive `ctx: typer.Context` to access the shared `CortexClient` via `ctx.obj["client"]`
+5. Uses utility functions from `utils.py` for output formatting
+
+### Common Options Classes
+- **`ListCommandOptions`** (`command_options.py`): Standard options for list commands
+  - `--table`, `--csv`: Output format options
+  - `--columns, -C`: Select specific columns for table/csv output
+  - `--filter, -F`: Filter rows using JSONPath and regex
+  - `--sort, -S`: Sort rows by JSONPath fields
+  - `--page, -p`, `--page-size, -z`: Pagination controls
+
+- **`CommandOptions`**: Base options (e.g., `--print` for internal testing)
+
+### Output Handling
+- Default: JSON output via Rich's `print_json()`
+- Table/CSV output: Configurable via `--table` or `--csv` flags with column selection
+- Output utilities in `utils.py`:
+  - `print_output()`: JSON output
+  - `print_output_with_context()`: Formatted output with table/csv support
+  - `guess_data_key()`: Infers the data key in paginated responses
+
+### Testing
+- **Test framework**: pytest with pytest-cov for coverage
+- **Test utilities**: `tests/helpers/utils.py` provides a `cli()` helper that wraps the Typer CLI runner
+- **Test data setup**: Tests depend on `test_import.py` running first to load test entities
+- Tests use the real Cortex API (not mocked) and require valid `CORTEX_API_KEY`
+- Parallel execution: Tests run with `pytest-xdist` (`-n auto`) for speed
+- Serial marker: Use `@pytest.mark.serial` for tests that must run sequentially
+
+## Command Naming Style Guide
+
+Follow the conventions in `STYLE.md`:
+- **Flags over arguments**: Use named flags for clarity and future compatibility
+- **Long and short versions**: All flags should have both (e.g., `--long-version, -l`)
+- **Consistent short flags**: Reuse short flags across commands where possible
+- **Kebab-case**: Multi-word flags use kebab-case (e.g., `--api-key`)
+
+### Standard Verbs
+- **list**: Paginated list of resources (fetch all pages by default)
+- **get**: Retrieve full details of a single object
+- **create**: Create new object (fails if exists, unless `--replace-existing` or `--update-existing`)
+- **delete**: Delete object (interactive prompt unless `--force`)
+- **update**: Modify existing object (accepts full or partial definitions)
+- **archive/unarchive**: Archive operations
+- **add/remove**: Add/remove items from list attributes
+- **set/unset**: Set/unset single-value attributes
+- **open**: Open resource in browser
+
+## Build & Release Process
+
+### Branch Naming Convention
+Use the GitHub-recommended format: `<issue-number>-<short-description>`
+- Example: `186-fix-urllib3-cve` for issue #186
+- Use lowercase kebab-case for the description
+- Keep the description concise (3-5 words)
+
+### Direct Commits to Main
+Documentation-only changes (like updates to CLAUDE.md, README.md, STYLE.md) can be committed directly to `main` without going through the staging workflow.
+
+### Release Workflow
+1. Create feature branch for changes
+2. Create PR to merge feature branch to `staging` for testing
+3. Create PR to merge `staging` to `main` to trigger release:
+   ```bash
+   gh pr create --base main --head staging --title "Release X.Y.Z: Description"
+   ```
+   - Include the expected version number and brief description in title
+   - List all changes in the PR body
+4. Version bumping is automatic based on **conventional commit prefixes** in the commit history since the last tag:
+   - `feat:` prefix → **minor** version bump (new features)
+   - `fix:` prefix → **patch** version bump (bug fixes)
+   - If multiple types present, the highest wins (feat > fix)
+   - Default (no recognized prefix): patch bump
+5. Release publishes to:
+   - PyPI
+   - Docker Hub (`cortexapp/cli:VERSION` and `cortexapp/cli:latest`)
+   - Homebrew tap (`cortexapps/homebrew-tap`)
+
+### Determining the Next Version (Claude Instructions)
+Before creating a staging-to-main release PR, Claude must:
+
+1. **Check the current version tag**:
+   ```bash
+   git fetch origin --tags
+   git describe --tags --abbrev=0
+   ```
+
+2. **Analyze commits since the last tag**:
+   ```bash
+   git log <last-tag>..origin/staging --oneline
+   ```
+
+3. **Determine the version bump** by examining commit prefixes:
+   - Any `feat:` commit → minor bump (X.Y.0 → X.(Y+1).0)
+   - Only `fix:` commits → patch bump (X.Y.Z → X.Y.(Z+1))
+
+4. **Explain the version** to the user before creating the PR:
+   > "The next version will be **X.Y.Z** because the commits include:
+   > - `feat: add --table option to newrelic list` (triggers minor bump)
+   > - `fix: correct API endpoint for validate`
+   > Since there's a `feat:` commit, this will be a minor version bump."
+
+This ensures the user understands what version will be published and why.
+
+### Homebrew Dependency Updates
+The `mislav/bump-homebrew-formula-action` only updates the main package URL and SHA256. It **cannot** update the `resource` blocks for Python dependencies (this is a documented limitation of the action).
+
+When updating Python dependency versions (e.g., urllib3, requests), the homebrew formula in `cortexapps/homebrew-tap` must be updated manually:
+1. Clone the `cortexapps/homebrew-tap` repository
+2. Update the resource blocks in `Formula/cortexapps-cli.rb` with new URLs and SHA256 hashes from PyPI
+3. Alternatively, use `brew update-python-resources cortexapps-cli` locally and copy the output
+
+**Important**: The `homebrew/cortexapps-cli.rb` file in this repository should be kept in sync with the tap formula for reference. Update it when making dependency changes.
+
+### Commit Message Format
+Commits use **conventional commit** prefixes which affect both versioning and changelog:
+
+**For version bumping** (detected by github-tag-action):
+- `feat:` → triggers **minor** version bump
+- `fix:` → triggers **patch** version bump
+
+**For HISTORY.md changelog** (detected by git-changelog):
+- `add:` → appears under "Added"
+- `fix:` → appears under "Bug Fixes"
+- `change:` → appears under "Changed"
+- `remove:` → appears under "Removed"
+
+Best practice: Use `feat:` for new features (will bump minor) and `fix:` for bug fixes (will bump patch). These prefixes satisfy both the version bumping and changelog generation.
+
+### HISTORY.md Merge Conflicts
+The `HISTORY.md` file is auto-generated when `staging` is merged to `main`. This means:
+- `main` always has the latest HISTORY.md
+- `staging` lags behind until the next release
+- Feature branches created from `main` have the updated history
+
+When merging feature branches to `staging`, conflicts in HISTORY.md are expected. Resolve by accepting the incoming version:
+```bash
+git checkout --theirs HISTORY.md
+git add HISTORY.md
+```
+
+### GitHub Actions
+- **`publish.yml`**: Triggered on push to `main`, handles versioning and multi-platform publishing
+- **`test-pr.yml`**: Runs tests on pull requests
+
+## Key Files
+
+- `cli.py`: Main CLI entry point and global callback
+- `cortex_client.py`: HTTP client for Cortex API
+- `command_options.py`: Reusable command option definitions
+- `utils.py`: Output formatting utilities
+- `commands/*.py`: Individual command implementations
+- `pyproject.toml`: Poetry configuration and dependencies
+- `Justfile`: Task automation recipes
+- `DEVELOPER.md`: Developer-specific testing and workflow notes
+- `STYLE.md`: Command design guidelines

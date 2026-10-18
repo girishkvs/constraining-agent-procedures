@@ -1,0 +1,71 @@
+{
+  "version": "SC-public-command-tier-v1",
+  "type": "Lexical command-affordance proxy, not human risk labels or actual action costs",
+  "order": ["D", "W", "R"],
+  "primary_source": {
+    "shell_info": ["bash", "sh", "shell", "zsh", "console", "powershell", "pwsh", "cmd", "bat"],
+    "sql_info": ["sql", "tsql", "plsql", "postgresql", "postgres", "mysql", "sqlite"],
+    "unlabeled": "Only lines beginning with a known CLI after prompt normalization; $/> prompts also qualify. Indented code has no info string and follows this rule.",
+    "inline": false,
+    "comments": "Skip pure shell #, // and SQL -- comment lines. SQL /* comment-only lines are not commands. No commands are executed.",
+    "segments": "Split at ;, &&, || and | outside simple single/double quotes; strip leading $/>/PS path> prompts, sudo/command/exec/time/nohup and leading NAME=value assignments.",
+    "known_cli": ["rm", "git", "kubectl", "terraform", "helm", "docker", "az", "aws", "gcloud", "wrangler", "supabase", "curl", "dd", "mkfs", "shred", "npm", "pnpm", "yarn", "pip", "pip3", "cargo", "twine", "poetry", "uv", "dotnet", "vercel", "gh", "systemctl", "reboot", "shutdown", "crontab", "remove-item", "clear-content", "del", "rmdir", "rd", "drop", "truncate", "delete", "insert", "update", "alter", "create", "grant", "revoke", "merge"],
+    "info_normalization": "First info token casefolded, optional {.language} wrapper removed; opening and closing fences are not command text."
+  },
+  "command_rules": [
+    {"id":"D-rm-recursive","tier":"D","regex":"^rm\\b[^\\n]*(?:\\s-[A-Za-z]*[rR][A-Za-z]*\\b|\\s--recursive\\b)"},
+    {"id":"D-git-force-push","tier":"D","regex":"^git\\s+(?:-(?:C|c)\\s+\\S+\\s+)*push\\b[^\\n]*(?:--force(?:-with-lease|-if-includes)?\\b|(?:^|\\s)-[A-Za-z]*f[A-Za-z]*\\b)"},
+    {"id":"D-git-hard-reset","tier":"D","regex":"^git\\s+(?:-(?:C|c)\\s+\\S+\\s+)*reset\\b[^\\n]*--hard\\b"},
+    {"id":"D-git-clean-force","tier":"D","regex":"^git\\s+(?:-(?:C|c)\\s+\\S+\\s+)*clean\\b[^\\n]*(?:\\s-[A-Za-z]*f[A-Za-z]*\\b|--force\\b)"},
+    {"id":"D-git-branch-capital-D","tier":"D","regex":"^git\\s+(?:-(?:C|c)\\s+\\S+\\s+)*branch\\b[^\\n]*\\s-D\\b","case_sensitive":true},
+    {"id":"D-kubectl-delete","tier":"D","regex":"^kubectl\\s+(?:--?[\\w-]+(?:=\\S+|\\s+\\S+)?\\s+)*delete\\b"},
+    {"id":"D-terraform-destroy","tier":"D","regex":"^terraform\\s+(?:-\\S+\\s+)*destroy\\b"},
+    {"id":"D-helm-remove","tier":"D","regex":"^helm\\s+(?:--?[\\w-]+(?:=\\S+|\\s+\\S+)?\\s+)*(?:uninstall|delete)\\b"},
+    {"id":"D-docker-remove","tier":"D","regex":"^docker\\s+(?:(?:container|image)\\s+)?(?:rm|rmi)\\b|^docker\\s+(?:system\\s+prune|volume\\s+(?:rm|prune))\\b"},
+    {"id":"D-sql","tier":"D","regex":"^(?:DROP\\s+(?:TABLE|DATABASE|SCHEMA|INDEX|VIEW|ROLE|USER|FUNCTION|PROCEDURE)|TRUNCATE\\b|DELETE\\s+FROM\\b)"},
+    {"id":"D-cloud-delete","tier":"D","regex":"^(?:az|aws|gcloud|wrangler)\\s+(?:[A-Za-z][\\w-]*\\s+){0,7}(?:delete(?:-[\\w-]+)?|terminate(?:-[\\w-]+)?|remove|purge|destroy)\\b"},
+    {"id":"D-supabase-reset","tier":"D","regex":"^supabase\\s+(?:db\\s+)?(?:reset|delete|remove)\\b"},
+    {"id":"D-curl-delete","tier":"D","regex":"^curl\\b[^\\n]*(?:-X\\s*DELETE\\b|--request(?:=|\\s+)DELETE\\b)"},
+    {"id":"D-disk-write","tier":"D","regex":"^(?:dd|mkfs(?:\\.[\\w-]+)?|shred)\\b"},
+    {"id":"D-npm-unpublish","tier":"D","regex":"^(?:npm|pnpm|yarn)\\s+unpublish\\b"},
+    {"id":"D-powershell-remove","tier":"D","regex":"^(?:Remove-Item|Clear-Content)\\b"},
+    {"id":"D-windows-remove","tier":"D","regex":"^(?:del|rmdir|rd)\\s+[^\\n]*(?:/s\\b|/q\\b)"},
+    {"id":"W-git-push","tier":"W","regex":"^git\\s+(?:-(?:C|c)\\s+\\S+\\s+)*push\\b"},
+    {"id":"W-github-write","tier":"W","regex":"^gh\\s+(?:pr\\s+(?:create|merge)|release\\s+create)\\b"},
+    {"id":"W-kubectl-write","tier":"W","regex":"^kubectl\\s+(?:--?[\\w-]+(?:=\\S+|\\s+\\S+)?\\s+)*(?:apply|create|patch|scale|rollout|set|edit|label|annotate|cordon|drain)\\b"},
+    {"id":"W-terraform-write","tier":"W","regex":"^terraform\\s+(?:-\\S+\\s+)*(?:apply|import)\\b"},
+    {"id":"W-helm-write","tier":"W","regex":"^helm\\s+(?:--?[\\w-]+(?:=\\S+|\\s+\\S+)?\\s+)*(?:install|upgrade|rollback)\\b"},
+    {"id":"W-docker-push","tier":"W","regex":"^docker\\s+push\\b"},
+    {"id":"W-package-publish","tier":"W","regex":"^(?:(?:npm|pnpm|yarn|pip|pip3|cargo|poetry|uv)\\s+publish|twine\\s+upload|python(?:3)?\\s+-m\\s+twine\\s+upload|dotnet\\s+nuget\\s+push)\\b"},
+    {"id":"W-cloud-write","tier":"W","regex":"^(?:az|aws|gcloud)\\s+(?:[A-Za-z][\\w-]*\\s+){0,7}(?:create(?:-[\\w-]+)?|update(?:-[\\w-]+)?|set(?:-[\\w-]+)?|deploy(?:-[\\w-]+)?|start(?:-[\\w-]+)?|stop(?:-[\\w-]+)?|restart(?:-[\\w-]+)?|run-instances)\\b"},
+    {"id":"W-wrangler-write","tier":"W","regex":"^wrangler\\s+(?:deploy|publish|secret\\s+put)\\b"},
+    {"id":"W-vercel-write","tier":"W","regex":"^vercel\\s+deploy\\b"},
+    {"id":"W-supabase-push","tier":"W","regex":"^supabase\\s+db\\s+push\\b"},
+    {"id":"W-sql","tier":"W","regex":"^(?:INSERT\\s+INTO|UPDATE\\s+\\S+\\s+SET|ALTER\\b|CREATE\\s+(?:OR\\s+REPLACE\\s+)?(?:TABLE|DATABASE|SCHEMA|INDEX|VIEW|ROLE|USER|FUNCTION|PROCEDURE)|GRANT\\b|REVOKE\\b|MERGE\\s+INTO)"},
+    {"id":"W-curl-write","tier":"W","regex":"^curl\\b[^\\n]*(?:-X\\s*(?:POST|PUT|PATCH)\\b|--request(?:=|\\s+)(?:POST|PUT|PATCH)\\b)"},
+    {"id":"W-systemctl","tier":"W","regex":"^systemctl\\s+(?:--?[\\w-]+\\s+)*(?:start|stop|restart|enable|disable|reload)\\b"},
+    {"id":"W-reboot-shutdown","tier":"W","regex":"^(?:reboot|shutdown)\\b"},
+    {"id":"W-crontab-write","tier":"W","regex":"^crontab\\s+(?!-l\\b)(?:-e\\b|-r\\b|[^-\\s]\\S*)"}
+  ],
+  "prose_description_verbs": {
+    "D": "\\b(?:delete|destroy|drop|truncate|purge|terminate|force[- ]push|erase|overwrite|irreversibly\\s+reset)\\b",
+    "W": "\\b(?:deploy|publish|push\\s+to|migrate|roll\\s+back|rollback|restart|reboot|shutdown|provision)\\b"
+  },
+  "sensitivity_sources": {
+    "V-allcode": "All fenced and indented code blocks, same command rules and precedence.",
+    "V-inline": "Primary plus inline backtick spans outside fenced/indented code, same command rules.",
+    "V-prose": "Primary plus ordinary-prose sentence/list units matching NEITHER broad P nor broad O, using the frozen verb patterns. Computed only after Seal A because it depends on P/O flags.",
+    "V-desc": "Skills only: frontmatter description using the same D/W verb patterns, not primary commands. Other families unsupported."
+  },
+  "negative_cases": [
+    {"text":"git status","expected":"R"},{"text":"git commit -m local","expected":"R"},{"text":"git rebase master","expected":"R"},
+    {"text":"git branch -d merged","expected":"R"},{"text":"git branch -D lost","expected":"D"},
+    {"text":"git push origin main","expected":"W"},{"text":"git push --force-with-lease origin main","expected":"D"},
+    {"text":"rm -rf work","expected":"D"},{"text":"kubectl get pods","expected":"R"},{"text":"kubectl delete pod x","expected":"D"},
+    {"text":"terraform plan","expected":"R"},{"text":"terraform apply","expected":"W"},{"text":"az group delete --name x","expected":"D"},
+    {"text":"az group list","expected":"R"},{"text":"curl -X GET https://example.invalid","expected":"R"},
+    {"text":"curl -X DELETE https://example.invalid","expected":"D"},{"text":"DROP TABLE work;","expected":"D"},
+    {"text":"SELECT 'DROP TABLE work';","expected":"R"},{"text":"# rm -rf work","expected":"R"},
+    {"text":"echo 'git push --force'","expected":"R"},{"text":"npm test","expected":"R"},{"text":"crontab -l","expected":"R"}
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "O_operative_rate": 0.9333333333333333,
+  "SC_adjusted_top_P_share": 0.4610778443113772,
+  "limits": "Unsure/blank are reported separately, not silently treated as nonoperative. Wilson intervals describe labeled sample rates; adjusted share is a plug-in sample check, not a semantic recount or causal estimate.",
+  "operative_samples": {
+    "O_full": {
+      "N": 2,
+      "U": 0,
+      "Wilson95": [
+        0.7867654163738308,
+        0.9815229762087295
+      ],
+      "Y": 28,
+      "blank": 0,
+      "operative_rate": 0.9333333333333333,
+      "sample_items": 30,
+      "valid_Y_or_N": 30
+    },
+    "P_rest": {
+      "N": 5,
+      "U": 0,
+      "Wilson95": [
+        0.7062444591340484,
+        0.9373976892056628
+      ],
+      "Y": 30,
+      "blank": 0,
+      "operative_rate": 0.8571428571428571,
+      "sample_items": 35,
+      "valid_Y_or_N": 35
+    },
+    "P_top": {
+      "N": 4,
+      "U": 0,
+      "Wilson95": [
+        0.7404853135378618,
+        0.9546482066690264
+      ],
+      "Y": 31,
+      "blank": 0,
+      "operative_rate": 0.8857142857142857,
+      "sample_items": 35,
+      "valid_Y_or_N": 35
+    }
+  },
+  "risk_agreement": 0.5333333333333333,
+  "risk_blank": 0,
+  "risk_confusion_detected_rows_reading_label_columns": {
+    "D": {
+      "D": 6,
+      "R": 4,
+      "W": 0
+    },
+    "R": {
+      "D": 0,
+      "R": 5,
+      "W": 5
+    },
+    "W": {
+      "D": 3,
+      "R": 2,
+      "W": 5
+    }
+  },
+  "risk_valid_labels": 30,
+  "status": "LABELED_OR_PARTIALLY_LABELED",
+  "stratum_weighted_overall_P_precision": 0.8700840336134453
+}

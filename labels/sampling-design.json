@@ -1,0 +1,16 @@
+{
+  "population_pools": {
+    "O_full": 1864,
+    "P_rest": 2232,
+    "P_top": 1848
+  },
+  "procedures_per_detected_tier": 10,
+  "reading": "statements and procedures were read blind to sample group under the rubric in labels/RUBRIC.md",
+  "seed_prefix": "SC-public-expansion-2026-10-16-v1",
+  "selection": "PCG64, without replacement within each stratum; separately seeded shuffle.",
+  "statements": {
+    "O_full": 30,
+    "P_rest": 35,
+    "P_top": 35
+  }
+}

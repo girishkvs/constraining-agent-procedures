@@ -1,0 +1,11 @@
+{
+  "generated_content": {
+    "authored_remainder": "Include the authored remainder; record generated line and region counts per file",
+    "generated_only": "Exclude file if, after generated-region removal, comment/metadata/navigation-marker removal and markup stripping, no eligible alphanumeric text remains",
+    "region_action": "Blank every source line from marker start through marker end, preserving physical line numbering",
+    "region_end_regex": "<!--\\s*END_MARKER\\s*-->",
+    "region_start_regex": "<!--\\s*MARKER:\\s*do not edit this section directly\\.[^\\n]*generate-docs[^\\n]*-->",
+    "unclosed_generated_region": "STOP measurement-integrity failure",
+    "whole_file": "Explicit generated-file header in first 12 physical lines, except a bounded generated-region marker is not a whole-file declaration"
+  }
+}

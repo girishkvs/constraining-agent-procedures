@@ -1,0 +1,2249 @@
+{
+  "do_not_open_before_labeling": true,
+  "items": {
+    "P-01c2546329753a3f": {
+      "detected_tier": "D",
+      "doc_id": "ceeeb3b649ffc68ca3602374bad6305dd0fbebc451ee0beab5fa8d3385962a76",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "kubectl delete deployment feature-auth-v2 hotfix-payment-flow demo-dashboard -n staging",
+          "line": 135,
+          "raw_line": "  kubectl delete deployment feature-auth-v2 hotfix-payment-flow demo-dashboard -n staging",
+          "rule": "D-kubectl-delete",
+          "source": "code:unlabeled",
+          "tier": "D"
+        },
+        {
+          "command": "kubectl delete deployment test-migration -n dev",
+          "line": 136,
+          "raw_line": "  kubectl delete deployment test-migration -n dev",
+          "rule": "D-kubectl-delete",
+          "source": "code:unlabeled",
+          "tier": "D"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/k8s-cost-optimizer/SKILL.md"
+    },
+    "P-05f0ec367d1cefb5": {
+      "detected_tier": "W",
+      "doc_id": "6d8050cd04a8c71002e4afb86e34a61d2f8190724d1c45ec37e04cc9f9a81857",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "helm upgrade --install api-server ./charts/api-server -n app --create-namespace -f values-prod.yaml --set image.tag=1.2.3 --wait --timeout 5m",
+          "line": 226,
+          "raw_line": "helm upgrade --install api-server ./charts/api-server -n app --create-namespace -f values-prod.yaml --set image.tag=1.2.3 --wait --timeout 5m",
+          "rule": "W-helm-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "helm rollback api-server 1 -n app",
+          "line": 229,
+          "raw_line": "helm rollback api-server 1 -n app",
+          "rule": "W-helm-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/kubernetes-helm/SKILL.md"
+    },
+    "P-174647dba335445a": {
+      "detected_tier": "D",
+      "doc_id": "28bda8915bbd6bc4574c3677c3d2980cd4b40c99d826d8056891bcd188503887",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "gcloud config set project my-project-id",
+          "line": 38,
+          "raw_line": "gcloud config set project my-project-id",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud config set compute/region us-central1",
+          "line": 39,
+          "raw_line": "gcloud config set compute/region us-central1",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud config set compute/zone us-central1-a",
+          "line": 40,
+          "raw_line": "gcloud config set compute/zone us-central1-a",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud config configurations create production",
+          "line": 43,
+          "raw_line": "gcloud config configurations create production",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud compute instances create web-server \\",
+          "line": 51,
+          "raw_line": "gcloud compute instances create web-server \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud compute instances stop web-server --zone=us-central1-a",
+          "line": 70,
+          "raw_line": "gcloud compute instances stop web-server --zone=us-central1-a",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud compute instances start web-server --zone=us-central1-a",
+          "line": 71,
+          "raw_line": "gcloud compute instances start web-server --zone=us-central1-a",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud compute instances delete web-server --zone=us-central1-a",
+          "line": 72,
+          "raw_line": "gcloud compute instances delete web-server --zone=us-central1-a",
+          "rule": "D-cloud-delete",
+          "source": "code:bash",
+          "tier": "D"
+        },
+        {
+          "command": "gcloud compute firewall-rules create allow-http \\",
+          "line": 75,
+          "raw_line": "gcloud compute firewall-rules create allow-http \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud storage buckets create gs://my-bucket --location=us-central1",
+          "line": 84,
+          "raw_line": "gcloud storage buckets create gs://my-bucket --location=us-central1",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud storage buckets update gs://my-bucket \\",
+          "line": 90,
+          "raw_line": "gcloud storage buckets update gs://my-bucket \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud functions deploy my-function \\",
+          "line": 101,
+          "raw_line": "gcloud functions deploy my-function \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud iam service-accounts create app-sa \\",
+          "line": 125,
+          "raw_line": "gcloud iam service-accounts create app-sa \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud iam service-accounts keys create key.json \\",
+          "line": 128,
+          "raw_line": "gcloud iam service-accounts keys create key.json \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud container clusters create my-cluster \\",
+          "line": 148,
+          "raw_line": "gcloud container clusters create my-cluster \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud sql instances create my-db --database-version=POSTGRES_15 \\",
+          "line": 177,
+          "raw_line": "gcloud sql instances create my-db --database-version=POSTGRES_15 \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud pubsub topics create my-topic",
+          "line": 182,
+          "raw_line": "gcloud pubsub topics create my-topic",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud pubsub subscriptions create my-sub --topic=my-topic",
+          "line": 183,
+          "raw_line": "gcloud pubsub subscriptions create my-sub --topic=my-topic",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/gcloud/SKILL.md"
+    },
+    "P-20a7c3bccfaf4ee0": {
+      "detected_tier": "W",
+      "doc_id": "3e17c97fe500297f00c70ea1a9fd639cc6441abe670331b246f8f9ce118d5b14",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "curl -s -X POST $API/auth/signup -H 'Content-Type: application/json' \\",
+          "line": 275,
+          "raw_line": "curl -s -X POST $API/auth/signup -H 'Content-Type: application/json' \\",
+          "rule": "W-curl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "curl -s -X POST $API/products -H \"Authorization: Bearer $INVENTORY_TOKEN\" -H 'Content-Type: application/json' -d '{\"sku\":\"MUG-BLK-350\",\"name\":\"Black mug 350 ml\",\"priceCents\":1290,\"stock\":48}'   # 201",
+          "line": 278,
+          "raw_line": "curl -s -X POST $API/products -H \"Authorization: Bearer $INVENTORY_TOKEN\" -H 'Content-Type: application/json' -d '{\"sku\":\"MUG-BLK-350\",\"name\":\"Black mug 350 ml\",\"priceCents\":1290,\"stock\":48}'   # 201",
+          "rule": "W-curl-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/adonisjs/SKILL.md"
+    },
+    "P-2380ecb9cca5e05a": {
+      "detected_tier": "D",
+      "doc_id": "c6c9b7d984fc2ffef1dd3d29d29ccf651fa8fb063ec17f0cfa702fa9b3a0c8be",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "Remove-Item -Force -ErrorAction Stop",
+          "line": 240,
+          "raw_line": "            $files | Remove-Item -Force -ErrorAction Stop",
+          "rule": "D-powershell-remove",
+          "source": "code:powershell",
+          "tier": "D"
+        }
+      ],
+      "url": "https://github.com/github/awesome-copilot/blob/3b674ecaa87504b8ca41edce22b32a2abe1bfcf8/instructions/powershell.instructions.md"
+    },
+    "P-2c5fe7d980405858": {
+      "detected_tier": "D",
+      "doc_id": "e442ced374aa828cc7817deb36048539cccf7aa9f372cad1ba5860e5d96e1889",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "aws ec2 run-instances \\",
+          "line": 37,
+          "raw_line": "aws ec2 run-instances \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 run-instances \\",
+          "line": 49,
+          "raw_line": "aws ec2 run-instances \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "systemctl start docker",
+          "line": 64,
+          "raw_line": "systemctl start docker",
+          "rule": "W-systemctl",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "systemctl enable docker",
+          "line": 65,
+          "raw_line": "systemctl enable docker",
+          "rule": "W-systemctl",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 stop-instances --instance-ids i-0123456789abcdef0",
+          "line": 82,
+          "raw_line": "aws ec2 stop-instances --instance-ids i-0123456789abcdef0",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 start-instances --instance-ids i-0123456789abcdef0",
+          "line": 83,
+          "raw_line": "aws ec2 start-instances --instance-ids i-0123456789abcdef0",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 terminate-instances --instance-ids i-0123456789abcdef0",
+          "line": 84,
+          "raw_line": "aws ec2 terminate-instances --instance-ids i-0123456789abcdef0",
+          "rule": "D-cloud-delete",
+          "source": "code:bash",
+          "tier": "D"
+        },
+        {
+          "command": "aws ec2 stop-instances --instance-ids i-0123456789abcdef0",
+          "line": 89,
+          "raw_line": "aws ec2 stop-instances --instance-ids i-0123456789abcdef0",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 start-instances --instance-ids i-0123456789abcdef0",
+          "line": 93,
+          "raw_line": "aws ec2 start-instances --instance-ids i-0123456789abcdef0",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 create-security-group \\",
+          "line": 100,
+          "raw_line": "aws ec2 create-security-group \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 create-image \\",
+          "line": 120,
+          "raw_line": "aws ec2 create-image \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 delete-snapshot --snapshot-id snap-0123456789abcdef0",
+          "line": 136,
+          "raw_line": "aws ec2 delete-snapshot --snapshot-id snap-0123456789abcdef0",
+          "rule": "D-cloud-delete",
+          "source": "code:bash",
+          "tier": "D"
+        },
+        {
+          "command": "aws ec2 create-volume \\",
+          "line": 143,
+          "raw_line": "aws ec2 create-volume \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 create-snapshot \\",
+          "line": 162,
+          "raw_line": "aws ec2 create-snapshot \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws ec2 create-launch-template \\",
+          "line": 172,
+          "raw_line": "aws ec2 create-launch-template \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws autoscaling create-auto-scaling-group \\",
+          "line": 186,
+          "raw_line": "aws autoscaling create-auto-scaling-group \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/aws-ec2/SKILL.md"
+    },
+    "P-38b0da267619232e": {
+      "detected_tier": "R",
+      "doc_id": "d6473033bec8248e26540b36e901ae46b86a1df80f67548835072db040363bf9",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/getsentry/skills/blob/f57ada2d0b640406ea7e25b11d636c530e77c58b/agents/code-simplifier.md"
+    },
+    "P-391d567253e0db0e": {
+      "detected_tier": "W",
+      "doc_id": "3d1c3e1cbd17adb070152357bf7b13f2104a90725eb6904327e766af8b27dd0a",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "kubectl apply -f -",
+          "line": 36,
+          "raw_line": "linkerd install --crds | kubectl apply -f -",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl apply -f -",
+          "line": 37,
+          "raw_line": "linkerd install | kubectl apply -f -",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl apply -f -",
+          "line": 43,
+          "raw_line": "linkerd viz install | kubectl apply -f -",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl apply -f -",
+          "line": 51,
+          "raw_line": "kubectl get deploy web-app -o yaml | linkerd inject - | kubectl apply -f -",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl annotate namespace default linkerd.io/inject=enabled",
+          "line": 54,
+          "raw_line": "kubectl annotate namespace default linkerd.io/inject=enabled",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl apply -f -",
+          "line": 221,
+          "raw_line": "linkerd multicluster install | kubectl apply -f -",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl --context=east apply -f -",
+          "line": 222,
+          "raw_line": "linkerd multicluster link --cluster-name=west | kubectl --context=east apply -f -",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl label svc web-app mirror.linkerd.io/exported=true",
+          "line": 225,
+          "raw_line": "kubectl label svc web-app mirror.linkerd.io/exported=true",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl apply -f -",
+          "line": 250,
+          "raw_line": "linkerd upgrade | kubectl apply -f -",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/linkerd/SKILL.md"
+    },
+    "P-59c5f76f870c3a3b": {
+      "detected_tier": "R",
+      "doc_id": "db17d4a043668470ec867cb6f92650226ba8cd1cbac6fd4013681bc9903895b6",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/nx/SKILL.md"
+    },
+    "P-5dc9d7aa349f105e": {
+      "detected_tier": "D",
+      "doc_id": "dc962ce6cc33394a8505a337fdb43adf28f2af5512a5125e98f09af61d354b48",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "rm -rf node_modules package-lock.json",
+          "line": 117,
+          "raw_line": "rm -rf node_modules package-lock.json",
+          "rule": "D-rm-recursive",
+          "source": "code:bash",
+          "tier": "D"
+        }
+      ],
+      "url": "https://github.com/github/awesome-copilot/blob/3b674ecaa87504b8ca41edce22b32a2abe1bfcf8/agents/react19-dep-surgeon.agent.md"
+    },
+    "P-83da4b67212f80f7": {
+      "detected_tier": "W",
+      "doc_id": "245f1bf4c5a66f988cbf755136751730ecabfc45218035d710a4a48f06af0502",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "git push dokku main",
+          "line": 82,
+          "raw_line": "git push dokku main",
+          "rule": "W-git-push",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "git push dokku main",
+          "line": 244,
+          "raw_line": "git push dokku main",
+          "rule": "W-git-push",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/dokku/SKILL.md"
+    },
+    "P-8ae0c4b61070241d": {
+      "detected_tier": "R",
+      "doc_id": "b0b3546a234529a61c99dc1f1dd16f7700da7c6b3c4fa90158961cbcf15606bd",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/github/awesome-copilot/blob/3b674ecaa87504b8ca41edce22b32a2abe1bfcf8/skills/arize-instrumentation/SKILL.md"
+    },
+    "P-8b664b356df28ab2": {
+      "detected_tier": "W",
+      "doc_id": "b3b1d055370013e11d435e89363bca0bbe3cea77020dbe80e02cd7def57140b3",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "curl -s -X POST -H 'Content-Type: application/json' \\",
+          "line": 236,
+          "raw_line": "curl -s -X POST -H 'Content-Type: application/json' \\",
+          "rule": "W-curl-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/mockoon/SKILL.md"
+    },
+    "P-981123ea7dd2bcfb": {
+      "detected_tier": "R",
+      "doc_id": "75c4f0b802523aa827dd231c4afc70602cebf3f4bb70409e5c1b07483ea5084c",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/github/awesome-copilot/blob/3b674ecaa87504b8ca41edce22b32a2abe1bfcf8/agents/ms-sql-dba.agent.md"
+    },
+    "P-9b1e75e9afa52b1b": {
+      "detected_tier": "W",
+      "doc_id": "bbae632461011936c99e9008c2e1718029e864377eb637844426aacfed0fcffe",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "CREATE INDEX idx_user_data ON users(email, first_name, last_name, created_at)",
+          "line": 38,
+          "raw_line": "CREATE INDEX idx_user_data ON users(email, first_name, last_name, created_at);",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "CREATE INDEX idx_users_email_created ON users(email, created_at)",
+          "line": 42,
+          "raw_line": "CREATE INDEX idx_users_email_created ON users(email, created_at);",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "CREATE INDEX idx_users_name ON users(last_name, first_name)",
+          "line": 45,
+          "raw_line": "CREATE INDEX idx_users_name ON users(last_name, first_name);",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "CREATE INDEX idx_users_status_created ON users(status, created_at)",
+          "line": 48,
+          "raw_line": "CREATE INDEX idx_users_status_created ON users(status, created_at)",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "INSERT INTO products (name, price) VALUES ('Product 1', 10.00)",
+          "line": 174,
+          "raw_line": "INSERT INTO products (name, price) VALUES ('Product 1', 10.00);",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "INSERT INTO products (name, price) VALUES ('Product 2', 15.00)",
+          "line": 175,
+          "raw_line": "INSERT INTO products (name, price) VALUES ('Product 2', 15.00);",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "INSERT INTO products (name, price) VALUES ('Product 3', 20.00)",
+          "line": 176,
+          "raw_line": "INSERT INTO products (name, price) VALUES ('Product 3', 20.00);",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "INSERT INTO products (name, price) VALUES",
+          "line": 179,
+          "raw_line": "INSERT INTO products (name, price) VALUES ",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "CREATE INDEX idx_orders_covering",
+          "line": 208,
+          "raw_line": "CREATE INDEX idx_orders_covering ",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        },
+        {
+          "command": "CREATE INDEX idx_orders_active",
+          "line": 217,
+          "raw_line": "CREATE INDEX idx_orders_active ",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/github/awesome-copilot/blob/3b674ecaa87504b8ca41edce22b32a2abe1bfcf8/skills/sql-optimization/SKILL.md"
+    },
+    "P-9ec78919a87e6de7": {
+      "detected_tier": "R",
+      "doc_id": "e48c33bec91eb51d6a621a72167a1db4388e6e90a50bfac7ce7f82f45ed048f9",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/engineering-team/skills/incident-response/SKILL.md"
+    },
+    "P-aa9f5768162132de": {
+      "detected_tier": "W",
+      "doc_id": "4056a5efe4a7e7cc9a9b9af2e1232b41698a16663c4f21df304ab17c9ea6c02f",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "curl -sS -X POST \"https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=$CRUX_API_KEY\" \\",
+          "line": 160,
+          "raw_line": "curl -sS -X POST \"https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=$CRUX_API_KEY\" \\",
+          "rule": "W-curl-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/seo-audit/SKILL.md"
+    },
+    "P-ab19a5f0cf052377": {
+      "detected_tier": "D",
+      "doc_id": "9b2ca725b6455a6ecc9679f01533667725b6b8ac6ba6bc44f2e66c80badd3e2b",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "git push -u origin <feature-branch>",
+          "line": 116,
+          "raw_line": "git push -u origin <feature-branch>",
+          "rule": "W-git-push",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "git branch -D <feature-branch>",
+          "line": 156,
+          "raw_line": "git branch -D <feature-branch>",
+          "rule": "D-git-branch-capital-D",
+          "source": "code:bash",
+          "tier": "D"
+        }
+      ],
+      "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/finishing-a-development-branch/SKILL.md"
+    },
+    "P-ae096cc453a0f04d": {
+      "detected_tier": "R",
+      "doc_id": "5d10b2b4666bce684b546fcee9afd02350873dd52d0e2c008a9cf79f7735bc63",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/github/awesome-copilot/blob/3b674ecaa87504b8ca41edce22b32a2abe1bfcf8/agents/task-researcher.agent.md"
+    },
+    "P-b105adf066677ee4": {
+      "detected_tier": "R",
+      "doc_id": "149ddafd91470036225b8dce67be94bf9f5b14cfdd05b312390ac8b7d7cd080c",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/github/awesome-copilot/blob/3b674ecaa87504b8ca41edce22b32a2abe1bfcf8/instructions/context-engineering.instructions.md"
+    },
+    "P-b21bb4ce31c053b3": {
+      "detected_tier": "R",
+      "doc_id": "0c2822d8ca95af0b91ad1c2734c0acca11c6f3eaef510b5707ecb53066e42cd0",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/ant-design/SKILL.md"
+    },
+    "P-b42e31a05b203ee9": {
+      "detected_tier": "D",
+      "doc_id": "0869c3b071a02bd8808302be2622157aa0cd95e8316c7d5e57909d91caf655cd",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "gcloud functions deploy handle-webhook \\",
+          "line": 60,
+          "raw_line": "gcloud functions deploy handle-webhook \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud functions deploy process-order \\",
+          "line": 96,
+          "raw_line": "gcloud functions deploy process-order \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud functions deploy process-upload \\",
+          "line": 140,
+          "raw_line": "gcloud functions deploy process-upload \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud functions deploy on-user-created \\",
+          "line": 180,
+          "raw_line": "gcloud functions deploy on-user-created \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud functions delete process-order --gen2 --region us-central1",
+          "line": 211,
+          "raw_line": "gcloud functions delete process-order --gen2 --region us-central1",
+          "rule": "D-cloud-delete",
+          "source": "code:bash",
+          "tier": "D"
+        },
+        {
+          "command": "curl -X POST http://localhost:8080 \\",
+          "line": 223,
+          "raw_line": "curl -X POST http://localhost:8080 \\",
+          "rule": "W-curl-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/gcp-cloud-functions/SKILL.md"
+    },
+    "P-c6c694eaa4aa1cbc": {
+      "detected_tier": "W",
+      "doc_id": "506b66a9bbf6616d47f2003e1c159652a48a2b20e127f36aa3a962a647af7163",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "gcloud monitoring services create --service-id=web-frontend \\",
+          "line": 67,
+          "raw_line": "gcloud monitoring services create --service-id=web-frontend \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud alpha monitoring slos create \\",
+          "line": 70,
+          "raw_line": "gcloud alpha monitoring slos create \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud container clusters create-auto prod \\",
+          "line": 79,
+          "raw_line": "gcloud container clusters create-auto prod \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud sql instances create orders \\",
+          "line": 83,
+          "raw_line": "gcloud sql instances create orders \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud compute disks create app-data \\",
+          "line": 88,
+          "raw_line": "gcloud compute disks create app-data \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud storage buckets create gs://my-prod-data \\",
+          "line": 95,
+          "raw_line": "gcloud storage buckets create gs://my-prod-data \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud run services update api \\",
+          "line": 128,
+          "raw_line": "gcloud run services update api \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud backup-dr backup-plans create web-tier-plan \\",
+          "line": 171,
+          "raw_line": "gcloud backup-dr backup-plans create web-tier-plan \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/gcp-waf-reliability/SKILL.md"
+    },
+    "P-c782bcbe5a9a57ce": {
+      "detected_tier": "R",
+      "doc_id": "5e05745697c6fb6d3d2233a2cf19b994c44f8e7afe685ac5c0be2f432a0c7578",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/puppeteer/SKILL.md"
+    },
+    "P-de2e80eb6f0afc67": {
+      "detected_tier": "D",
+      "doc_id": "ef915443c1310dfff9232288da0cbf21e4b4f06b342ff5208bffa7f4b3ef5297",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "aws sqs create-queue \\",
+          "line": 38,
+          "raw_line": "aws sqs create-queue \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws sqs create-queue \\",
+          "line": 49,
+          "raw_line": "aws sqs create-queue \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws sqs create-queue --queue-name order-processing-dlq",
+          "line": 62,
+          "raw_line": "aws sqs create-queue --queue-name order-processing-dlq",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws sqs set-queue-attributes \\",
+          "line": 70,
+          "raw_line": "aws sqs set-queue-attributes \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws sqs start-message-move-task \\",
+          "line": 79,
+          "raw_line": "aws sqs start-message-move-task \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "aws sqs delete-message \\",
+          "line": 171,
+          "raw_line": "aws sqs delete-message \\",
+          "rule": "D-cloud-delete",
+          "source": "code:bash",
+          "tier": "D"
+        },
+        {
+          "command": "aws sqs purge-queue \\",
+          "line": 195,
+          "raw_line": "aws sqs purge-queue \\",
+          "rule": "D-cloud-delete",
+          "source": "code:bash",
+          "tier": "D"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/aws-sqs/SKILL.md"
+    },
+    "P-eaae7d1b54021bb6": {
+      "detected_tier": "W",
+      "doc_id": "e3a63f162886e5eabdca7a87efe0c53fd105adf4e63458d3a3e1e48b34dab3f0",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "curl -s -X POST http://localhost:9000/admin/products \\",
+          "line": 107,
+          "raw_line": "curl -s -X POST http://localhost:9000/admin/products \\",
+          "rule": "W-curl-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/medusa/SKILL.md"
+    },
+    "P-edecfd5c244e84c0": {
+      "detected_tier": "D",
+      "doc_id": "6adf6a58ee5ac37c7afe6e8da650a555ca02f99f4c56b0d6ec42b86d747ce303",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "dd if=/dev/sdb of=disk.img bs=4M status=progress conv=noerror,sync",
+          "line": 34,
+          "raw_line": "sudo dd if=/dev/sdb of=disk.img bs=4M status=progress conv=noerror,sync",
+          "rule": "D-disk-write",
+          "source": "code:bash",
+          "tier": "D"
+        },
+        {
+          "command": "dd if=/dev/sdb of=sdcard.img bs=4M status=progress",
+          "line": 129,
+          "raw_line": "sudo dd if=/dev/sdb of=sdcard.img bs=4M status=progress",
+          "rule": "D-disk-write",
+          "source": "code:bash",
+          "tier": "D"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/foremost/SKILL.md"
+    },
+    "P-ef26051b7d9f7088": {
+      "detected_tier": "W",
+      "doc_id": "696c955b8d9b7f85fe95f1e79ed75c23b7356cdc79829e9dfe7845e3ed5a4036",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "gcloud container clusters create-auto prod-cluster \\",
+          "line": 48,
+          "raw_line": "gcloud container clusters create-auto prod-cluster \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "kubectl create deployment hello \\",
+          "line": 56,
+          "raw_line": "kubectl create deployment hello \\",
+          "rule": "W-kubectl-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud container clusters create-auto prod-cluster \\",
+          "line": 64,
+          "raw_line": "gcloud container clusters create-auto prod-cluster \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud iam service-accounts create orders-api",
+          "line": 81,
+          "raw_line": "gcloud iam service-accounts create orders-api",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud container node-pools create inference-l4 \\",
+          "line": 201,
+          "raw_line": "gcloud container node-pools create inference-l4 \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "gcloud container node-pools create batch-spot \\",
+          "line": 241,
+          "raw_line": "gcloud container node-pools create batch-spot \\",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "url": "https://github.com/TerminalSkills/skills/blob/6edcf94159d9f46b0759d2e1b59dd545cfaca254/skills/gcp-gke/SKILL.md"
+    },
+    "P-f906e555b1c83b32": {
+      "detected_tier": "D",
+      "doc_id": "0427badb68f7a95683faf9de192919697821ed0bdd1db4eb5b1fb85e9d51c292",
+      "kind": "procedure",
+      "matched_commands": [
+        {
+          "command": "git branch -D hub/{session-id}/{agent-id}/attempt-1",
+          "line": 46,
+          "raw_line": "git branch -D hub/{session-id}/{agent-id}/attempt-1",
+          "rule": "D-git-branch-capital-D",
+          "source": "code:bash",
+          "tier": "D"
+        }
+      ],
+      "url": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/engineering/agenthub/skills/merge/SKILL.md"
+    },
+    "P-f91ed193b99a88ee": {
+      "detected_tier": "R",
+      "doc_id": "068a7b383d55edaf4d0fc3b3a415e5a227f98773a98b022ae0b6adf8041932c2",
+      "kind": "procedure",
+      "matched_commands": [],
+      "url": "https://github.com/getsentry/skills/blob/f57ada2d0b640406ea7e25b11d636c530e77c58b/skills/claude-settings-audit/SKILL.md"
+    },
+    "S-00b1dad756af0201": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "1dceec229578be892e4660dc92e75d5143835e59adeb3c64f395460c6b6d586d",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 11,
+      "unit_sha256": "0a5fe7ece02e46c3da1f39279d43afae191d6a4ce565b37ebefc1b05c867aad7"
+    },
+    "S-039c50b89c098ef5": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "f61f1110cab8608a4ccb9c78fc348ee744bb5405b7e22053684193776ce7e965",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 118,
+      "unit_sha256": "9803c30fb81385454d8e49adc52ff72f0371de45589f1aae8f69c0958912dbb6"
+    },
+    "S-0e08021facb7d84a": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "bc3a18a93e48480ae907084074eaff5b8f9c6b6ccc525e181fa0417af5ce8ca4",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 109,
+      "unit_sha256": "6ded55536f4a70272c2177929729ccf7a9ab750ebadf2549c42643d1a65dd76d"
+    },
+    "S-0eda86ad6aba2ecb": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "02a81789edb2181919c69b66c19c179405bfedb01b09487cb09ced62db1cb612",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 15,
+      "unit_sha256": "ceccbd390e5d529f9d760f19489baebe1844c6f086e4c3759bbad3f32364229e"
+    },
+    "S-114815666c75c2dd": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "b5bcf4db22bad5b9634de042a1161ce1b77ff2d545c99aa32b4bf0bbd1fc3e4d",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 8,
+      "unit_sha256": "860d36434ec36dc8f810420f838244cbfc907c6d5743fb3b69f75f11f63f5e06"
+    },
+    "S-1508ca941414ac86": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "534a560c32819264ec05eb433ce62f78f2c8bd70988094a41f0c1828801703a5",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 32,
+      "unit_sha256": "298dfe75f005ebdaa564a7deda3ea263b160dcd1a1873d69b9b2901c99652f5c"
+    },
+    "S-1676f0c95122cc46": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "80e58795613ae0f5f6ee59762cc055eb5f6a4df52b8dabc4fc98a36407694a1e",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 77,
+      "unit_sha256": "29ca6893036ebfab67cbf0645db84bf6dba87e9492e7f89b9d76acb756d3ed2c"
+    },
+    "S-16867eee2d3fc3da": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "b1cf9726d92b32d876248aeb40af85fd988c3e7d97f8b0ac8ac6b1c61db7e027",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 65,
+      "unit_sha256": "29a23f7cf46d1809207d90fa59cc3aa65121cb520ff3d6e43d7b6b85b5650e5d"
+    },
+    "S-1afe26f7bc474868": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "ff5a528676db47acf79be3495faf8c5a5473ffb1c9b3fac71c60d20cbba8471f",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 13,
+      "unit_sha256": "bc9a7d0bd86441ab3de1784649d660732538695ac3688d6f97da064085f322fa"
+    },
+    "S-1c513aa33639ab5a": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "554556daee2b4473431f1e163a8072903daa69b3cc3358a4b6d4d62cd7324d2b",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 80,
+      "unit_sha256": "38f92645c34c1f18afbba8f5e2291bef611fae7385aba5c53bd52e3166f05b34"
+    },
+    "S-231e7f37771dbc3a": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "87260fb17a51eb985dbc158bf6d26d477a51f446fe5178f0040e59091a4bccb1",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "helm install --generate-name infisical-helm-charts/secrets-operator",
+          "line": 167,
+          "raw_line": "helm install --generate-name infisical-helm-charts/secrets-operator",
+          "rule": "W-helm-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_rest",
+      "unit_index": 43,
+      "unit_sha256": "882794a196f8246244a267c205699481f394894aea5bf298ddbb25ac47e3722b"
+    },
+    "S-2487e95038eceb97": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "1d62600daa6bd26f789a1b1263df06103b07e2ba33009781c27ce246c0973425",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 17,
+      "unit_sha256": "af71256cb3bfd189304a43cdf3b34abe66744f347276fd85babb83922990af31"
+    },
+    "S-265f830643002374": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "56bb4ba6d688e182cbbdbb8567d9b16fb08c9559b971a67ac1306af9b24019af",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 237,
+      "unit_sha256": "0c828551d71862a9619a7d1b96cd6f4fed15cdc190b6487d6b1b0db7d84349b7"
+    },
+    "S-2b66222fdb165c70": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "d346ca9be105526c51b6c29a1879d8478e5860e2f5eb72b433a7437cbedaef39",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 84,
+      "unit_sha256": "7de2c30b9ef5b8001b1d55cb575a1ac440d8f60c311d4947181fa6d3a50891b0"
+    },
+    "S-2cf02dbc030d54c2": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "a04b838ae3814e6457ea4cca6995a96544572872cb3967d80a60554f35f5ccb0",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 76,
+      "unit_sha256": "81c587466168bda16ded56111a5de46c331cb958b79ecccdf27af64f964da342"
+    },
+    "S-2ef79907b90931a2": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "028f7bce197e6afa40881d13b0e551fbf7a1aff9aaa4f5086a2204ae262b85fb",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 41,
+      "unit_sha256": "a131c67a5515495f3f6d28374050d13d98b621dd03dc8c25ea5e69eb168b2c1e"
+    },
+    "S-311aa36421ef5560": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "56bb4ba6d688e182cbbdbb8567d9b16fb08c9559b971a67ac1306af9b24019af",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 215,
+      "unit_sha256": "9f043492612d45966bd250a529c7d2c6febb2b5adb95ee27dff6001e49971479"
+    },
+    "S-32dcb08a17f47e0c": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "ad5b0bb1d57eb31bfc5f6f4755303af8908941e98cab4c7b4f21bfcad6a6d4d2",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 20,
+      "unit_sha256": "3c4fcf21924c7df17b8537640a535a959c0f1f052c6632ab9c4b5e3d3653844e"
+    },
+    "S-32f5d5035e6654ec": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "a80a818db06afc2541b71ea26913fbaf2c62e2685a0d126946115a6968ede9f4",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 18,
+      "unit_sha256": "6f2f8cd44b50c9493ca6b725cb99bba3674fd0227627fb92570e3731a7c9c4b1"
+    },
+    "S-358ddb375a6edb72": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "594f98ad0b23aec6627110f6881e92c26cd53f16560baa245e5cc13380d082af",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 27,
+      "unit_sha256": "de8fbc2127407c22b63d749d579fbc27071e69bb4c290c0f4da3037de30d0454"
+    },
+    "S-363b40a80e69f258": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "505bffd94a309e6fa872c41127e7302641dbc41902e55f39189e2e1eb43c954f",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 35,
+      "unit_sha256": "149932bc1a89ad78000c1c8a5acbc5570b1a0211681fe5ecc0f0e3435fa24be6"
+    },
+    "S-36fd1d30fa302f16": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "091881d6e576764d56b0b69707135421c0fa664bd6b64c250ea4b298cec1de29",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 29,
+      "unit_sha256": "02434173e56a58aca22d68ec2a871b7207740cb728e0078f84390eb8f1b6e3aa"
+    },
+    "S-38b2c48f467517d5": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "65bc4434f3be36cf9e71c54963cf8a0e24bbba8e27c5d01076e93a45a90a44ff",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 11,
+      "unit_sha256": "1e3086802207aa71b0f7aece458b3ba36810587e9b3febd8d7d168c526068bdc"
+    },
+    "S-3a197fbc0fcb8636": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "b95a87c2d5836710df7026bf8a5a28447ed3afe5a587ba8e84ebd08c43b074ec",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 26,
+      "unit_sha256": "33b807a097ff11cdb7d92322faea76d3fe5362c7465137f12973a750e2fa5597"
+    },
+    "S-3a49249928848230": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "caee865ab8d64b87bd65985fc392b8cff8d3a9c758c76f024a0d83052e6631c5",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 56,
+      "unit_sha256": "da496d9704b022e09330751198d170f8ab4c37261c4e286bbc3fd79b895ff66b"
+    },
+    "S-3c59b26f0b424d48": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "1267c2093040ecfa0d87dd8a6d9fb99ac79725d89ad409fc8fb4981c5c5c6a9f",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 26,
+      "unit_sha256": "656e12769feb8f9b59e940427c4421ab4874fb71f7b8a778effd7bb3cabd36db"
+    },
+    "S-40be4b2e5699db48": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "c064e35e74207d1f197acd88c9cad22b413852dd73e8d96e140962f1f40d096e",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 104,
+      "unit_sha256": "9da7865858160d162521c77e7f01a67ea88ffef1fb420e9a1ba0013fde594c61"
+    },
+    "S-40f1a9895f9bf917": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "239bafae2a79d14dba0bcc8dad31341a3a484e3dbc0435fc100007adc66f730a",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 25,
+      "unit_sha256": "f313beabefbd8fb188999a2e60e7f6255ac3ff50a362a7fa9b4974f6e6cb6979"
+    },
+    "S-456e46cd49a45d76": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "094084c576016ef3b028a1f85cb9a012cdb3b2453e0af2901b11081699f46c6c",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 106,
+      "unit_sha256": "083b32938e52264ed31fc526e7846e8615dd9408307e92654b025a8252a13eed"
+    },
+    "S-45d4c191966e6228": {
+      "O": true,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "56e90f40859192d93c2db498c900fb036e56d1936ea18fb4a7c1950d67554bdb",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 27,
+      "unit_sha256": "32007227397853b252ceb972b2b232440443b889aed014e22c8961e5a49e2aa5"
+    },
+    "S-525d1f90e7e9c236": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "a07681d4149d9e0c06bfbe527696155c31b0d07d9f0dacab6e85922c346605b6",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 87,
+      "unit_sha256": "35f3dc0806a1fb6ebaaf5147d776ad25d355ad9abcb963bda03beb06cfaadcca"
+    },
+    "S-55b5d239724a905a": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "acdc07ac8c5cdc07e5761dd4e4f251aba636db8fee367a85c54b0a18481332c4",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 8,
+      "unit_sha256": "21e27bb22eba8c1a59c658602b6928d60fd1d90c60c9d16eadaba0273b6caa30"
+    },
+    "S-5666cfd781a3669b": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "6430942a1b940dfe2e0471472a9289128de10d9414ac45d58ab44301ae547857",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 152,
+      "unit_sha256": "b38225be9cd2b1a873288e389c5c23e6e1edc66b4766d67cd0d2f58381e23177"
+    },
+    "S-5787888071052893": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "56bb4ba6d688e182cbbdbb8567d9b16fb08c9559b971a67ac1306af9b24019af",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 76,
+      "unit_sha256": "0560f3bd6ba63ee308aff1b479b8ddad33ebd0f466222f2e254fc674b159174c"
+    },
+    "S-619e7d99c57aa262": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "117fcaa43c1d34387c674ff1c6e6bc30e20bd68a16de21c62cd616b8ab3cc5a7",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 40,
+      "unit_sha256": "d4f6b244c330fb9d77c97da336934acafc2620beb7b0e0c551dd9ab99e563a5f"
+    },
+    "S-6562e692b94bd1d8": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "562430c1912021f8dc8e22e886846387b4c725ed682e8100996e85c12a0a0d91",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 24,
+      "unit_sha256": "073a3cd3713ac622dce3a29fc92e008fa554c327e171b9cc6a464ebd1ce5c720"
+    },
+    "S-66ad6510bfb2117a": {
+      "O": true,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "38018a5f9263f694f93dacbf318c23ca929d159c788cd9826b895fdcddac33d9",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 54,
+      "unit_sha256": "bc2e9242b4474b3ff9af236412ef2196af396bd711b9853fac4a256ac8ef4709"
+    },
+    "S-66d9ad67d1c4b29b": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "155031f075768e83809266382fd267ccb8722d4135b0f67ae210e6eac2f86838",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 71,
+      "unit_sha256": "7f50a7f3cf75c80419b658fd41196212ede83b97e4219c24e0034c102ba51dd5"
+    },
+    "S-6771204d4900c3fa": {
+      "O": true,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "9b78d24eff48220f7da10bc9d0c70d4f99b11ce1e0ae2f54b90b5aa669a19260",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 27,
+      "unit_sha256": "3279861a8160eaa158655e0b5409f6a224d7064fec21b934d4bbe2b139fa2255"
+    },
+    "S-68bc286b0e88f017": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "9bd76102b9f3a4c537c1c34a8e3d3779d5edf1d62b96e31eb7c6aec6b10d87f2",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 173,
+      "unit_sha256": "9b048beb77b45135651ddec28bc704f00be2fb0ebf309bbc276b304a6ce8b6d9"
+    },
+    "S-698e7de2b59c2a58": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "bd418de614ecb10a295c6094d100346f94c26fcf1ec6dd18a0b3a710e2371d9d",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "UPDATE Orders SET Status = \"Overdue\"",
+          "line": 106,
+          "raw_line": "UPDATE Orders SET Status = \"Overdue\"",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_rest",
+      "unit_index": 33,
+      "unit_sha256": "58bbb4e572f8ebb77443177495206229bc43828b5c6adc68c62262e87ec861d8"
+    },
+    "S-6bff3f777e2d81f7": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "d91a2cbca708bc42e70d1e6cd1a0e3919e0b530560dd72ab9f698a4e1d550c07",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 215,
+      "unit_sha256": "f787e8dff0b3ceceda9e3e6ab4eed84200c962871a94f3ade32e944d195cc5b2"
+    },
+    "S-6f58ac22880080c9": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "117fcaa43c1d34387c674ff1c6e6bc30e20bd68a16de21c62cd616b8ab3cc5a7",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 46,
+      "unit_sha256": "c0d97b85a871665b9c1e840906e6c5ee7696caf65332f53f9f54a9fc1bca7c35"
+    },
+    "S-7174d761ca1bd6fc": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "2d8b9319a8f442fb0dfa0e86365a1395c3de543157d234440e063e42d59483b6",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 12,
+      "unit_sha256": "9b7739f6eae022ee3bd782d1f6dd0a533e8e7dc412e922cd5edc83c815dd02fb"
+    },
+    "S-760d715bae582048": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "068a7b383d55edaf4d0fc3b3a415e5a227f98773a98b022ae0b6adf8041932c2",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 86,
+      "unit_sha256": "1b08420d59b42b9036e183f24f904f27ede89e3ae1af76f360dbbca9caaee25b"
+    },
+    "S-775e5f9f88765821": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "55ad095bce02f0d6ad9df04c4f5cf0e0c7fd460c6e9c35c5430ca49e14aca43a",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 12,
+      "unit_sha256": "6783c28d49bb5ce6dc86053c7e2908838e5f0ded83029dd05bc23c643db430d0"
+    },
+    "S-7b71ee0238df79ce": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "d7f4de26178e9934839e2bea573d9fc712d1c242d44779be34441d9424b9da01",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "az account set --subscription <subscription-id>",
+          "line": 66,
+          "raw_line": "az account set --subscription <subscription-id>",
+          "rule": "W-cloud-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_top",
+      "unit_index": 32,
+      "unit_sha256": "d81733431528dc208ee572bccc5efb1ced1d6c7257ac46ed8d81eafe7ec98b15"
+    },
+    "S-7cfcd860cbb0ebfa": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "c4dc2e5656c563d7948128d968ab5d97e4a33a7f009de9def5a5036c49515bda",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 50,
+      "unit_sha256": "1b39f359b80ac126969c6314020aa344df968576e8a3d352e730f32ac58f9dcf"
+    },
+    "S-80d204cb5f9f68c6": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "cef50fa92fe092562c1a3bd5a7e05999b4510c2c07cc4ae1c3785303af4710f5",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 20,
+      "unit_sha256": "a515517f0ffc657ce36d1133f3ffc7b74ee1887bc1eecbfa41905f579f6f59ef"
+    },
+    "S-88a50d4adb74ba0f": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "094084c576016ef3b028a1f85cb9a012cdb3b2453e0af2901b11081699f46c6c",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 113,
+      "unit_sha256": "2cb4c1aa6fc522e9b1d4178f5f75e1600825b20702dc11208c13cf299b428ee4"
+    },
+    "S-8c2904eb72ab14f9": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "dd30f94ffb56c1cb3b537472f316e6572b9a155831be2a8f954e0846af52c338",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 29,
+      "unit_sha256": "4f8962b14528a1fc82e95bd30b6eb3748250bed98b288ad94e7c438c3f2b8e86"
+    },
+    "S-8fed969b8d2dc397": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "35a0f420aac36dc363789a7ad7dcfe8fa40978130a237a42b3f86c953e3ddaa7",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 11,
+      "unit_sha256": "bae28190c5cbb71773153202b30624ba637e043b3d2afed71bb8e8bfbebfc338"
+    },
+    "S-922cfe260ae715a9": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "9e8298a06beabc0118d225a870209af6b49521e13f9b83b1820e3b3f871a20f2",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "CREATE TABLE passkeys (",
+          "line": 217,
+          "raw_line": "CREATE TABLE passkeys (",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_rest",
+      "unit_index": 19,
+      "unit_sha256": "d4c568861d089e9ba68031a01589b645e2822170fea06669c8d776c919c2f88d"
+    },
+    "S-92c258d49ebfaecd": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "e990536557581e28000aa685661bd68d88ac51a19a88979cb4996b67e2aea8d3",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 94,
+      "unit_sha256": "b52c590f529dc24a97399c5e63567a0187a4ff31cd35731104ea6ab791e76376"
+    },
+    "S-92f09e0fe20cdd7f": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "f2fd05a8f52975025174d1100e9773b830701dd21f6285f5b8b8a29180885e2a",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 37,
+      "unit_sha256": "6c323e5ec8427a4ec98809fbd040418a04fd07e65609cc59fa24eeb173a97336"
+    },
+    "S-955f744182cba137": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "c725f6c6f48c6329c803c775ee7017f33a9f17ca289883defa538bfc2e77232a",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 51,
+      "unit_sha256": "f704453743f50b156dd5f4e2e9caccb006ad3c5af3160846f14183c57de2c915"
+    },
+    "S-96e1974636b6de5c": {
+      "O": true,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "682122829eee87e580fa99f1ed799a219a48ee8978fa6fc4c181b666f3d7a68f",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 37,
+      "unit_sha256": "d67217d9d11a8ac5de7ef527a2a23da5c8a893ed5f3f74688b92cc9745bf092e"
+    },
+    "S-9944c3793b6c6cda": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "37b2f578db4ba561ec216d0654b437dca8cc9146b46c0dbac99d761d16fa0c69",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 17,
+      "unit_sha256": "d950e09b819f1533c0ed6134e18a415e60e6e53e0bcdd15cb6216bb6b08aeaa8"
+    },
+    "S-9be8633e679350df": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "f0770f0ea45d8f75a361b658e250a1bdd91c4359cc3ce92ad49681daea8ee0ee",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 18,
+      "unit_sha256": "fe53cba9f2666e33ddaab814947cdc5bf0bbd793c35bc542cc295b9482e89de0"
+    },
+    "S-9fca2557427140b0": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "121795fe4698605de789ae42c3604b0844902f906e1988b7b49e3b07162cf660",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "curl -s -X POST --user \"$JENKINS_AUTH\" -F \"jenkinsfile=<Jenkinsfile\" \\",
+          "line": 270,
+          "raw_line": "curl -s -X POST --user \"$JENKINS_AUTH\" -F \"jenkinsfile=<Jenkinsfile\" \\",
+          "rule": "W-curl-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_rest",
+      "unit_index": 44,
+      "unit_sha256": "ca4e122e976c8452d3c6cf443c2a2c8511414d5914e507e28332aca711a27ed9"
+    },
+    "S-a154f63c4b8194ed": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "b4e8a200f4873fdcebbb2471862ecbf3cf51eea3bc7b0a245164ed6adec0ee7a",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 15,
+      "unit_sha256": "5a96a3a73e5e41812459bd36ad7a55aa7b9ab7a4d608117294ed7fe731ef5f2a"
+    },
+    "S-a3ff15f25aa3fd3f": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "d346ca9be105526c51b6c29a1879d8478e5860e2f5eb72b433a7437cbedaef39",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 148,
+      "unit_sha256": "c7d3240ea1fd5c92c8eebcd62d5c5af7def2fb56d36adf99399838640e6e5c20"
+    },
+    "S-a4e290a97f061b8c": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "5f5a0c6e7673dd3c2612a7a53bc80d29696e382fa5a9e0314e6861ac56a37925",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 28,
+      "unit_sha256": "fad3552e0d7dc5e76637c09437fbc809638779b7f02b2ce09341d6a2db1a22ed"
+    },
+    "S-a6a2feec95f28af8": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "17eb1484b9713f83f03d754ea170f71d82f17e6185b29627886b0e6274aae8bc",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 8,
+      "unit_sha256": "b285fe0607bd44796077913b0ca9e249cc17c67f38c26c96ed8ac55eee1075ba"
+    },
+    "S-a6ceb122ec157473": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "68e829aa85b8ca9ded0ce8c8d7c74cacc1a4ff29016fc2e6464d7fe22c017642",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 73,
+      "unit_sha256": "6da49af216a53fa08f2daf0527d38d434ca37427da19a0cbefa68fe8e1c69881"
+    },
+    "S-a95f3b7f87a615d5": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "8cc43687ee80fbc48c43ddac8a8107c18932fd364b033212128727fdf78006b7",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 151,
+      "unit_sha256": "8badfeb06309e30e38219b3ca20cd0759d4b1d40ac1910033acf7b1b1358909e"
+    },
+    "S-a9a71a174f17d32d": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "3b23a18f1f918e107c2accda303e0f22a3741c246bee479e0e1d0827dd10400b",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "gh pr merge <N> -R \"$REPO\" --<method>     # never --auto, never --admin",
+          "line": 183,
+          "raw_line": "gh pr merge <N> -R \"$REPO\" --<method>     # never --auto, never --admin",
+          "rule": "W-github-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_top",
+      "unit_index": 64,
+      "unit_sha256": "386616cd436916fee54227119564d608ff189e0472a61cd5cf35b1eee09c0199"
+    },
+    "S-afc2f725b8e6147a": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "e6dbe64208d5b210d908d5f528028c2d6f4fcc72e8608ae65323f1a846f6a174",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 7,
+      "unit_sha256": "a5bf80d378c5638d972616039d02c90cca125d89ca526ca33453af84c42a209c"
+    },
+    "S-affabea2c09489dd": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "bd418de614ecb10a295c6094d100346f94c26fcf1ec6dd18a0b3a710e2371d9d",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "UPDATE Orders SET Status = \"Overdue\"",
+          "line": 106,
+          "raw_line": "UPDATE Orders SET Status = \"Overdue\"",
+          "rule": "W-sql",
+          "source": "code:sql",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_rest",
+      "unit_index": 12,
+      "unit_sha256": "600675c22328f6f5b33f72b145442a073d33416d286606bf7c1bbdf11bd158eb"
+    },
+    "S-b0013afff4aae45b": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "3c87ba20116ad1940bfd72a064455be9983d9168f12fdb60d384d38898a506b9",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 13,
+      "unit_sha256": "3ded4ca0968879c220b2778aeda379e43aab46568fa46da9cb90b46528079fca"
+    },
+    "S-b812b080ca5907a5": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "d91a2cbca708bc42e70d1e6cd1a0e3919e0b530560dd72ab9f698a4e1d550c07",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 203,
+      "unit_sha256": "f6146be8632370a3f8ceba389b82b812fbd71ec226659710e83ccd3cc1290499"
+    },
+    "S-b867d3e0d9357234": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "c90d4f0df424e2f193d57358a4e561da5a00dc05357f85cfa8a6599659ba04c1",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 95,
+      "unit_sha256": "44a4ce0651af0acfab2151e0df4c9771b8be248eb42d3a28d595e035c6be1e11"
+    },
+    "S-b9f2e800f9afc266": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "f536d963d22fcdd1eb18c83b23b6d4265029458b793c344e0b226a5e70eecd7d",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 19,
+      "unit_sha256": "3675546376738e266f615a557966d5f3eda5ca95e461de53d9341dad12e25deb"
+    },
+    "S-ba350f7919a68e3d": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "eb40ac42be6bcb434eba199b1c52d7658713522676bcf3b4a69749057f62b873",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 9,
+      "unit_sha256": "3e2cc57c5404731362fe7340111daad1d31b2b4876bb6d1966378823e3be5cc3"
+    },
+    "S-bdb15c6d4a0ce923": {
+      "O": true,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "98897433a9fe8444376e2203b4c0ef696804c5252459e28c26d9605c096ec8da",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 168,
+      "unit_sha256": "3cbd07a9328a6e85bac3709f0a19f6248593087671ea0428e38cc11d2a732410"
+    },
+    "S-c4c735e89978151c": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "3b23a18f1f918e107c2accda303e0f22a3741c246bee479e0e1d0827dd10400b",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "gh pr merge <N> -R \"$REPO\" --<method>     # never --auto, never --admin",
+          "line": 183,
+          "raw_line": "gh pr merge <N> -R \"$REPO\" --<method>     # never --auto, never --admin",
+          "rule": "W-github-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_top",
+      "unit_index": 50,
+      "unit_sha256": "8ab4232052b5e9d583f3fe7a96d2c68ab1e12f7a7e5925130ee2c7ff6bfa6b68"
+    },
+    "S-c525457ef65a00f4": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "4de03b13ccc3e41fc841ed017058263bb033200bf8c07770a5728aee7c7e5e1e",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 30,
+      "unit_sha256": "f4b8ccab41d7aabf4db24f1cd06614defbe4fcfc678db67143243415696b3440"
+    },
+    "S-c97f6013a70d6238": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "5e05745697c6fb6d3d2233a2cf19b994c44f8e7afe685ac5c0be2f432a0c7578",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 19,
+      "unit_sha256": "f7300cbf849c8e2510ed93d2ab7f5743817c1b422e5319bfea3f221a4ce3fec9"
+    },
+    "S-ccfcfb2004ad811a": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "56bb4ba6d688e182cbbdbb8567d9b16fb08c9559b971a67ac1306af9b24019af",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 64,
+      "unit_sha256": "17c78434b0617ae5bb21136177893dc0e2f89dbf9a453fbd68782059dcf728dd"
+    },
+    "S-cd839d28b1913c2b": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "a5f749b6aca0fef83a0ad8dfd77900ae0a1486e269a728e7959f89d1b92da072",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 54,
+      "unit_sha256": "b0cc2ada65aaaf6581c473e90264b4247d97bbb25dbee0b0246dd821f4354f63"
+    },
+    "S-ce93cd34d0b8c7bc": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "dd6a499b1e9b9523ba10d4d280e7089499157a6d3d5a10f9637a2a42fb4b9dab",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 118,
+      "unit_sha256": "51c0f6649ff11f4b3523f05f2bb60fdbe24c308bb46e5350a8b30cb0a45b9f27"
+    },
+    "S-d447c259454e4881": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "6672ffc4485fb756631692256d8f2e3a3e6f1aa05bdcf82b1a62bd103e0c6333",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 16,
+      "unit_sha256": "d51ca587fb9c65667a73303468ea58473502f08cf5f32b0297474f9fcf80f360"
+    },
+    "S-d56ab3a81fecec6c": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "5ec6553a5be2bae39cd95b9475530a5278be6614ff8a68a4f4a79a3ebca27556",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 5,
+      "unit_sha256": "424bddeb8166bfa5409746e3111695a8fc141a652688ebdb5477fc1526cbd99d"
+    },
+    "S-d8ed65de8a962e08": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "aee050102f0d36102453121bfb48a446a98998a36a838d12d6c62d3573efdede",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 68,
+      "unit_sha256": "d0c38c2a26dac95d73c1c7e8802bcf1b43151c8ef3e252f70af55f2e9b788d5c"
+    },
+    "S-da88f1bdc402049a": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "edfc6fb09d34c337ef51ea3e152515a385198d16f0daaaf04f001800f2774043",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 78,
+      "unit_sha256": "d5b264f82f809938402a1671ff1e0587249ce804d47f53605ebf970fd0059804"
+    },
+    "S-db24f04c79aeee6d": {
+      "O": true,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "98897433a9fe8444376e2203b4c0ef696804c5252459e28c26d9605c096ec8da",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 105,
+      "unit_sha256": "0b57b1565b484e2e8269f7a21ec42b4b4f8db268c78b99abcfafb3f5ac9edf32"
+    },
+    "S-dc773368db9ed3db": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "d738a5ee972ef7743639f6653b68481396972158ba52726491a16b02dc63a67f",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 103,
+      "unit_sha256": "79f2ad5e476f75d89dc47ce8800a83be0aa2f64825b08775719d3ebf73935bea"
+    },
+    "S-dde60852c05b3c85": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "e9d6694e57dac7eccf5159d5fb48bd150772a5d5944305bf5985c19c0bcb206f",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 65,
+      "unit_sha256": "aa1d407b90474d429e82c520a4edaac021268f8d91ffd3bdc681e7d77c26cd54"
+    },
+    "S-e86a14aaf7e13bc9": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "c1823f1e5b1fad485ab2a55924dcf46d2539a7cbdf791462c69eabd641b1c93c",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 78,
+      "unit_sha256": "412c3453b5bdba68057c50416e4334e0447f170d4f523d2310c264c9757d593b"
+    },
+    "S-e9383d78f5bcb50e": {
+      "O": false,
+      "P": true,
+      "detected_tier": "W",
+      "doc_id": "a62aaf8052a5ccbea82acabf7522b5be1d5b6247e0250018ad96a9f8b1fee2de",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "terraform import aws_instance.api_server i-0abc123def456",
+          "line": 191,
+          "raw_line": "terraform import aws_instance.api_server i-0abc123def456",
+          "rule": "W-terraform-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "terraform apply -var-file=\"production.tfvars\"",
+          "line": 209,
+          "raw_line": "terraform apply -var-file=\"production.tfvars\"",
+          "rule": "W-terraform-write",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "terraform import aws_vpc.main vpc-0abc123",
+          "line": 229,
+          "raw_line": "terraform import aws_vpc.main vpc-0abc123",
+          "rule": "W-terraform-write",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "stratum": "P_rest",
+      "unit_index": 45,
+      "unit_sha256": "510d57c29d4528305134c637d315fc578b8865040a0df80b6313565b158c15d6"
+    },
+    "S-eccf5d972aabacad": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "d39d8f97c8c110725ec40fcfa87b39bd9a2ca1d32755f0874529476c913c8426",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 98,
+      "unit_sha256": "044d2815b890d4a76c92aa5c68a6eb28d3dd46abba2f31c8e98c1fc72d89123a"
+    },
+    "S-ef16344497c638f5": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "103fb4ad013cc9efe09e4b6841788236e528ff82e5e9b344063ef2678fccf895",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 76,
+      "unit_sha256": "74f6cc6bd94e795647e399abe1601920ded499504b6e955dec8aa046fec624ed"
+    },
+    "S-f0855f2b2bc4d85c": {
+      "O": true,
+      "P": false,
+      "detected_tier": "W",
+      "doc_id": "5196bab8459a6662cda54b0620d49d0269956e51cd847bc38d95d032c3dd97d4",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "az storage account migration start --name stii5trxva2ark4 \\",
+          "line": 291,
+          "raw_line": "   az storage account migration start --name stii5trxva2ark4 \\",
+          "rule": "W-cloud-write",
+          "source": "code:unlabeled",
+          "tier": "W"
+        }
+      ],
+      "stratum": "O_full",
+      "unit_index": 41,
+      "unit_sha256": "8a7c7bc1b51100da6579f7afc074a06f8efac08613333a83452ab15666ef5117"
+    },
+    "S-f1074f16c93b21b3": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "f59c428ec0a058f2cb00dd2fff5e5d958f8b928a66d46ead6f679712c117bc4f",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 98,
+      "unit_sha256": "61bcbbda721797701cecc490ef2f97d5af9def46fac2f368a690060eb68b5325"
+    },
+    "S-f292d5aea5bb574e": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "38018a5f9263f694f93dacbf318c23ca929d159c788cd9826b895fdcddac33d9",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 8,
+      "unit_sha256": "8351d4b00eee2ff14a02e951d9b2d19822249ebf49f49435415e68960fd4750d"
+    },
+    "S-f2dd3042e521714f": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "b162020a3cd5ccbde1597339cafe8e808d2b9c62b5c3fe108dd5852695fafb6a",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 21,
+      "unit_sha256": "427f9dd9c168c7ca33fc677cec63bc77b9fa278f65ab6c05e85aabb5e397739c"
+    },
+    "S-f62626a474e98b42": {
+      "O": true,
+      "P": false,
+      "detected_tier": "R",
+      "doc_id": "89bfebd0973c40f9ec6355099901222ae67004cdbc12d08a363443870558fb79",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "O_full",
+      "unit_index": 207,
+      "unit_sha256": "9ca710440d72c13882c2d4ea7d0a40f57975b82a43b5ef834f0ebeb88c4147f2"
+    },
+    "S-f71a43c45f032e06": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "2e0d6ab6d99eda28339d36b7e01a7d2c4b1728d96204ee6511eb0406767499a2",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_top",
+      "unit_index": 84,
+      "unit_sha256": "f3094331c9051a754fad46d4f317143e02acb17598371027327a6bec0cbb1b61"
+    },
+    "S-fad16f387896b45f": {
+      "O": false,
+      "P": true,
+      "detected_tier": "R",
+      "doc_id": "2d8b9319a8f442fb0dfa0e86365a1395c3de543157d234440e063e42d59483b6",
+      "kind": "statement",
+      "matched_commands": [],
+      "stratum": "P_rest",
+      "unit_index": 24,
+      "unit_sha256": "354938a5b760c4b5afcbd505735b08e61503172eecd6e93417513b1ad5ec19af"
+    },
+    "S-fcbe04c4f0ef76d7": {
+      "O": true,
+      "P": false,
+      "detected_tier": "W",
+      "doc_id": "48de721aad080f5971029a03651853dec86d9a049ff95e705c4bc3de177339c4",
+      "kind": "statement",
+      "matched_commands": [
+        {
+          "command": "systemctl stop apache2 2>/dev/null",
+          "line": 107,
+          "raw_line": "sudo systemctl stop apache2 2>/dev/null",
+          "rule": "W-systemctl",
+          "source": "code:bash",
+          "tier": "W"
+        },
+        {
+          "command": "shutdown -h now",
+          "line": 108,
+          "raw_line": "sudo shutdown -h now",
+          "rule": "W-reboot-shutdown",
+          "source": "code:bash",
+          "tier": "W"
+        }
+      ],
+      "stratum": "O_full",
+      "unit_index": 23,
+      "unit_sha256": "051127274cf2448eb43e3344f8a8df34771094383bb4af04e6320a380e496b54"
+    }
+  },
+  "detected_tiers_are_not_ground_truth": true,
+  "population_pools": {
+    "O_full": 1864,
+    "P_rest": 2232,
+    "P_top": 1848
+  },
+  "reading_status": "Completed readings; not population truth."
+}

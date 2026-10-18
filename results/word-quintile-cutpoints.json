@@ -1,0 +1,10 @@
+{
+  "cutpoints": [
+    193.8,
+    302.0,
+    466.4,
+    778.0
+  ],
+  "method": "linear",
+  "ties": "lower bin"
+}

@@ -1,0 +1,3 @@
+classification,term,IRR_point,IRR_bootstrap95_low,IRR_bootstrap95_high,defined_draws,undefined_or_failed_draws
+POSTHOC,tier_D,1.2978112395965176,0.971637707090893,1.6638605466729581,997,2
+POSTHOC,tier_W,1.1403183244755788,0.9769118229951579,1.306916469424787,997,2

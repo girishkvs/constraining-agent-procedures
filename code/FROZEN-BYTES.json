@@ -1,0 +1,32 @@
+[
+  {
+    "path": "code/adapter.py",
+    "preserved_bytes": true,
+    "sha256": "77023d0ad67542cb6784791c85ca3ef43a488d7701f33e0c44b97c2820bb300b"
+  },
+  {
+    "path": "code/legacy/parser.py",
+    "preserved_bytes": true,
+    "sha256": "8edc5a45cec7311170739d323a17fa90fa380ff56804f8a1e64d58a70f7197db"
+  },
+  {
+    "path": "code/legacy/metrics.py",
+    "preserved_bytes": true,
+    "sha256": "79f802573af31f695862c0574cf884496aeaaa5a213da6b744aec0579a69ad90"
+  },
+  {
+    "path": "code/fast_metrics.py",
+    "preserved_bytes": true,
+    "sha256": "cfe8dc14713ef5b7608a04e60f76a984d3026183f9164bf0eed000a40ba78c30"
+  },
+  {
+    "path": "code/repository_metrics.py",
+    "preserved_bytes": true,
+    "sha256": "fd48c1dcd352dedb624c3832a0f7674f8ce71a9ae0a5654b6e75c6d56d3a1dbd"
+  },
+  {
+    "path": "code/risk-lexicon-frozen.json",
+    "preserved_bytes": true,
+    "sha256": "575b1fd91632de44c8fb4d022d4282b4da104aade54d0833dcd52b26cbada9b5"
+  }
+]

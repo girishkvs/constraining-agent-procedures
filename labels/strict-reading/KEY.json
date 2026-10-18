@@ -1,0 +1,952 @@
+{
+  "procedures": {
+    "Z-01": {
+      "O_dual": 0,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/argocd/SKILL.md",
+      "path": "skills/argocd/SKILL.md",
+      "prose_words": 35,
+      "publisher": "TerminalSkills/skills",
+      "tier": "W"
+    },
+    "Z-02": {
+      "O_dual": 0,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/elysia/SKILL.md",
+      "path": "skills/elysia/SKILL.md",
+      "prose_words": 186,
+      "publisher": "TerminalSkills/skills",
+      "tier": "R"
+    },
+    "Z-03": {
+      "O_dual": 0,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/htop/SKILL.md",
+      "path": "skills/htop/SKILL.md",
+      "prose_words": 87,
+      "publisher": "TerminalSkills/skills",
+      "tier": "R"
+    },
+    "Z-04": {
+      "O_dual": 1,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/iptables/SKILL.md",
+      "path": "skills/iptables/SKILL.md",
+      "prose_words": 96,
+      "publisher": "TerminalSkills/skills",
+      "tier": "R"
+    },
+    "Z-05": {
+      "O_dual": 1,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/monorepo-manager/SKILL.md",
+      "path": "skills/monorepo-manager/SKILL.md",
+      "prose_words": 285,
+      "publisher": "TerminalSkills/skills",
+      "tier": "R"
+    },
+    "Z-06": {
+      "O_dual": 0,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/moonrepo/SKILL.md",
+      "path": "skills/moonrepo/SKILL.md",
+      "prose_words": 184,
+      "publisher": "TerminalSkills/skills",
+      "tier": "R"
+    },
+    "Z-07": {
+      "O_dual": 0,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/semantic-release/SKILL.md",
+      "path": "skills/semantic-release/SKILL.md",
+      "prose_words": 84,
+      "publisher": "TerminalSkills/skills",
+      "tier": "R"
+    },
+    "Z-08": {
+      "O_dual": 0,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/structlog-python/SKILL.md",
+      "path": "skills/structlog-python/SKILL.md",
+      "prose_words": 97,
+      "publisher": "TerminalSkills/skills",
+      "tier": "R"
+    },
+    "Z-09": {
+      "O_dual": 0,
+      "corpus_path": "corpus/TerminalSkills/skills/skills/tiled/SKILL.md",
+      "path": "skills/tiled/SKILL.md",
+      "prose_words": 464,
+      "publisher": "TerminalSkills/skills",
+      "tier": "R"
+    },
+    "Z-10": {
+      "O_dual": 0,
+      "corpus_path": "corpus/alirezarezvani/claude-skills/engineering-team/self-improving-agent/skills/memory-review/SKILL.md",
+      "path": "engineering-team/self-improving-agent/skills/memory-review/SKILL.md",
+      "prose_words": 339,
+      "publisher": "alirezarezvani/claude-skills",
+      "tier": "R"
+    },
+    "Z-11": {
+      "O_dual": 0,
+      "corpus_path": "corpus/alirezarezvani/claude-skills/engineering-team/skills/senior-data-engineer/SKILL.md",
+      "path": "engineering-team/skills/senior-data-engineer/SKILL.md",
+      "prose_words": 458,
+      "publisher": "alirezarezvani/claude-skills",
+      "tier": "R"
+    },
+    "Z-12": {
+      "O_dual": 0,
+      "corpus_path": "corpus/alirezarezvani/claude-skills/engineering-team/skills/senior-qa/SKILL.md",
+      "path": "engineering-team/skills/senior-qa/SKILL.md",
+      "prose_words": 323,
+      "publisher": "alirezarezvani/claude-skills",
+      "tier": "R"
+    },
+    "Z-13": {
+      "O_dual": 0,
+      "corpus_path": "corpus/alirezarezvani/claude-skills/engineering/agenthub/skills/eval/SKILL.md",
+      "path": "engineering/agenthub/skills/eval/SKILL.md",
+      "prose_words": 153,
+      "publisher": "alirezarezvani/claude-skills",
+      "tier": "R"
+    },
+    "Z-14": {
+      "O_dual": 0,
+      "corpus_path": "corpus/alirezarezvani/claude-skills/engineering/book-to-skill/commands/cs-book-to-skill.md",
+      "path": "engineering/book-to-skill/commands/cs-book-to-skill.md",
+      "prose_words": 357,
+      "publisher": "alirezarezvani/claude-skills",
+      "tier": "R"
+    },
+    "Z-15": {
+      "O_dual": 4,
+      "corpus_path": "corpus/github/awesome-copilot/agents/power-platform-expert.agent.md",
+      "path": "agents/power-platform-expert.agent.md",
+      "prose_words": 774,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-16": {
+      "O_dual": 5,
+      "corpus_path": "corpus/github/awesome-copilot/instructions/copilot-sdk-python.instructions.md",
+      "path": "instructions/copilot-sdk-python.instructions.md",
+      "prose_words": 684,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-17": {
+      "O_dual": 0,
+      "corpus_path": "corpus/github/awesome-copilot/instructions/dataverse-python-agentic-workflows.instructions.md",
+      "path": "instructions/dataverse-python-agentic-workflows.instructions.md",
+      "prose_words": 631,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-18": {
+      "O_dual": 0,
+      "corpus_path": "corpus/github/awesome-copilot/instructions/dataverse-python-file-operations.instructions.md",
+      "path": "instructions/dataverse-python-file-operations.instructions.md",
+      "prose_words": 45,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-19": {
+      "O_dual": 0,
+      "corpus_path": "corpus/github/awesome-copilot/instructions/dataverse-python-testing-debugging.instructions.md",
+      "path": "instructions/dataverse-python-testing-debugging.instructions.md",
+      "prose_words": 179,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-20": {
+      "O_dual": 1,
+      "corpus_path": "corpus/github/awesome-copilot/instructions/pcf-code-components.instructions.md",
+      "path": "instructions/pcf-code-components.instructions.md",
+      "prose_words": 582,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-21": {
+      "O_dual": 2,
+      "corpus_path": "corpus/github/awesome-copilot/instructions/pcf-model-driven-apps.instructions.md",
+      "path": "instructions/pcf-model-driven-apps.instructions.md",
+      "prose_words": 186,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-22": {
+      "O_dual": 0,
+      "corpus_path": "corpus/github/awesome-copilot/instructions/rust-mcp-server.instructions.md",
+      "path": "instructions/rust-mcp-server.instructions.md",
+      "prose_words": 254,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-23": {
+      "O_dual": 0,
+      "corpus_path": "corpus/github/awesome-copilot/skills/java-docs/SKILL.md",
+      "path": "skills/java-docs/SKILL.md",
+      "prose_words": 180,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-24": {
+      "O_dual": 0,
+      "corpus_path": "corpus/github/awesome-copilot/skills/react18-batching-patterns/SKILL.md",
+      "path": "skills/react18-batching-patterns/SKILL.md",
+      "prose_words": 208,
+      "publisher": "github/awesome-copilot",
+      "tier": "R"
+    },
+    "Z-25": {
+      "O_dual": 0,
+      "corpus_path": "corpus/hashicorp/agent-skills/plugins/packer/skills/windows-builder/SKILL.md",
+      "path": "plugins/packer/skills/windows-builder/SKILL.md",
+      "prose_words": 82,
+      "publisher": "hashicorp/agent-skills",
+      "tier": "R"
+    },
+    "Z-26": {
+      "O_dual": 0,
+      "corpus_path": "corpus/microsoft/skills/.github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+      "prose_words": 186,
+      "publisher": "microsoft/skills",
+      "tier": "R"
+    },
+    "Z-27": {
+      "O_dual": 0,
+      "corpus_path": "corpus/microsoft/skills/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md",
+      "prose_words": 223,
+      "publisher": "microsoft/skills",
+      "tier": "R"
+    },
+    "Z-28": {
+      "O_dual": 0,
+      "corpus_path": "corpus/microsoft/skills/.github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md",
+      "prose_words": 98,
+      "publisher": "microsoft/skills",
+      "tier": "R"
+    },
+    "Z-29": {
+      "O_dual": 1,
+      "corpus_path": "corpus/microsoft/skills/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
+      "path": ".github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
+      "prose_words": 58,
+      "publisher": "microsoft/skills",
+      "tier": "R"
+    },
+    "Z-30": {
+      "O_dual": 3,
+      "corpus_path": "corpus/microsoft/skills/.github/skills/debugview/SKILL.md",
+      "path": ".github/skills/debugview/SKILL.md",
+      "prose_words": 679,
+      "publisher": "microsoft/skills",
+      "tier": "R"
+    }
+  },
+  "rng": "numpy PCG64 seeded with int(sha256(label))",
+  "seeds": {
+    "statements_shuffle": "AES-reading-v9-statements-2026-10-17",
+    "zero_match_sample": "AES-recall-v9-zero-match-2026-10-17"
+  },
+  "statements": {
+    "R-001": {
+      "O": true,
+      "P": false,
+      "doc_id": "dd30f94ffb56c1cb3b537472f316e6572b9a155831be2a8f954e0846af52c338",
+      "original_item": "S-8c2904eb72ab14f9",
+      "stratum": "O_full"
+    },
+    "R-002": {
+      "O": false,
+      "P": true,
+      "doc_id": "e990536557581e28000aa685661bd68d88ac51a19a88979cb4996b67e2aea8d3",
+      "original_item": "S-92c258d49ebfaecd",
+      "stratum": "P_top"
+    },
+    "R-003": {
+      "O": false,
+      "P": true,
+      "doc_id": "3b23a18f1f918e107c2accda303e0f22a3741c246bee479e0e1d0827dd10400b",
+      "original_item": "S-c4c735e89978151c",
+      "stratum": "P_top"
+    },
+    "R-004": {
+      "O": false,
+      "P": true,
+      "doc_id": "562430c1912021f8dc8e22e886846387b4c725ed682e8100996e85c12a0a0d91",
+      "original_item": "S-6562e692b94bd1d8",
+      "stratum": "P_rest"
+    },
+    "R-005": {
+      "O": false,
+      "P": true,
+      "doc_id": "d346ca9be105526c51b6c29a1879d8478e5860e2f5eb72b433a7437cbedaef39",
+      "original_item": "S-a3ff15f25aa3fd3f",
+      "stratum": "P_top"
+    },
+    "R-006": {
+      "O": true,
+      "P": false,
+      "doc_id": "1dceec229578be892e4660dc92e75d5143835e59adeb3c64f395460c6b6d586d",
+      "original_item": "S-00b1dad756af0201",
+      "stratum": "O_full"
+    },
+    "R-007": {
+      "O": false,
+      "P": true,
+      "doc_id": "6430942a1b940dfe2e0471472a9289128de10d9414ac45d58ab44301ae547857",
+      "original_item": "S-5666cfd781a3669b",
+      "stratum": "P_rest"
+    },
+    "R-008": {
+      "O": true,
+      "P": true,
+      "doc_id": "98897433a9fe8444376e2203b4c0ef696804c5252459e28c26d9605c096ec8da",
+      "original_item": "S-bdb15c6d4a0ce923",
+      "stratum": "O_full"
+    },
+    "R-009": {
+      "O": false,
+      "P": true,
+      "doc_id": "bd418de614ecb10a295c6094d100346f94c26fcf1ec6dd18a0b3a710e2371d9d",
+      "original_item": "S-698e7de2b59c2a58",
+      "stratum": "P_rest"
+    },
+    "R-010": {
+      "O": false,
+      "P": true,
+      "doc_id": "d39d8f97c8c110725ec40fcfa87b39bd9a2ca1d32755f0874529476c913c8426",
+      "original_item": "S-eccf5d972aabacad",
+      "stratum": "P_top"
+    },
+    "R-011": {
+      "O": false,
+      "P": true,
+      "doc_id": "dd6a499b1e9b9523ba10d4d280e7089499157a6d3d5a10f9637a2a42fb4b9dab",
+      "original_item": "S-ce93cd34d0b8c7bc",
+      "stratum": "P_rest"
+    },
+    "R-012": {
+      "O": false,
+      "P": true,
+      "doc_id": "5f5a0c6e7673dd3c2612a7a53bc80d29696e382fa5a9e0314e6861ac56a37925",
+      "original_item": "S-a4e290a97f061b8c",
+      "stratum": "P_rest"
+    },
+    "R-013": {
+      "O": false,
+      "P": true,
+      "doc_id": "a62aaf8052a5ccbea82acabf7522b5be1d5b6247e0250018ad96a9f8b1fee2de",
+      "original_item": "S-e9383d78f5bcb50e",
+      "stratum": "P_rest"
+    },
+    "R-014": {
+      "O": false,
+      "P": true,
+      "doc_id": "d91a2cbca708bc42e70d1e6cd1a0e3919e0b530560dd72ab9f698a4e1d550c07",
+      "original_item": "S-6bff3f777e2d81f7",
+      "stratum": "P_top"
+    },
+    "R-015": {
+      "O": false,
+      "P": true,
+      "doc_id": "103fb4ad013cc9efe09e4b6841788236e528ff82e5e9b344063ef2678fccf895",
+      "original_item": "S-ef16344497c638f5",
+      "stratum": "P_top"
+    },
+    "R-016": {
+      "O": false,
+      "P": true,
+      "doc_id": "b4e8a200f4873fdcebbb2471862ecbf3cf51eea3bc7b0a245164ed6adec0ee7a",
+      "original_item": "S-a154f63c4b8194ed",
+      "stratum": "P_rest"
+    },
+    "R-017": {
+      "O": true,
+      "P": false,
+      "doc_id": "56bb4ba6d688e182cbbdbb8567d9b16fb08c9559b971a67ac1306af9b24019af",
+      "original_item": "S-265f830643002374",
+      "stratum": "O_full"
+    },
+    "R-018": {
+      "O": true,
+      "P": false,
+      "doc_id": "f59c428ec0a058f2cb00dd2fff5e5d958f8b928a66d46ead6f679712c117bc4f",
+      "original_item": "S-f1074f16c93b21b3",
+      "stratum": "O_full"
+    },
+    "R-019": {
+      "O": false,
+      "P": true,
+      "doc_id": "a07681d4149d9e0c06bfbe527696155c31b0d07d9f0dacab6e85922c346605b6",
+      "original_item": "S-525d1f90e7e9c236",
+      "stratum": "P_top"
+    },
+    "R-020": {
+      "O": false,
+      "P": true,
+      "doc_id": "b95a87c2d5836710df7026bf8a5a28447ed3afe5a587ba8e84ebd08c43b074ec",
+      "original_item": "S-3a197fbc0fcb8636",
+      "stratum": "P_rest"
+    },
+    "R-021": {
+      "O": true,
+      "P": false,
+      "doc_id": "edfc6fb09d34c337ef51ea3e152515a385198d16f0daaaf04f001800f2774043",
+      "original_item": "S-da88f1bdc402049a",
+      "stratum": "O_full"
+    },
+    "R-022": {
+      "O": true,
+      "P": false,
+      "doc_id": "48de721aad080f5971029a03651853dec86d9a049ff95e705c4bc3de177339c4",
+      "original_item": "S-fcbe04c4f0ef76d7",
+      "stratum": "O_full"
+    },
+    "R-023": {
+      "O": false,
+      "P": true,
+      "doc_id": "55ad095bce02f0d6ad9df04c4f5cf0e0c7fd460c6e9c35c5430ca49e14aca43a",
+      "original_item": "S-775e5f9f88765821",
+      "stratum": "P_rest"
+    },
+    "R-024": {
+      "O": false,
+      "P": true,
+      "doc_id": "b1cf9726d92b32d876248aeb40af85fd988c3e7d97f8b0ac8ac6b1c61db7e027",
+      "original_item": "S-16867eee2d3fc3da",
+      "stratum": "P_rest"
+    },
+    "R-025": {
+      "O": false,
+      "P": true,
+      "doc_id": "121795fe4698605de789ae42c3604b0844902f906e1988b7b49e3b07162cf660",
+      "original_item": "S-9fca2557427140b0",
+      "stratum": "P_rest"
+    },
+    "R-026": {
+      "O": true,
+      "P": false,
+      "doc_id": "bc3a18a93e48480ae907084074eaff5b8f9c6b6ccc525e181fa0417af5ce8ca4",
+      "original_item": "S-0e08021facb7d84a",
+      "stratum": "O_full"
+    },
+    "R-027": {
+      "O": true,
+      "P": false,
+      "doc_id": "ff5a528676db47acf79be3495faf8c5a5473ffb1c9b3fac71c60d20cbba8471f",
+      "original_item": "S-1afe26f7bc474868",
+      "stratum": "O_full"
+    },
+    "R-028": {
+      "O": false,
+      "P": true,
+      "doc_id": "a5f749b6aca0fef83a0ad8dfd77900ae0a1486e269a728e7959f89d1b92da072",
+      "original_item": "S-cd839d28b1913c2b",
+      "stratum": "P_rest"
+    },
+    "R-029": {
+      "O": true,
+      "P": false,
+      "doc_id": "2d8b9319a8f442fb0dfa0e86365a1395c3de543157d234440e063e42d59483b6",
+      "original_item": "S-7174d761ca1bd6fc",
+      "stratum": "O_full"
+    },
+    "R-030": {
+      "O": false,
+      "P": true,
+      "doc_id": "554556daee2b4473431f1e163a8072903daa69b3cc3358a4b6d4d62cd7324d2b",
+      "original_item": "S-1c513aa33639ab5a",
+      "stratum": "P_top"
+    },
+    "R-031": {
+      "O": true,
+      "P": false,
+      "doc_id": "d738a5ee972ef7743639f6653b68481396972158ba52726491a16b02dc63a67f",
+      "original_item": "S-dc773368db9ed3db",
+      "stratum": "O_full"
+    },
+    "R-032": {
+      "O": false,
+      "P": true,
+      "doc_id": "eb40ac42be6bcb434eba199b1c52d7658713522676bcf3b4a69749057f62b873",
+      "original_item": "S-ba350f7919a68e3d",
+      "stratum": "P_rest"
+    },
+    "R-033": {
+      "O": true,
+      "P": false,
+      "doc_id": "239bafae2a79d14dba0bcc8dad31341a3a484e3dbc0435fc100007adc66f730a",
+      "original_item": "S-40f1a9895f9bf917",
+      "stratum": "O_full"
+    },
+    "R-034": {
+      "O": false,
+      "P": true,
+      "doc_id": "091881d6e576764d56b0b69707135421c0fa664bd6b64c250ea4b298cec1de29",
+      "original_item": "S-36fd1d30fa302f16",
+      "stratum": "P_top"
+    },
+    "R-035": {
+      "O": false,
+      "P": true,
+      "doc_id": "3c87ba20116ad1940bfd72a064455be9983d9168f12fdb60d384d38898a506b9",
+      "original_item": "S-b0013afff4aae45b",
+      "stratum": "P_rest"
+    },
+    "R-036": {
+      "O": false,
+      "P": true,
+      "doc_id": "35a0f420aac36dc363789a7ad7dcfe8fa40978130a237a42b3f86c953e3ddaa7",
+      "original_item": "S-8fed969b8d2dc397",
+      "stratum": "P_rest"
+    },
+    "R-037": {
+      "O": false,
+      "P": true,
+      "doc_id": "d7f4de26178e9934839e2bea573d9fc712d1c242d44779be34441d9424b9da01",
+      "original_item": "S-7b71ee0238df79ce",
+      "stratum": "P_top"
+    },
+    "R-038": {
+      "O": true,
+      "P": false,
+      "doc_id": "5196bab8459a6662cda54b0620d49d0269956e51cd847bc38d95d032c3dd97d4",
+      "original_item": "S-f0855f2b2bc4d85c",
+      "stratum": "O_full"
+    },
+    "R-039": {
+      "O": true,
+      "P": false,
+      "doc_id": "9bd76102b9f3a4c537c1c34a8e3d3779d5edf1d62b96e31eb7c6aec6b10d87f2",
+      "original_item": "S-68bc286b0e88f017",
+      "stratum": "O_full"
+    },
+    "R-040": {
+      "O": true,
+      "P": false,
+      "doc_id": "b5bcf4db22bad5b9634de042a1161ce1b77ff2d545c99aa32b4bf0bbd1fc3e4d",
+      "original_item": "S-114815666c75c2dd",
+      "stratum": "O_full"
+    },
+    "R-041": {
+      "O": true,
+      "P": true,
+      "doc_id": "682122829eee87e580fa99f1ed799a219a48ee8978fa6fc4c181b666f3d7a68f",
+      "original_item": "S-96e1974636b6de5c",
+      "stratum": "O_full"
+    },
+    "R-042": {
+      "O": false,
+      "P": true,
+      "doc_id": "f0770f0ea45d8f75a361b658e250a1bdd91c4359cc3ce92ad49681daea8ee0ee",
+      "original_item": "S-9be8633e679350df",
+      "stratum": "P_top"
+    },
+    "R-043": {
+      "O": true,
+      "P": false,
+      "doc_id": "e6dbe64208d5b210d908d5f528028c2d6f4fcc72e8608ae65323f1a846f6a174",
+      "original_item": "S-afc2f725b8e6147a",
+      "stratum": "O_full"
+    },
+    "R-044": {
+      "O": true,
+      "P": false,
+      "doc_id": "a04b838ae3814e6457ea4cca6995a96544572872cb3967d80a60554f35f5ccb0",
+      "original_item": "S-2cf02dbc030d54c2",
+      "stratum": "O_full"
+    },
+    "R-045": {
+      "O": true,
+      "P": false,
+      "doc_id": "80e58795613ae0f5f6ee59762cc055eb5f6a4df52b8dabc4fc98a36407694a1e",
+      "original_item": "S-1676f0c95122cc46",
+      "stratum": "O_full"
+    },
+    "R-046": {
+      "O": false,
+      "P": true,
+      "doc_id": "c064e35e74207d1f197acd88c9cad22b413852dd73e8d96e140962f1f40d096e",
+      "original_item": "S-40be4b2e5699db48",
+      "stratum": "P_top"
+    },
+    "R-047": {
+      "O": false,
+      "P": true,
+      "doc_id": "f2fd05a8f52975025174d1100e9773b830701dd21f6285f5b8b8a29180885e2a",
+      "original_item": "S-92f09e0fe20cdd7f",
+      "stratum": "P_top"
+    },
+    "R-048": {
+      "O": false,
+      "P": true,
+      "doc_id": "87260fb17a51eb985dbc158bf6d26d477a51f446fe5178f0040e59091a4bccb1",
+      "original_item": "S-231e7f37771dbc3a",
+      "stratum": "P_rest"
+    },
+    "R-049": {
+      "O": false,
+      "P": true,
+      "doc_id": "f61f1110cab8608a4ccb9c78fc348ee744bb5405b7e22053684193776ce7e965",
+      "original_item": "S-039c50b89c098ef5",
+      "stratum": "P_top"
+    },
+    "R-050": {
+      "O": false,
+      "P": true,
+      "doc_id": "117fcaa43c1d34387c674ff1c6e6bc30e20bd68a16de21c62cd616b8ab3cc5a7",
+      "original_item": "S-6f58ac22880080c9",
+      "stratum": "P_top"
+    },
+    "R-051": {
+      "O": false,
+      "P": true,
+      "doc_id": "094084c576016ef3b028a1f85cb9a012cdb3b2453e0af2901b11081699f46c6c",
+      "original_item": "S-88a50d4adb74ba0f",
+      "stratum": "P_rest"
+    },
+    "R-052": {
+      "O": false,
+      "P": true,
+      "doc_id": "b162020a3cd5ccbde1597339cafe8e808d2b9c62b5c3fe108dd5852695fafb6a",
+      "original_item": "S-f2dd3042e521714f",
+      "stratum": "P_rest"
+    },
+    "R-053": {
+      "O": false,
+      "P": true,
+      "doc_id": "9e8298a06beabc0118d225a870209af6b49521e13f9b83b1820e3b3f871a20f2",
+      "original_item": "S-922cfe260ae715a9",
+      "stratum": "P_rest"
+    },
+    "R-054": {
+      "O": false,
+      "P": true,
+      "doc_id": "56bb4ba6d688e182cbbdbb8567d9b16fb08c9559b971a67ac1306af9b24019af",
+      "original_item": "S-ccfcfb2004ad811a",
+      "stratum": "P_top"
+    },
+    "R-055": {
+      "O": false,
+      "P": true,
+      "doc_id": "acdc07ac8c5cdc07e5761dd4e4f251aba636db8fee367a85c54b0a18481332c4",
+      "original_item": "S-55b5d239724a905a",
+      "stratum": "P_top"
+    },
+    "R-056": {
+      "O": false,
+      "P": true,
+      "doc_id": "505bffd94a309e6fa872c41127e7302641dbc41902e55f39189e2e1eb43c954f",
+      "original_item": "S-363b40a80e69f258",
+      "stratum": "P_top"
+    },
+    "R-057": {
+      "O": false,
+      "P": true,
+      "doc_id": "1267c2093040ecfa0d87dd8a6d9fb99ac79725d89ad409fc8fb4981c5c5c6a9f",
+      "original_item": "S-3c59b26f0b424d48",
+      "stratum": "P_top"
+    },
+    "R-058": {
+      "O": false,
+      "P": true,
+      "doc_id": "c725f6c6f48c6329c803c775ee7017f33a9f17ca289883defa538bfc2e77232a",
+      "original_item": "S-955f744182cba137",
+      "stratum": "P_top"
+    },
+    "R-059": {
+      "O": true,
+      "P": false,
+      "doc_id": "89bfebd0973c40f9ec6355099901222ae67004cdbc12d08a363443870558fb79",
+      "original_item": "S-f62626a474e98b42",
+      "stratum": "O_full"
+    },
+    "R-060": {
+      "O": true,
+      "P": false,
+      "doc_id": "c1823f1e5b1fad485ab2a55924dcf46d2539a7cbdf791462c69eabd641b1c93c",
+      "original_item": "S-e86a14aaf7e13bc9",
+      "stratum": "O_full"
+    },
+    "R-061": {
+      "O": false,
+      "P": true,
+      "doc_id": "5e05745697c6fb6d3d2233a2cf19b994c44f8e7afe685ac5c0be2f432a0c7578",
+      "original_item": "S-c97f6013a70d6238",
+      "stratum": "P_rest"
+    },
+    "R-062": {
+      "O": false,
+      "P": true,
+      "doc_id": "028f7bce197e6afa40881d13b0e551fbf7a1aff9aaa4f5086a2204ae262b85fb",
+      "original_item": "S-2ef79907b90931a2",
+      "stratum": "P_rest"
+    },
+    "R-063": {
+      "O": false,
+      "P": true,
+      "doc_id": "8cc43687ee80fbc48c43ddac8a8107c18932fd364b033212128727fdf78006b7",
+      "original_item": "S-a95f3b7f87a615d5",
+      "stratum": "P_rest"
+    },
+    "R-064": {
+      "O": false,
+      "P": true,
+      "doc_id": "d91a2cbca708bc42e70d1e6cd1a0e3919e0b530560dd72ab9f698a4e1d550c07",
+      "original_item": "S-b812b080ca5907a5",
+      "stratum": "P_top"
+    },
+    "R-065": {
+      "O": false,
+      "P": true,
+      "doc_id": "c90d4f0df424e2f193d57358a4e561da5a00dc05357f85cfa8a6599659ba04c1",
+      "original_item": "S-b867d3e0d9357234",
+      "stratum": "P_top"
+    },
+    "R-066": {
+      "O": false,
+      "P": true,
+      "doc_id": "6672ffc4485fb756631692256d8f2e3a3e6f1aa05bdcf82b1a62bd103e0c6333",
+      "original_item": "S-d447c259454e4881",
+      "stratum": "P_rest"
+    },
+    "R-067": {
+      "O": false,
+      "P": true,
+      "doc_id": "094084c576016ef3b028a1f85cb9a012cdb3b2453e0af2901b11081699f46c6c",
+      "original_item": "S-456e46cd49a45d76",
+      "stratum": "P_rest"
+    },
+    "R-068": {
+      "O": false,
+      "P": true,
+      "doc_id": "4de03b13ccc3e41fc841ed017058263bb033200bf8c07770a5728aee7c7e5e1e",
+      "original_item": "S-c525457ef65a00f4",
+      "stratum": "P_rest"
+    },
+    "R-069": {
+      "O": false,
+      "P": true,
+      "doc_id": "68e829aa85b8ca9ded0ce8c8d7c74cacc1a4ff29016fc2e6464d7fe22c017642",
+      "original_item": "S-a6ceb122ec157473",
+      "stratum": "P_rest"
+    },
+    "R-070": {
+      "O": false,
+      "P": true,
+      "doc_id": "155031f075768e83809266382fd267ccb8722d4135b0f67ae210e6eac2f86838",
+      "original_item": "S-66d9ad67d1c4b29b",
+      "stratum": "P_top"
+    },
+    "R-071": {
+      "O": false,
+      "P": true,
+      "doc_id": "3b23a18f1f918e107c2accda303e0f22a3741c246bee479e0e1d0827dd10400b",
+      "original_item": "S-a9a71a174f17d32d",
+      "stratum": "P_top"
+    },
+    "R-072": {
+      "O": false,
+      "P": true,
+      "doc_id": "5ec6553a5be2bae39cd95b9475530a5278be6614ff8a68a4f4a79a3ebca27556",
+      "original_item": "S-d56ab3a81fecec6c",
+      "stratum": "P_rest"
+    },
+    "R-073": {
+      "O": true,
+      "P": false,
+      "doc_id": "117fcaa43c1d34387c674ff1c6e6bc30e20bd68a16de21c62cd616b8ab3cc5a7",
+      "original_item": "S-619e7d99c57aa262",
+      "stratum": "O_full"
+    },
+    "R-074": {
+      "O": false,
+      "P": true,
+      "doc_id": "56bb4ba6d688e182cbbdbb8567d9b16fb08c9559b971a67ac1306af9b24019af",
+      "original_item": "S-311aa36421ef5560",
+      "stratum": "P_top"
+    },
+    "R-075": {
+      "O": true,
+      "P": false,
+      "doc_id": "ad5b0bb1d57eb31bfc5f6f4755303af8908941e98cab4c7b4f21bfcad6a6d4d2",
+      "original_item": "S-32dcb08a17f47e0c",
+      "stratum": "O_full"
+    },
+    "R-076": {
+      "O": true,
+      "P": true,
+      "doc_id": "56e90f40859192d93c2db498c900fb036e56d1936ea18fb4a7c1950d67554bdb",
+      "original_item": "S-45d4c191966e6228",
+      "stratum": "O_full"
+    },
+    "R-077": {
+      "O": true,
+      "P": false,
+      "doc_id": "caee865ab8d64b87bd65985fc392b8cff8d3a9c758c76f024a0d83052e6631c5",
+      "original_item": "S-3a49249928848230",
+      "stratum": "O_full"
+    },
+    "R-078": {
+      "O": false,
+      "P": true,
+      "doc_id": "594f98ad0b23aec6627110f6881e92c26cd53f16560baa245e5cc13380d082af",
+      "original_item": "S-358ddb375a6edb72",
+      "stratum": "P_top"
+    },
+    "R-079": {
+      "O": false,
+      "P": true,
+      "doc_id": "a80a818db06afc2541b71ea26913fbaf2c62e2685a0d126946115a6968ede9f4",
+      "original_item": "S-32f5d5035e6654ec",
+      "stratum": "P_top"
+    },
+    "R-080": {
+      "O": false,
+      "P": true,
+      "doc_id": "2d8b9319a8f442fb0dfa0e86365a1395c3de543157d234440e063e42d59483b6",
+      "original_item": "S-fad16f387896b45f",
+      "stratum": "P_rest"
+    },
+    "R-081": {
+      "O": true,
+      "P": true,
+      "doc_id": "98897433a9fe8444376e2203b4c0ef696804c5252459e28c26d9605c096ec8da",
+      "original_item": "S-db24f04c79aeee6d",
+      "stratum": "O_full"
+    },
+    "R-082": {
+      "O": false,
+      "P": true,
+      "doc_id": "cef50fa92fe092562c1a3bd5a7e05999b4510c2c07cc4ae1c3785303af4710f5",
+      "original_item": "S-80d204cb5f9f68c6",
+      "stratum": "P_rest"
+    },
+    "R-083": {
+      "O": false,
+      "P": true,
+      "doc_id": "bd418de614ecb10a295c6094d100346f94c26fcf1ec6dd18a0b3a710e2371d9d",
+      "original_item": "S-affabea2c09489dd",
+      "stratum": "P_rest"
+    },
+    "R-084": {
+      "O": false,
+      "P": true,
+      "doc_id": "02a81789edb2181919c69b66c19c179405bfedb01b09487cb09ced62db1cb612",
+      "original_item": "S-0eda86ad6aba2ecb",
+      "stratum": "P_rest"
+    },
+    "R-085": {
+      "O": false,
+      "P": true,
+      "doc_id": "d346ca9be105526c51b6c29a1879d8478e5860e2f5eb72b433a7437cbedaef39",
+      "original_item": "S-2b66222fdb165c70",
+      "stratum": "P_top"
+    },
+    "R-086": {
+      "O": false,
+      "P": true,
+      "doc_id": "068a7b383d55edaf4d0fc3b3a415e5a227f98773a98b022ae0b6adf8041932c2",
+      "original_item": "S-760d715bae582048",
+      "stratum": "P_top"
+    },
+    "R-087": {
+      "O": true,
+      "P": true,
+      "doc_id": "38018a5f9263f694f93dacbf318c23ca929d159c788cd9826b895fdcddac33d9",
+      "original_item": "S-66ad6510bfb2117a",
+      "stratum": "O_full"
+    },
+    "R-088": {
+      "O": false,
+      "P": true,
+      "doc_id": "1d62600daa6bd26f789a1b1263df06103b07e2ba33009781c27ce246c0973425",
+      "original_item": "S-2487e95038eceb97",
+      "stratum": "P_rest"
+    },
+    "R-089": {
+      "O": false,
+      "P": true,
+      "doc_id": "aee050102f0d36102453121bfb48a446a98998a36a838d12d6c62d3573efdede",
+      "original_item": "S-d8ed65de8a962e08",
+      "stratum": "P_top"
+    },
+    "R-090": {
+      "O": false,
+      "P": true,
+      "doc_id": "c4dc2e5656c563d7948128d968ab5d97e4a33a7f009de9def5a5036c49515bda",
+      "original_item": "S-7cfcd860cbb0ebfa",
+      "stratum": "P_top"
+    },
+    "R-091": {
+      "O": true,
+      "P": false,
+      "doc_id": "65bc4434f3be36cf9e71c54963cf8a0e24bbba8e27c5d01076e93a45a90a44ff",
+      "original_item": "S-38b2c48f467517d5",
+      "stratum": "O_full"
+    },
+    "R-092": {
+      "O": false,
+      "P": true,
+      "doc_id": "534a560c32819264ec05eb433ce62f78f2c8bd70988094a41f0c1828801703a5",
+      "original_item": "S-1508ca941414ac86",
+      "stratum": "P_top"
+    },
+    "R-093": {
+      "O": false,
+      "P": true,
+      "doc_id": "f536d963d22fcdd1eb18c83b23b6d4265029458b793c344e0b226a5e70eecd7d",
+      "original_item": "S-b9f2e800f9afc266",
+      "stratum": "P_rest"
+    },
+    "R-094": {
+      "O": true,
+      "P": false,
+      "doc_id": "17eb1484b9713f83f03d754ea170f71d82f17e6185b29627886b0e6274aae8bc",
+      "original_item": "S-a6a2feec95f28af8",
+      "stratum": "O_full"
+    },
+    "R-095": {
+      "O": false,
+      "P": true,
+      "doc_id": "37b2f578db4ba561ec216d0654b437dca8cc9146b46c0dbac99d761d16fa0c69",
+      "original_item": "S-9944c3793b6c6cda",
+      "stratum": "P_rest"
+    },
+    "R-096": {
+      "O": false,
+      "P": true,
+      "doc_id": "56bb4ba6d688e182cbbdbb8567d9b16fb08c9559b971a67ac1306af9b24019af",
+      "original_item": "S-5787888071052893",
+      "stratum": "P_top"
+    },
+    "R-097": {
+      "O": false,
+      "P": true,
+      "doc_id": "2e0d6ab6d99eda28339d36b7e01a7d2c4b1728d96204ee6511eb0406767499a2",
+      "original_item": "S-f71a43c45f032e06",
+      "stratum": "P_top"
+    },
+    "R-098": {
+      "O": true,
+      "P": true,
+      "doc_id": "9b78d24eff48220f7da10bc9d0c70d4f99b11ce1e0ae2f54b90b5aa669a19260",
+      "original_item": "S-6771204d4900c3fa",
+      "stratum": "O_full"
+    },
+    "R-099": {
+      "O": false,
+      "P": true,
+      "doc_id": "38018a5f9263f694f93dacbf318c23ca929d159c788cd9826b895fdcddac33d9",
+      "original_item": "S-f292d5aea5bb574e",
+      "stratum": "P_rest"
+    },
+    "R-100": {
+      "O": false,
+      "P": true,
+      "doc_id": "e9d6694e57dac7eccf5159d5fb48bd150772a5d5944305bf5985c19c0bcb206f",
+      "original_item": "S-dde60852c05b3c85",
+      "stratum": "P_top"
+    }
+  },
+  "zero_match_pool_size": 458
+}

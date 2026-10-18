@@ -1,0 +1,663 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "direct N",
+      "actual": 1495,
+      "expected": 1495,
+      "pass": true
+    },
+    {
+      "check": "direct P",
+      "actual": 4080,
+      "expected": 4080,
+      "pass": true
+    },
+    {
+      "check": "direct O",
+      "actual": 1864,
+      "expected": 1864,
+      "pass": true
+    },
+    {
+      "check": "direct zero-P",
+      "actual": 462,
+      "expected": 462,
+      "pass": true
+    },
+    {
+      "check": "direct top-150 percent",
+      "actual": 45.29,
+      "expected": 45.29,
+      "pass": true
+    },
+    {
+      "check": "agent_context N",
+      "actual": 1540,
+      "expected": 1540,
+      "pass": true
+    },
+    {
+      "check": "agent_context P",
+      "actual": 2403,
+      "expected": 2403,
+      "pass": true
+    },
+    {
+      "check": "gitlab N",
+      "actual": 833,
+      "expected": 833,
+      "pass": true
+    },
+    {
+      "check": "gitlab P",
+      "actual": 799,
+      "expected": 799,
+      "pass": true
+    },
+    {
+      "check": "openshift N",
+      "actual": 288,
+      "expected": 288,
+      "pass": true
+    },
+    {
+      "check": "openshift P",
+      "actual": 229,
+      "expected": 229,
+      "pass": true
+    },
+    {
+      "check": "command tiers",
+      "actual": {
+        "R": 1333,
+        "W": 140,
+        "D": 22
+      },
+      "expected": {
+        "D": 22,
+        "W": 140,
+        "R": 1333
+      },
+      "pass": true
+    },
+    {
+      "check": "operative P_top",
+      "actual": 31,
+      "expected": 31,
+      "pass": true
+    },
+    {
+      "check": "operative denominator P_top",
+      "actual": 35,
+      "expected": 35,
+      "pass": true
+    },
+    {
+      "check": "operative P_rest",
+      "actual": 30,
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "check": "operative denominator P_rest",
+      "actual": 35,
+      "expected": 35,
+      "pass": true
+    },
+    {
+      "check": "operative O_full",
+      "actual": 28,
+      "expected": 28,
+      "pass": true
+    },
+    {
+      "check": "operative denominator O_full",
+      "actual": 30,
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "check": "frozen code/adapter.py",
+      "actual": "77023d0ad67542cb6784791c85ca3ef43a488d7701f33e0c44b97c2820bb300b",
+      "expected": "77023d0ad67542cb6784791c85ca3ef43a488d7701f33e0c44b97c2820bb300b",
+      "pass": true
+    },
+    {
+      "check": "frozen code/legacy/parser.py",
+      "actual": "8edc5a45cec7311170739d323a17fa90fa380ff56804f8a1e64d58a70f7197db",
+      "expected": "8edc5a45cec7311170739d323a17fa90fa380ff56804f8a1e64d58a70f7197db",
+      "pass": true
+    },
+    {
+      "check": "frozen code/legacy/metrics.py",
+      "actual": "79f802573af31f695862c0574cf884496aeaaa5a213da6b744aec0579a69ad90",
+      "expected": "79f802573af31f695862c0574cf884496aeaaa5a213da6b744aec0579a69ad90",
+      "pass": true
+    },
+    {
+      "check": "frozen code/fast_metrics.py",
+      "actual": "cfe8dc14713ef5b7608a04e60f76a984d3026183f9164bf0eed000a40ba78c30",
+      "expected": "cfe8dc14713ef5b7608a04e60f76a984d3026183f9164bf0eed000a40ba78c30",
+      "pass": true
+    },
+    {
+      "check": "frozen code/repository_metrics.py",
+      "actual": "fd48c1dcd352dedb624c3832a0f7674f8ce71a9ae0a5654b6e75c6d56d3a1dbd",
+      "expected": "fd48c1dcd352dedb624c3832a0f7674f8ce71a9ae0a5654b6e75c6d56d3a1dbd",
+      "pass": true
+    },
+    {
+      "check": "frozen code/risk-lexicon-frozen.json",
+      "actual": "575b1fd91632de44c8fb4d022d4282b4da104aade54d0833dcd52b26cbada9b5",
+      "expected": "575b1fd91632de44c8fb4d022d4282b4da104aade54d0833dcd52b26cbada9b5",
+      "pass": true
+    },
+    {
+      "check": "all source paths present",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "redacted registry identities",
+      "actual": [
+        "65339547b026c33d7478ad6abfc59174da20e4a1fdd206378283a94c4e73c9a0"
+      ],
+      "expected": [
+        "65339547b026c33d7478ad6abfc59174da20e4a1fdd206378283a94c4e73c9a0"
+      ],
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict scores exact",
+      "actual": {
+        "readers": {
+          "A": {
+            "P_top": {
+              "n": 35,
+              "instructs_Y": 31,
+              "forbids_Y": 29,
+              "U_any": 0
+            },
+            "P_rest": {
+              "n": 35,
+              "instructs_Y": 27,
+              "forbids_Y": 25,
+              "U_any": 0
+            },
+            "O_full": {
+              "n": 30,
+              "instructs_Y": 26,
+              "requires_Y": 26,
+              "U_any": 0
+            },
+            "zero_match_limit_Y": 17,
+            "zero_match_limit_U": 0
+          },
+          "B": {
+            "P_top": {
+              "n": 35,
+              "instructs_Y": 31,
+              "forbids_Y": 28,
+              "U_any": 0
+            },
+            "P_rest": {
+              "n": 35,
+              "instructs_Y": 27,
+              "forbids_Y": 25,
+              "U_any": 0
+            },
+            "O_full": {
+              "n": 30,
+              "instructs_Y": 26,
+              "requires_Y": 26,
+              "U_any": 1
+            },
+            "zero_match_limit_Y": 16,
+            "zero_match_limit_U": 0
+          }
+        },
+        "consensus_both_Y": {
+          "P_top": {
+            "n": 35,
+            "forbids_Y": 28,
+            "forbids_rate": 0.8,
+            "forbids_wilson95": [
+              0.6411,
+              0.8996
+            ],
+            "instructs_Y": 31,
+            "instructs_rate": 0.8857,
+            "instructs_wilson95": [
+              0.7405,
+              0.9546
+            ]
+          },
+          "P_rest": {
+            "n": 35,
+            "forbids_Y": 25,
+            "forbids_rate": 0.7143,
+            "forbids_wilson95": [
+              0.5495,
+              0.8367
+            ],
+            "instructs_Y": 27,
+            "instructs_rate": 0.7714,
+            "instructs_wilson95": [
+              0.6098,
+              0.8793
+            ]
+          },
+          "O_full": {
+            "n": 30,
+            "requires_Y": 26,
+            "requires_rate": 0.8667,
+            "requires_wilson95": [
+              0.7032,
+              0.9469
+            ],
+            "instructs_Y": 26,
+            "instructs_rate": 0.8667,
+            "instructs_wilson95": [
+              0.7032,
+              0.9469
+            ]
+          },
+          "adjusted_top_share_forbids": 0.4811,
+          "weighted_P_precision_forbids": 0.7531,
+          "adjusted_top_share_instructs": 0.4873,
+          "weighted_P_precision_instructs": 0.8232,
+          "zero_match_limit": {
+            "n": 30,
+            "Y": 16,
+            "rate": 0.5333,
+            "wilson95": [
+              0.3614,
+              0.6977
+            ]
+          }
+        },
+        "either_Y": {
+          "P_top": {
+            "n": 35,
+            "forbids_Y": 29,
+            "forbids_rate": 0.8286,
+            "forbids_wilson95": [
+              0.6732,
+              0.919
+            ],
+            "instructs_Y": 31,
+            "instructs_rate": 0.8857,
+            "instructs_wilson95": [
+              0.7405,
+              0.9546
+            ]
+          },
+          "P_rest": {
+            "n": 35,
+            "forbids_Y": 25,
+            "forbids_rate": 0.7143,
+            "forbids_wilson95": [
+              0.5495,
+              0.8367
+            ],
+            "instructs_Y": 27,
+            "instructs_rate": 0.7714,
+            "instructs_wilson95": [
+              0.6098,
+              0.8793
+            ]
+          },
+          "O_full": {
+            "n": 30,
+            "requires_Y": 26,
+            "requires_rate": 0.8667,
+            "requires_wilson95": [
+              0.7032,
+              0.9469
+            ],
+            "instructs_Y": 26,
+            "instructs_rate": 0.8667,
+            "instructs_wilson95": [
+              0.7032,
+              0.9469
+            ]
+          },
+          "adjusted_top_share_forbids": 0.4899,
+          "weighted_P_precision_forbids": 0.7661,
+          "adjusted_top_share_instructs": 0.4873,
+          "weighted_P_precision_instructs": 0.8232,
+          "zero_match_limit": {
+            "n": 30,
+            "Y": 17,
+            "rate": 0.5667,
+            "wilson95": [
+              0.392,
+              0.7262
+            ]
+          }
+        },
+        "agreement": {
+          "instructs_all_100": {
+            "kappa": 0.963,
+            "raw": 99
+          },
+          "forbids_P_70": {
+            "kappa": 0.96,
+            "raw": 69
+          },
+          "requires_O_30": {
+            "kappa": 0.858,
+            "raw": 29
+          },
+          "limit_Z_30": {
+            "kappa": 0.933,
+            "raw": 29
+          }
+        },
+        "disagreements_forbids_P": [
+          {
+            "id": "R-070",
+            "stratum": "P_top",
+            "A": "Y",
+            "B": "N",
+            "A_reason": "Requires one trigger per object, imposing a one-trigger limit.",
+            "B_reason": "Positive best practice (one trigger per object); 'avoid conflicts' is the purpose."
+          }
+        ],
+        "note": "POSTHOC strict scoring. Rubric: labels/strict-reading/READ-ME.md. Input hashes: labels/strict-reading/SEAL-before-reading.json."
+      },
+      "expected": {
+        "readers": {
+          "A": {
+            "P_top": {
+              "n": 35,
+              "instructs_Y": 31,
+              "forbids_Y": 29,
+              "U_any": 0
+            },
+            "P_rest": {
+              "n": 35,
+              "instructs_Y": 27,
+              "forbids_Y": 25,
+              "U_any": 0
+            },
+            "O_full": {
+              "n": 30,
+              "instructs_Y": 26,
+              "requires_Y": 26,
+              "U_any": 0
+            },
+            "zero_match_limit_Y": 17,
+            "zero_match_limit_U": 0
+          },
+          "B": {
+            "P_top": {
+              "n": 35,
+              "instructs_Y": 31,
+              "forbids_Y": 28,
+              "U_any": 0
+            },
+            "P_rest": {
+              "n": 35,
+              "instructs_Y": 27,
+              "forbids_Y": 25,
+              "U_any": 0
+            },
+            "O_full": {
+              "n": 30,
+              "instructs_Y": 26,
+              "requires_Y": 26,
+              "U_any": 1
+            },
+            "zero_match_limit_Y": 16,
+            "zero_match_limit_U": 0
+          }
+        },
+        "consensus_both_Y": {
+          "P_top": {
+            "n": 35,
+            "forbids_Y": 28,
+            "forbids_rate": 0.8,
+            "forbids_wilson95": [
+              0.6411,
+              0.8996
+            ],
+            "instructs_Y": 31,
+            "instructs_rate": 0.8857,
+            "instructs_wilson95": [
+              0.7405,
+              0.9546
+            ]
+          },
+          "P_rest": {
+            "n": 35,
+            "forbids_Y": 25,
+            "forbids_rate": 0.7143,
+            "forbids_wilson95": [
+              0.5495,
+              0.8367
+            ],
+            "instructs_Y": 27,
+            "instructs_rate": 0.7714,
+            "instructs_wilson95": [
+              0.6098,
+              0.8793
+            ]
+          },
+          "O_full": {
+            "n": 30,
+            "requires_Y": 26,
+            "requires_rate": 0.8667,
+            "requires_wilson95": [
+              0.7032,
+              0.9469
+            ],
+            "instructs_Y": 26,
+            "instructs_rate": 0.8667,
+            "instructs_wilson95": [
+              0.7032,
+              0.9469
+            ]
+          },
+          "adjusted_top_share_forbids": 0.4811,
+          "weighted_P_precision_forbids": 0.7531,
+          "adjusted_top_share_instructs": 0.4873,
+          "weighted_P_precision_instructs": 0.8232,
+          "zero_match_limit": {
+            "n": 30,
+            "Y": 16,
+            "rate": 0.5333,
+            "wilson95": [
+              0.3614,
+              0.6977
+            ]
+          }
+        },
+        "either_Y": {
+          "P_top": {
+            "n": 35,
+            "forbids_Y": 29,
+            "forbids_rate": 0.8286,
+            "forbids_wilson95": [
+              0.6732,
+              0.919
+            ],
+            "instructs_Y": 31,
+            "instructs_rate": 0.8857,
+            "instructs_wilson95": [
+              0.7405,
+              0.9546
+            ]
+          },
+          "P_rest": {
+            "n": 35,
+            "forbids_Y": 25,
+            "forbids_rate": 0.7143,
+            "forbids_wilson95": [
+              0.5495,
+              0.8367
+            ],
+            "instructs_Y": 27,
+            "instructs_rate": 0.7714,
+            "instructs_wilson95": [
+              0.6098,
+              0.8793
+            ]
+          },
+          "O_full": {
+            "n": 30,
+            "requires_Y": 26,
+            "requires_rate": 0.8667,
+            "requires_wilson95": [
+              0.7032,
+              0.9469
+            ],
+            "instructs_Y": 26,
+            "instructs_rate": 0.8667,
+            "instructs_wilson95": [
+              0.7032,
+              0.9469
+            ]
+          },
+          "adjusted_top_share_forbids": 0.4899,
+          "weighted_P_precision_forbids": 0.7661,
+          "adjusted_top_share_instructs": 0.4873,
+          "weighted_P_precision_instructs": 0.8232,
+          "zero_match_limit": {
+            "n": 30,
+            "Y": 17,
+            "rate": 0.5667,
+            "wilson95": [
+              0.392,
+              0.7262
+            ]
+          }
+        },
+        "agreement": {
+          "instructs_all_100": {
+            "kappa": 0.963,
+            "raw": 99
+          },
+          "forbids_P_70": {
+            "kappa": 0.96,
+            "raw": 69
+          },
+          "requires_O_30": {
+            "kappa": 0.858,
+            "raw": 29
+          },
+          "limit_Z_30": {
+            "kappa": 0.933,
+            "raw": 29
+          }
+        },
+        "disagreements_forbids_P": [
+          {
+            "id": "R-070",
+            "stratum": "P_top",
+            "A": "Y",
+            "B": "N",
+            "A_reason": "Requires one trigger per object, imposing a one-trigger limit.",
+            "B_reason": "Positive best practice (one trigger per object); 'avoid conflicts' is the purpose."
+          }
+        ],
+        "note": "POSTHOC strict scoring. Rubric: labels/strict-reading/READ-ME.md. Input hashes: labels/strict-reading/SEAL-before-reading.json."
+      },
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict P_top",
+      "actual": 28,
+      "expected": 28,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict denominator P_top",
+      "actual": 35,
+      "expected": 35,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict P_rest",
+      "actual": 25,
+      "expected": 25,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict denominator P_rest",
+      "actual": 35,
+      "expected": 35,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict O_full",
+      "actual": 26,
+      "expected": 26,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict denominator O_full",
+      "actual": 30,
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict P agreement",
+      "actual": 69,
+      "expected": 69,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC strict P agreement denominator",
+      "actual": 70,
+      "expected": 70,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC zero-match limits",
+      "actual": 16,
+      "expected": 16,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC zero-match limit denominator",
+      "actual": 30,
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC guarded D IRR",
+      "actual": 1.298,
+      "expected": 1.298,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC guarded W IRR",
+      "actual": 1.14,
+      "expected": 1.14,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC topic excess tests",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "check": "POSTHOC topic excess users",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    }
+  ],
+  "missing_files": [],
+  "redacted_documents": [
+    {
+      "document_id": "65339547b026c33d7478ad6abfc59174da20e4a1fdd206378283a94c4e73c9a0",
+      "relative_path": "corpus/tobitsoftware/chayns-components/packages/maps/AGENTS.md",
+      "verification": "distributed hash"
+    }
+  ]
+}

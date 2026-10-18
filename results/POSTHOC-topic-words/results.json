@@ -1,0 +1,455 @@
+{
+  "classes": [
+    {
+      "class": "prohibition",
+      "classification": "POSTHOC",
+      "documents": 1495,
+      "matched_statements": 4080,
+      "references": {
+        "length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.35808823529411765,
+              "low": 0.33578431372549017,
+              "undefined_replicates": 0
+            },
+            "mean": 0.3464581123030374,
+            "observed": 0.45294117647058824,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.20066889632107024,
+              "low": 0.16923076923076924,
+              "undefined_replicates": 0
+            },
+            "mean": 0.18465291787588556,
+            "observed": 0.30903010033444817,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        },
+        "repository_conditioned_length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.35784313725490197,
+              "low": 0.33700980392156865,
+              "undefined_replicates": 0
+            },
+            "mean": 0.3473712130142638,
+            "observed": 0.45294117647058824,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.19665551839464884,
+              "low": 0.16588628762541807,
+              "undefined_replicates": 0
+            },
+            "mean": 0.18074543736302037,
+            "observed": 0.30903010033444817,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        }
+      },
+      "seeds": {
+        "bootstrap_seed_integer": "84055528262047115221685981246022856291483945843508150840026827416654865625003",
+        "key": [
+          "direct",
+          "ordinary_prose_all_entrypoint_identities",
+          "sentence",
+          "broad",
+          "dual"
+        ],
+        "length_null_seed_integer": "24210444769964435663882531414648436002198359083674343032924542822516899918441",
+        "numpy_version": "2.4.6",
+        "repository_conditioned_length_null_seed_integer": "23994656023270534713122904682338399791057288979980723272298539149151669246390",
+        "rng": "PCG64"
+      },
+      "statement_match_share": 0.03962896411053373,
+      "statements": 102955,
+      "top_tenth_share": 0.45294117647058824,
+      "zero_share": 0.30903010033444817
+    },
+    {
+      "class": "obligation",
+      "classification": "POSTHOC",
+      "documents": 1495,
+      "matched_statements": 1864,
+      "references": {
+        "length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.4028969957081545,
+              "low": 0.3701716738197425,
+              "undefined_replicates": 0
+            },
+            "mean": 0.3860596729940568,
+            "observed": 0.486587982832618,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.4140468227424749,
+              "low": 0.3806020066889632,
+              "undefined_replicates": 0
+            },
+            "mean": 0.3964008284126782,
+            "observed": 0.4568561872909699,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        },
+        "repository_conditioned_length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.4179184549356223,
+              "low": 0.38680257510729615,
+              "undefined_replicates": 0
+            },
+            "mean": 0.4022142998443239,
+            "observed": 0.486587982832618,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.4187290969899666,
+              "low": 0.38729096989966555,
+              "undefined_replicates": 0
+            },
+            "mean": 0.40303483220621844,
+            "observed": 0.4568561872909699,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        }
+      },
+      "seeds": {
+        "bootstrap_seed_integer": "84055528262047115221685981246022856291483945843508150840026827416654865625003",
+        "key": [
+          "direct",
+          "ordinary_prose_all_entrypoint_identities",
+          "sentence",
+          "broad",
+          "dual"
+        ],
+        "length_null_seed_integer": "24210444769964435663882531414648436002198359083674343032924542822516899918441",
+        "numpy_version": "2.4.6",
+        "repository_conditioned_length_null_seed_integer": "23994656023270534713122904682338399791057288979980723272298539149151669246390",
+        "rng": "PCG64"
+      },
+      "statement_match_share": 0.018104997328930113,
+      "statements": 102955,
+      "top_tenth_share": 0.486587982832618,
+      "zero_share": 0.4568561872909699
+    },
+    {
+      "class": "files",
+      "classification": "POSTHOC",
+      "documents": 1495,
+      "matched_statements": 4208,
+      "references": {
+        "length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.3574144486692015,
+              "low": 0.33460076045627374,
+              "undefined_replicates": 0
+            },
+            "mean": 0.34626953526825516,
+            "observed": 0.50356463878327,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.19130434782608696,
+              "low": 0.16187290969899665,
+              "undefined_replicates": 0
+            },
+            "mean": 0.17654171218691564,
+            "observed": 0.40668896321070236,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        },
+        "repository_conditioned_length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.3643060836501901,
+              "low": 0.3438688212927757,
+              "undefined_replicates": 0
+            },
+            "mean": 0.3543360485229013,
+            "observed": 0.50356463878327,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.18996655518394648,
+              "low": 0.1591973244147157,
+              "undefined_replicates": 0
+            },
+            "mean": 0.17457925885215247,
+            "observed": 0.40668896321070236,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        }
+      },
+      "seeds": {
+        "bootstrap_seed_integer": "84055528262047115221685981246022856291483945843508150840026827416654865625003",
+        "key": [
+          "direct",
+          "ordinary_prose_all_entrypoint_identities",
+          "sentence",
+          "broad",
+          "dual"
+        ],
+        "length_null_seed_integer": "24210444769964435663882531414648436002198359083674343032924542822516899918441",
+        "numpy_version": "2.4.6",
+        "repository_conditioned_length_null_seed_integer": "23994656023270534713122904682338399791057288979980723272298539149151669246390",
+        "rng": "PCG64"
+      },
+      "statement_match_share": 0.040872225729687725,
+      "statements": 102955,
+      "top_tenth_share": 0.50356463878327,
+      "zero_share": 0.40668896321070236
+    },
+    {
+      "class": "users",
+      "classification": "POSTHOC",
+      "documents": 1495,
+      "matched_statements": 2995,
+      "references": {
+        "length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.3739565943238731,
+              "low": 0.34757929883138566,
+              "undefined_replicates": 0
+            },
+            "mean": 0.35976393521600797,
+            "observed": 0.5592654424040067,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.2782608695652174,
+              "low": 0.24481605351170568,
+              "undefined_replicates": 0
+            },
+            "mean": 0.2614928854364247,
+            "observed": 0.4936454849498328,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        },
+        "repository_conditioned_length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.4013355592654424,
+              "low": 0.37929883138564274,
+              "undefined_replicates": 0
+            },
+            "mean": 0.39048447479265713,
+            "observed": 0.5592654424040067,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.2903010033444816,
+              "low": 0.2588628762541806,
+              "undefined_replicates": 0
+            },
+            "mean": 0.2750692019490486,
+            "observed": 0.4936454849498328,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        }
+      },
+      "seeds": {
+        "bootstrap_seed_integer": "84055528262047115221685981246022856291483945843508150840026827416654865625003",
+        "key": [
+          "direct",
+          "ordinary_prose_all_entrypoint_identities",
+          "sentence",
+          "broad",
+          "dual"
+        ],
+        "length_null_seed_integer": "24210444769964435663882531414648436002198359083674343032924542822516899918441",
+        "numpy_version": "2.4.6",
+        "repository_conditioned_length_null_seed_integer": "23994656023270534713122904682338399791057288979980723272298539149151669246390",
+        "rng": "PCG64"
+      },
+      "statement_match_share": 0.029090379291923655,
+      "statements": 102955,
+      "top_tenth_share": 0.5592654424040067,
+      "zero_share": 0.4936454849498328
+    },
+    {
+      "class": "tests",
+      "classification": "POSTHOC",
+      "documents": 1495,
+      "matched_statements": 3123,
+      "references": {
+        "length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.3701569004162664,
+              "low": 0.3442203009926353,
+              "undefined_replicates": 0
+            },
+            "mean": 0.3574731916602979,
+            "observed": 0.697086135126481,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.2662207357859532,
+              "low": 0.2334448160535117,
+              "undefined_replicates": 0
+            },
+            "mean": 0.24978787005449024,
+            "observed": 0.5745819397993311,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        },
+        "repository_conditioned_length_null": {
+          "top_decile_P_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.43515850144092216,
+              "low": 0.4133845661223183,
+              "undefined_replicates": 0
+            },
+            "mean": 0.4238980683108131,
+            "observed": 0.697086135126481,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          },
+          "zero_P_document_share": {
+            "draws": 499,
+            "equal_observed_count": 0,
+            "interval": {
+              "defined_replicates": 499,
+              "high": 0.328428093645485,
+              "low": 0.2976588628762542,
+              "undefined_replicates": 0
+            },
+            "mean": 0.31311452336110346,
+            "observed": 0.5745819397993311,
+            "strict_below_observed_count": 499,
+            "strict_below_observed_share": 1.0,
+            "upper_tail_reference_p": 0.002
+          }
+        }
+      },
+      "seeds": {
+        "bootstrap_seed_integer": "84055528262047115221685981246022856291483945843508150840026827416654865625003",
+        "key": [
+          "direct",
+          "ordinary_prose_all_entrypoint_identities",
+          "sentence",
+          "broad",
+          "dual"
+        ],
+        "length_null_seed_integer": "24210444769964435663882531414648436002198359083674343032924542822516899918441",
+        "numpy_version": "2.4.6",
+        "repository_conditioned_length_null_seed_integer": "23994656023270534713122904682338399791057288979980723272298539149151669246390",
+        "rng": "PCG64"
+      },
+      "statement_match_share": 0.030333640911077656,
+      "statements": 102955,
+      "top_tenth_share": 0.697086135126481,
+      "zero_share": 0.5745819397993311
+    }
+  ],
+  "classification": "POSTHOC"
+}

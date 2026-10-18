@@ -1,0 +1,56 @@
+{
+  "frame_origin_rule_verbatim": "Apparent upstream imports require explicit origin rights and are excluded from independent-origin primary counts; exact cross-publisher clones are retained in identity inventory and reported, not counted as new independent text.",
+  "implementation_quotes": [
+    {
+      "lines": [
+        156,
+        174
+      ],
+      "path": "qualify.py",
+      "text": "    def origin_flags(self, source, path, text):\n        flags = []\n        attribution_lines = []\n        for number, line in enumerate(text.splitlines(), 1):\n            if self.structure.import_pattern.search(line):\n                attribution_lines.append(number)\n        if attribution_lines:\n            flags.append(\"apparent_import_attribution_requires_origin_review\")\n        if source[\"requested_repo\"] == \"openai/plugins\":\n            parts = PurePosixPath(path).parts\n            plugin = parts[1] if len(parts) > 1 else \"\"\n            known_imports = {\n                \"cloudflare\": \"cloudflare/skills\", \"superpowers\": \"obra/superpowers\",\n                \"supabase\": \"supabase/agent-skills\", \"sentry\": \"getsentry/skills\",\n                \"vercel\": \"vercel-labs/agent-skills\"\n            }\n            if plugin in known_imports:\n                flags.append(\"known_provider_packaging_not_new_origin:\" + known_imports[plugin])\n        return flags, attribution_lines"
+    },
+    {
+      "lines": [
+        31,
+        36
+      ],
+      "path": "structure.py",
+      "text": "        self.import_pattern = re.compile(\n            r\"(?:adapted|ported|copied|imported|derived)\\s+from|\"\n            r\"original(?:ly)?\\s+(?:source|author|skill)|\"\n            r\"(?:third[- ]party|upstream)\\s+(?:skill|instruction|prompt)|\"\n            r\"(?:based on|sourced from)\\s+(?:the\\s+)?(?:\\[|https?://)\",\n            re.IGNORECASE"
+    },
+    {
+      "lines": [
+        218,
+        249
+      ],
+      "path": "audit_and_seal.py",
+      "text": "    def origin_metadata_flags(self, context, data, entry):\n        path = PurePosixPath(context[\"path\"])\n        parent = path.parent\n        if parent.name in {\".codex-plugin\", \".claude-plugin\"}:\n            parent = parent.parent\n        prefix = \"\" if str(parent) == \".\" else str(parent) + \"/\"\n        related = entry[\"path\"].startswith(prefix)\n        for basis in entry.get(\"scope_basis\") or []:\n            if isinstance(basis, dict) and basis.get(\"plugin_manifest_path\") == context[\"path\"]:\n                related = True\n        if not related:\n            return []\n        repository = data.get(\"repository\")\n        if isinstance(repository, dict):\n            repository = repository.get(\"url\")\n        flags = []\n        if isinstance(repository, str):\n            value = repository.removeprefix(\"git+\").removesuffix(\".git\")\n            parsed = urllib.parse.urlsplit(value)\n            if parsed.hostname and parsed.hostname.casefold() == \"github.com\":\n                parts = parsed.path.strip(\"/\").split(\"/\")\n                if len(parts) >= 2:\n                    declared_repo = \"/\".join(parts[:2])\n                    if declared_repo.casefold() != entry[\"repo\"].casefold():\n                        flags.append(\"explicit_external_plugin_repository_not_independent_host_origin\")\n        license_value = data.get(\"license\")\n        if isinstance(license_value, str) and re.search(\n            r\"\\bproprietary\\b|\\bunlicensed\\b|all rights reserved|noncommercial|non-commercial\",\n            license_value, re.IGNORECASE\n        ):\n            flags.append(\"restrictive_plugin_license_declaration_conflicts_with_public_child_grant\")\n        return flags"
+    }
+  ],
+  "miss_explanation": "The body regex did not match Based on Anthropic's ... followed by a URL on a separate line. The package review inspected repository/license fields, not all README/marketplace/description vendoring declarations. This is incomplete origin-screen coverage, not a new interpretation allowing same-owner copies.",
+  "reviewed_frozen_files": [
+    {
+      "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+      "sha256": "5437f0bb0460f36c3d692f8f05dec8dc1a8dab2c152c57ce9a749981b4d64d37"
+    },
+    {
+      "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+      "sha256": "00e5c559d8a1804c4621366d516571e742ab7724b0f02dc14f66507249e4ba6e"
+    },
+    {
+      "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+      "sha256": "93a1cb7fe4da351a25553979ab8281271e4ecf97af6984e60822b6a1468d51d7"
+    },
+    {
+      "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+      "sha256": "bb7a208f9dbd91cec22758c2bcb59ad1f65c2f1170bac576a4a98d1b3308eb91"
+    },
+    {
+      "path": "Retained source evidence; see corpus/MANIFEST.csv and corpus/RIGHTS.csv.",
+      "sha256": "b56703559274fb20dec4da5cdebe6413831fe70cfd7d52755061a8e776a970c2"
+    }
+  ],
+  "same_publisher_exception_found": false,
+  "same_publisher_or_owner_policy_search_hits": [],
+  "scope_import_flags_rule_verbatim": "Conservative source-qualification screen, not an instruction classifier or human label. Explicit attribution or known upstream provider packaging prevents independent-origin primary counting; retained in exclusions.",
+  "scope_of_conclusion": "No same-publisher import exemption in the frozen study rules. External publisher first-party intake labels are not a study exception."
+}

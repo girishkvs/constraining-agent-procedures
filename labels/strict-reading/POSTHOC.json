@@ -1,0 +1,40 @@
+{
+  "byte_exact_files": [
+    {
+      "byte_exact": true,
+      "path": "labels/strict-reading/READ-ME.md",
+      "sha256": "e527446718389b82710125df36bf002f1f8d00f54a59e2b49981826486734a06"
+    },
+    {
+      "byte_exact": true,
+      "path": "labels/strict-reading/statements-to-read.csv",
+      "sha256": "2b7dd261f3032172115478e4268a4ebadd77dc32fa78f4b0c49de044e59d242e"
+    },
+    {
+      "byte_exact": true,
+      "path": "labels/strict-reading/reader-A-statements.csv",
+      "sha256": "98a2bbdff0b6fdaedb4eae897bd389c3e692e8fa17dcd21b3e2a09fdc62e5438"
+    },
+    {
+      "byte_exact": true,
+      "path": "labels/strict-reading/reader-A-procedures.csv",
+      "sha256": "12dd8b15673403e293c9aed27786ac98e60ea97f8edf9b539094ea361d56d810"
+    },
+    {
+      "byte_exact": true,
+      "path": "labels/strict-reading/reader-B-statements.csv",
+      "sha256": "dec9c3ce044a42eae2f2c34312858dbd30f49ca802ae0e36c32a95be75d43f6c"
+    },
+    {
+      "byte_exact": true,
+      "path": "labels/strict-reading/reader-B-procedures.csv",
+      "sha256": "89f25373b3fb5b5f9f4a03e3747aedb42183c45684eeeab577e0676a2543468b"
+    }
+  ],
+  "classification": "POSTHOC",
+  "index_changes": [
+    "corpus_path added to the procedure index and key",
+    "seal paths written relative to the artifact root",
+    "score note shortened"
+  ]
+}

@@ -1,0 +1,16 @@
+publisher,publisher_N,tier,tier_N,publisher_top_decile_k,tier_documents_in_publisher_top_decile,share_of_publisher_top_decile,not_the_global_top150
+TerminalSkills/skills,521,R,400,53,42,0.7924528301886793,True
+TerminalSkills/skills,521,W,108,53,11,0.20754716981132076,True
+TerminalSkills/skills,521,D,13,53,0,0.0,True
+alirezarezvani/claude-skills,186,R,175,19,18,0.9473684210526315,True
+alirezarezvani/claude-skills,186,W,9,19,1,0.05263157894736842,True
+alirezarezvani/claude-skills,186,D,2,19,0,0.0,True
+github/awesome-copilot,376,R,362,38,36,0.9473684210526315,True
+github/awesome-copilot,376,W,10,38,1,0.02631578947368421,True
+github/awesome-copilot,376,D,4,38,1,0.02631578947368421,True
+microsoft/skills,221,R,215,23,21,0.9130434782608695,True
+microsoft/skills,221,W,6,23,2,0.08695652173913043,True
+microsoft/skills,221,D,0,23,0,0.0,True
+trailofbits/skills,108,R,104,11,9,0.8181818181818182,True
+trailofbits/skills,108,W,2,11,1,0.09090909090909091,True
+trailofbits/skills,108,D,2,11,1,0.09090909090909091,True

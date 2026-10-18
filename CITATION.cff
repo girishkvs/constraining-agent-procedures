@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this artifact."
+type: software
+title: "Why “Never” Is Not Enough: Where Agent Procedures Say No and What It Means for Evaluation"
+authors:
+  - family-names: Konda
+    given-names: Girish
+date-released: 2026-10-17
+version: "2026.10"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Why “Never” Is Not Enough: Where Agent Procedures Say No and What It Means for Evaluation"
+  authors:
+    - family-names: Konda
+      given-names: Girish
+  year: 2026

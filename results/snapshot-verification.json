@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checked_identities": 4843,
+  "missing_files": [],
+  "byte_mismatches": [],
+  "redacted_documents": [
+    {
+      "document_id": "65339547b026c33d7478ad6abfc59174da20e4a1fdd206378283a94c4e73c9a0",
+      "relative_path": "corpus/tobitsoftware/chayns-components/packages/maps/AGENTS.md",
+      "verification": "distributed SHA-256 and bytes; upstream identity retained separately"
+    }
+  ]
+}

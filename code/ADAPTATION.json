@@ -1,0 +1,8 @@
+{
+  "corpus/MANIFEST.csv": "Relative paths use the actual materialized repository-owner directory case; original source identifiers and original paths are unchanged. The one colon filename uses the separately recorded percent encoding.",
+  "legacy/selection.json": "Only generated-region settings read by the parser are needed; population selection was not rerun.",
+  "protocols": "Frozen configuration values retained; no trigger changes.",
+  "regression.py": "Statistical methods retained without changes; only the relative origin-exclusion input path changed. Portable common.py and analysis.py supply local inputs.",
+  "risk.py": "Only the local configuration path/import was changed.",
+  "score_labels.py": "Only default relative paths, output-directory creation, and the reading-label column caption were changed; score formulas are unchanged."
+}

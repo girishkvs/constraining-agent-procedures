@@ -1,0 +1,69 @@
+{
+  "normalization": {
+    "boundaries": "Unicode word-character boundaries; multiword triggers require whitespace",
+    "contractions": "No expansion; don't, can't, mustn't and hyphenated do-not do not match their spelled-out alternatives",
+    "empty": "Do not manufacture units from empty normalized text",
+    "encoding": "Strict UTF-8, optional BOM removed; decoding failures stop for review",
+    "links": "Inline Markdown links and reference link suffixes removed; raw HTTP(S) URLs removed",
+    "markdown": "Remove opening YAML front matter, HTML comments, fence delimiters, heading/list/blockquote markers, link destinations, images, HTML tags, horizontal rules and Markdown emphasis delimiters; retain visible link labels and inline-code content in baseline",
+    "unicode": "NFKC then casefold for matching/dedup; curly quotation marks mapped to ASCII",
+    "whitespace": "Collapse Unicode whitespace to one ASCII space and trim"
+  },
+  "parser": {
+    "code": "Fenced backtick/tilde blocks and lines starting with a tab or at least four spaces; baseline retains content but not fences",
+    "examples": "Heading whose visible text contains whole word example/examples or sample/samples marks following content through next heading of equal or lower depth",
+    "inline_code": "Retained for lexical baseline; excluded from prose-word denominator and removed in no_code_examples arms",
+    "kinds": [
+      "prose",
+      "code",
+      "quote",
+      "example"
+    ],
+    "line": "Each nonempty eligible physical line after structural stripping",
+    "original_implementation_status": "Original trigger lists and estimands reproduced; exact private parser, token-boundary, normalization and dedup implementation unavailable. This declared public implementation is NOT an exact code-level reproduction.",
+    "paragraph": "Blank-line-delimited homogeneous-kind blocks; list items/headings hard boundaries; each contiguous code block is one paragraph",
+    "prose_words": "Unicode alphanumeric word runs, allowing internal ASCII apostrophe/hyphen; ordinary prose only, after inline-code removal",
+    "quotes": "Markdown blockquote lines",
+    "sentence": "Sentence/list-item approximation: join ordinary prose within blank-line-delimited blocks; list items and headings are hard block boundaries; split at .?! followed by whitespace or end, protect decimal points and e.g., i.e., Mr., Mrs., Dr., vs., etc.; fence/indented-code lines are individual units"
+  },
+  "triggers": {
+    "broad_obligation": [
+      "always",
+      "you must",
+      "must be",
+      "must use",
+      "must run",
+      "required to",
+      "ensure that",
+      "be sure to",
+      "make sure"
+    ],
+    "broad_prohibition": [
+      "never",
+      "do not",
+      "must not",
+      "cannot",
+      "shall not",
+      "should not",
+      "avoid",
+      "forbidden",
+      "prohibited",
+      "not allowed",
+      "refuse to"
+    ],
+    "counting_unit": "At most one P and at most one O per statement, regardless of repeated trigger occurrences",
+    "narrow_obligation": [
+      "always",
+      "you must",
+      "must be"
+    ],
+    "narrow_prohibition": [
+      "never",
+      "do not",
+      "must not",
+      "cannot",
+      "shall not",
+      "should not"
+    ]
+  }
+}

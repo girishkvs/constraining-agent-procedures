@@ -1,0 +1,192 @@
+{
+  "all_four_corpora_reproduced_from_distributed_source": true,
+  "case_sensitive_manifest_paths_verified": true,
+  "checks": [
+    {
+      "check": "17940 artifact-source procedure vectors exactly reproduce frozen vectors",
+      "pass": true
+    },
+    {
+      "check": "agent_context artifact-source vectors exactly reproduce frozen vectors",
+      "pass": true
+    },
+    {
+      "check": "gitlab artifact-source vectors exactly reproduce frozen vectors",
+      "pass": true
+    },
+    {
+      "check": "openshift artifact-source vectors exactly reproduce frozen vectors",
+      "pass": true
+    },
+    {
+      "check": "all 1495 primary covariate and command-tier vectors reproduce",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients primary_full",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients no_tier",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients tier_length_only",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients V-allcode",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients V-inline",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients V-prose",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients V-desc_SKILLS_ONLY",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients skills_only",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients all_kind_body",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients narrow_dictionary",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients POSTHOC_origin_1463",
+      "pass": true
+    },
+    {
+      "check": "regression coefficients priority_overlap",
+      "pass": true
+    },
+    {
+      "check": "all 999 bootstrap rows byte-identical, including the failed draw",
+      "pass": true
+    },
+    {
+      "check": "primary finite-slot and repository references exactly reproduce",
+      "pass": true
+    },
+    {
+      "check": "reading scores exactly reproduce the recorded scores",
+      "pass": true
+    },
+    {
+      "check": "POSTHOC origin sensitivity uses 1463/3981/1817/454",
+      "pass": true
+    },
+    {
+      "check": "stored comparison counts retain all four original populations",
+      "pass": true
+    },
+    {
+      "check": "only the four corpus populations used by the paper are indexed",
+      "pass": true
+    },
+    {
+      "check": "frozen analysis inputs unchanged against their recorded hashes",
+      "pass": true
+    },
+    {
+      "check": "POSTHOC extended P direct",
+      "pass": true
+    },
+    {
+      "check": "POSTHOC extended P agent_context",
+      "pass": true
+    },
+    {
+      "check": "POSTHOC extended P gitlab",
+      "pass": true
+    },
+    {
+      "check": "POSTHOC extended P openshift",
+      "pass": true
+    },
+    {
+      "check": "POSTHOC extended P runbooks_pooled",
+      "pass": true
+    },
+    {
+      "check": "all full and 250-999-band POSTHOC metrics reproduce, including pooled runbooks",
+      "pass": true
+    },
+    {
+      "check": "complete raw snapshot identity pass",
+      "pass": true
+    },
+    {
+      "check": "all source-only smoke assertions pass",
+      "pass": true
+    }
+  ],
+  "commands": [
+    {
+      "command": "python code/verify_snapshot.py",
+      "status": "PASS"
+    },
+    {
+      "command": "python tests/smoke_test.py",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/measure.py --grid",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/posthoc_contractions.py",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/tables.py",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/regression.py",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/reference.py --corpus direct",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/reference.py --corpus agent_context",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/reference.py --corpus gitlab",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/reference.py --corpus openshift",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/sample.py",
+      "status": "PASS"
+    },
+    {
+      "command": "python code/score_labels.py --statements-csv labels/statements.csv --procedures-csv labels/procedures.csv --output reproduced/reading-scores.json",
+      "status": "PASS"
+    }
+  ],
+  "raw_snapshot_status": {
+    "byte_mismatches": [],
+    "checked_identities": 4843,
+    "missing_files": [],
+    "status": "PASS"
+  },
+  "smoke_status": "PASS",
+  "status": "PASS"
+}

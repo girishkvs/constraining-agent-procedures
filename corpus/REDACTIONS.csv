@@ -1,0 +1,2 @@
+document_id,original_path,lines,pattern_replaced,replacement,original_sha256,distributed_sha256,distributed_bytes
+65339547b026c33d7478ad6abfc59174da20e4a1fdd206378283a94c4e73c9a0,packages/maps/AGENTS.md,17;38,"Google API key: AIza prefix plus 35 letters, digits, hyphens or underscores; 39 ASCII characters",REDACTED_KEY,3596e75c414b15d164ba6f49df1fc8b636a17bfe2f7ce5b7e19e123912fedf38,d98ca192002d3de911032937ea28089f64381f495c350cf47e189f54cb8da191,1141

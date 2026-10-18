@@ -1,0 +1,15 @@
+{
+  "PyYAML": "6.0.3",
+  "et_xmlfile": "2.0.0",
+  "numpy": "2.4.6",
+  "openpyxl": "3.1.5",
+  "packaging": "26.2",
+  "pandas": "3.0.5",
+  "patsy": "1.0.3",
+  "python": "3.13.7",
+  "python-dateutil": "2.9.0.post0",
+  "scipy": "1.18.0",
+  "six": "1.17.0",
+  "statsmodels": "0.15.0",
+  "tzdata": "2026.4"
+}

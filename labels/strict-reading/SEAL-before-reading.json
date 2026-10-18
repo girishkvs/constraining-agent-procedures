@@ -1,0 +1,180 @@
+{
+  "classification": "POSTHOC",
+  "distributed_files": {
+    "corpus/TerminalSkills/skills/skills/argocd/SKILL.md": {
+      "bytes": 6219,
+      "sha256": "d3d4570a82d3d38f0b60664609c9df72bc0b52829bfefe3951ba6dab98e9d173"
+    },
+    "corpus/TerminalSkills/skills/skills/elysia/SKILL.md": {
+      "bytes": 7814,
+      "sha256": "aa21520009f7233d0f66bbed44d398bca2b4ddc2e07ea6fe12f20852d5c4a4dc"
+    },
+    "corpus/TerminalSkills/skills/skills/htop/SKILL.md": {
+      "bytes": 2318,
+      "sha256": "539193385159d74e3a7aed3e91ebfdaa7bb8984466cc7e3978c02709d436c3fe"
+    },
+    "corpus/TerminalSkills/skills/skills/iptables/SKILL.md": {
+      "bytes": 2526,
+      "sha256": "8603c5731a3f030a4d0fbdf2d312d4c869c5237cf28c6c4e1afa3d8a6f9203be"
+    },
+    "corpus/TerminalSkills/skills/skills/monorepo-manager/SKILL.md": {
+      "bytes": 5579,
+      "sha256": "4325607696b12b035675c3654b8ef04ef6013a9ad909ff2382c6339043280738"
+    },
+    "corpus/TerminalSkills/skills/skills/moonrepo/SKILL.md": {
+      "bytes": 5286,
+      "sha256": "ed409373dc7cdae392e62a0c8d148936abddac9de60d4c6e6eeafaab72c6cc7d"
+    },
+    "corpus/TerminalSkills/skills/skills/semantic-release/SKILL.md": {
+      "bytes": 1609,
+      "sha256": "cd8d2ac0fe164d243c8371a8ed70d3ddcb69383f7f3741d2bac04964b49a2ee8"
+    },
+    "corpus/TerminalSkills/skills/skills/structlog-python/SKILL.md": {
+      "bytes": 4167,
+      "sha256": "b7e2aa613d8bab8ecf76f00ce5550620c280ecdf7aa2d761f25ab6ee0fd46c3e"
+    },
+    "corpus/TerminalSkills/skills/skills/tiled/SKILL.md": {
+      "bytes": 7526,
+      "sha256": "525f0afb4163e8f84ecbd912517d000e03d7bf5c89387bc03f01dcdf9d736a7e"
+    },
+    "corpus/alirezarezvani/claude-skills/engineering-team/self-improving-agent/skills/memory-review/SKILL.md": {
+      "bytes": 4265,
+      "sha256": "51caa5e982dff97a33b0c20ee63061425aca01e70e21bbfd41fa9915c183c6fd"
+    },
+    "corpus/alirezarezvani/claude-skills/engineering-team/skills/senior-data-engineer/SKILL.md": {
+      "bytes": 5802,
+      "sha256": "20495d2ee96a7b5a6d7026713f254f274682438997dd44933b7bca1882a1dae2"
+    },
+    "corpus/alirezarezvani/claude-skills/engineering-team/skills/senior-qa/SKILL.md": {
+      "bytes": 8588,
+      "sha256": "a67b326aa3dccd186b2d076f7e01a2ce5775537c643bba819f759743d2b6678c"
+    },
+    "corpus/alirezarezvani/claude-skills/engineering/agenthub/skills/eval/SKILL.md": {
+      "bytes": 2479,
+      "sha256": "270d7d054f0f8755b91acfe5095e900c053f8959404f9ce25f7cd3884b6ce5e1"
+    },
+    "corpus/alirezarezvani/claude-skills/engineering/book-to-skill/commands/cs-book-to-skill.md": {
+      "bytes": 3898,
+      "sha256": "e75809785c47523893586316bc50239105f3145b2318e9bf9b43a49b80a510b6"
+    },
+    "corpus/github/awesome-copilot/agents/power-platform-expert.agent.md": {
+      "bytes": 7139,
+      "sha256": "aaed8552fd98a4430a4f99371e269737e73a9b8bce0256a964c411444708d574"
+    },
+    "corpus/github/awesome-copilot/instructions/copilot-sdk-python.instructions.md": {
+      "bytes": 21016,
+      "sha256": "ada5cb28e07feaab473a88b603895a71b82658db69845fc884726bf987a64471"
+    },
+    "corpus/github/awesome-copilot/instructions/dataverse-python-agentic-workflows.instructions.md": {
+      "bytes": 17991,
+      "sha256": "8cc5d4481114437966e0f7af97d22e63ff4689a6b42648a19b9293eb0a4f7f3b"
+    },
+    "corpus/github/awesome-copilot/instructions/dataverse-python-file-operations.instructions.md": {
+      "bytes": 18353,
+      "sha256": "749a788e9f2927c76ba72faf42c36bb753df016bab800a9c8ef1e73e0030b5fa"
+    },
+    "corpus/github/awesome-copilot/instructions/dataverse-python-testing-debugging.instructions.md": {
+      "bytes": 11150,
+      "sha256": "128cfc8b5ebf7349522f77d81fa231dba4fbc3662a66f5e47629708c566fccd6"
+    },
+    "corpus/github/awesome-copilot/instructions/pcf-code-components.instructions.md": {
+      "bytes": 5368,
+      "sha256": "a5e126fdc293d9c94fbd3e940b83a0a1649888eb80018c571bc18998709db42c"
+    },
+    "corpus/github/awesome-copilot/instructions/pcf-model-driven-apps.instructions.md": {
+      "bytes": 2828,
+      "sha256": "5b86da22fc8546ad470a8f3b7ab99119db3445556f2bd8ef75f53c9a97a42d31"
+    },
+    "corpus/github/awesome-copilot/instructions/rust-mcp-server.instructions.md": {
+      "bytes": 16372,
+      "sha256": "d7fc7f13e69f39b0c582923d304a47653d3a36f2d4172c24f967a7a0179a1f47"
+    },
+    "corpus/github/awesome-copilot/skills/java-docs/SKILL.md": {
+      "bytes": 1439,
+      "sha256": "9f837092e00114d9f18a9e744707ef11bfc68913247d8014adc534a29e46d087"
+    },
+    "corpus/github/awesome-copilot/skills/react18-batching-patterns/SKILL.md": {
+      "bytes": 2489,
+      "sha256": "f4bdb6d5b817c19b00062392ff51965d42fe185facbb5724653dd9aa39c3140e"
+    },
+    "corpus/hashicorp/agent-skills/plugins/packer/skills/windows-builder/SKILL.md": {
+      "bytes": 4601,
+      "sha256": "0ddd0188747e826fb43d36563344fd8e105702962b01d23f443206fc4f23b576"
+    },
+    "corpus/microsoft/skills/.github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md": {
+      "bytes": 9509,
+      "sha256": "9bb62a43834be7a0095dc995fa5f703329114aa47f9ccdebe227a8a8c48bd374"
+    },
+    "corpus/microsoft/skills/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md": {
+      "bytes": 11671,
+      "sha256": "ad00eabdfbfbf51ee4b58d53a5444e44be2725a6d4c2603d88de1c04816ea5b4"
+    },
+    "corpus/microsoft/skills/.github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md": {
+      "bytes": 8393,
+      "sha256": "e422b13b05cb0b17c35c49d75f307127dbe1cc65735f07556d46daee82f0bdc5"
+    },
+    "corpus/microsoft/skills/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md": {
+      "bytes": 1761,
+      "sha256": "dd69536e2f18a09eac999d036f963dbbf6874f44fe4ac73a6df89170de4a542b"
+    },
+    "corpus/microsoft/skills/.github/skills/debugview/SKILL.md": {
+      "bytes": 10691,
+      "sha256": "4694de74b7a67f15c59ea9a6af7d916920380b7ab54b201f6e37ab24e04ca12d"
+    },
+    "labels/strict-reading/KEY.json": {
+      "bytes": 31108,
+      "sha256": "64bf27fdbcb77bcef443a3d14c49bcdb0f1c736d6053c5c682d65108864be5a5"
+    },
+    "labels/strict-reading/READ-ME.md": {
+      "bytes": 3269,
+      "sha256": "e527446718389b82710125df36bf002f1f8d00f54a59e2b49981826486734a06"
+    },
+    "labels/strict-reading/procedures-to-read.csv": {
+      "bytes": 7013,
+      "sha256": "dd335acfb5bbafd32178076b021e588e8c56221b28756791fb56c389108a89aa"
+    },
+    "labels/strict-reading/statements-to-read.csv": {
+      "bytes": 53476,
+      "sha256": "2b7dd261f3032172115478e4268a4ebadd77dc32fa78f4b0c49de044e59d242e"
+    }
+  },
+  "files": {
+    "corpus/TerminalSkills/skills/skills/argocd/SKILL.md": "d3d4570a82d3d38f0b60664609c9df72bc0b52829bfefe3951ba6dab98e9d173",
+    "corpus/TerminalSkills/skills/skills/elysia/SKILL.md": "aa21520009f7233d0f66bbed44d398bca2b4ddc2e07ea6fe12f20852d5c4a4dc",
+    "corpus/TerminalSkills/skills/skills/htop/SKILL.md": "539193385159d74e3a7aed3e91ebfdaa7bb8984466cc7e3978c02709d436c3fe",
+    "corpus/TerminalSkills/skills/skills/iptables/SKILL.md": "8603c5731a3f030a4d0fbdf2d312d4c869c5237cf28c6c4e1afa3d8a6f9203be",
+    "corpus/TerminalSkills/skills/skills/monorepo-manager/SKILL.md": "4325607696b12b035675c3654b8ef04ef6013a9ad909ff2382c6339043280738",
+    "corpus/TerminalSkills/skills/skills/moonrepo/SKILL.md": "ed409373dc7cdae392e62a0c8d148936abddac9de60d4c6e6eeafaab72c6cc7d",
+    "corpus/TerminalSkills/skills/skills/semantic-release/SKILL.md": "cd8d2ac0fe164d243c8371a8ed70d3ddcb69383f7f3741d2bac04964b49a2ee8",
+    "corpus/TerminalSkills/skills/skills/structlog-python/SKILL.md": "b7e2aa613d8bab8ecf76f00ce5550620c280ecdf7aa2d761f25ab6ee0fd46c3e",
+    "corpus/TerminalSkills/skills/skills/tiled/SKILL.md": "525f0afb4163e8f84ecbd912517d000e03d7bf5c89387bc03f01dcdf9d736a7e",
+    "corpus/alirezarezvani/claude-skills/engineering-team/self-improving-agent/skills/memory-review/SKILL.md": "51caa5e982dff97a33b0c20ee63061425aca01e70e21bbfd41fa9915c183c6fd",
+    "corpus/alirezarezvani/claude-skills/engineering-team/skills/senior-data-engineer/SKILL.md": "20495d2ee96a7b5a6d7026713f254f274682438997dd44933b7bca1882a1dae2",
+    "corpus/alirezarezvani/claude-skills/engineering-team/skills/senior-qa/SKILL.md": "a67b326aa3dccd186b2d076f7e01a2ce5775537c643bba819f759743d2b6678c",
+    "corpus/alirezarezvani/claude-skills/engineering/agenthub/skills/eval/SKILL.md": "270d7d054f0f8755b91acfe5095e900c053f8959404f9ce25f7cd3884b6ce5e1",
+    "corpus/alirezarezvani/claude-skills/engineering/book-to-skill/commands/cs-book-to-skill.md": "e75809785c47523893586316bc50239105f3145b2318e9bf9b43a49b80a510b6",
+    "corpus/github/awesome-copilot/agents/power-platform-expert.agent.md": "aaed8552fd98a4430a4f99371e269737e73a9b8bce0256a964c411444708d574",
+    "corpus/github/awesome-copilot/instructions/copilot-sdk-python.instructions.md": "ada5cb28e07feaab473a88b603895a71b82658db69845fc884726bf987a64471",
+    "corpus/github/awesome-copilot/instructions/dataverse-python-agentic-workflows.instructions.md": "8cc5d4481114437966e0f7af97d22e63ff4689a6b42648a19b9293eb0a4f7f3b",
+    "corpus/github/awesome-copilot/instructions/dataverse-python-file-operations.instructions.md": "749a788e9f2927c76ba72faf42c36bb753df016bab800a9c8ef1e73e0030b5fa",
+    "corpus/github/awesome-copilot/instructions/dataverse-python-testing-debugging.instructions.md": "128cfc8b5ebf7349522f77d81fa231dba4fbc3662a66f5e47629708c566fccd6",
+    "corpus/github/awesome-copilot/instructions/pcf-code-components.instructions.md": "a5e126fdc293d9c94fbd3e940b83a0a1649888eb80018c571bc18998709db42c",
+    "corpus/github/awesome-copilot/instructions/pcf-model-driven-apps.instructions.md": "5b86da22fc8546ad470a8f3b7ab99119db3445556f2bd8ef75f53c9a97a42d31",
+    "corpus/github/awesome-copilot/instructions/rust-mcp-server.instructions.md": "d7fc7f13e69f39b0c582923d304a47653d3a36f2d4172c24f967a7a0179a1f47",
+    "corpus/github/awesome-copilot/skills/java-docs/SKILL.md": "9f837092e00114d9f18a9e744707ef11bfc68913247d8014adc534a29e46d087",
+    "corpus/github/awesome-copilot/skills/react18-batching-patterns/SKILL.md": "f4bdb6d5b817c19b00062392ff51965d42fe185facbb5724653dd9aa39c3140e",
+    "corpus/hashicorp/agent-skills/plugins/packer/skills/windows-builder/SKILL.md": "0ddd0188747e826fb43d36563344fd8e105702962b01d23f443206fc4f23b576",
+    "corpus/microsoft/skills/.github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md": "9bb62a43834be7a0095dc995fa5f703329114aa47f9ccdebe227a8a8c48bd374",
+    "corpus/microsoft/skills/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md": "ad00eabdfbfbf51ee4b58d53a5444e44be2725a6d4c2603d88de1c04816ea5b4",
+    "corpus/microsoft/skills/.github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md": "e422b13b05cb0b17c35c49d75f307127dbe1cc65735f07556d46daee82f0bdc5",
+    "corpus/microsoft/skills/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md": "dd69536e2f18a09eac999d036f963dbbf6874f44fe4ac73a6df89170de4a542b",
+    "corpus/microsoft/skills/.github/skills/debugview/SKILL.md": "4694de74b7a67f15c59ea9a6af7d916920380b7ab54b201f6e37ab24e04ca12d",
+    "labels/strict-reading/KEY.json": "4ca03b28aead23e64547ab5e1dc145850bdc6f5d2a1e1091e39984ce3268ceea",
+    "labels/strict-reading/READ-ME.md": "e527446718389b82710125df36bf002f1f8d00f54a59e2b49981826486734a06",
+    "labels/strict-reading/procedures-to-read.csv": "4799064ff84cb580397b353365d5855c06109e6f90005bcd85017d090e489e72",
+    "labels/strict-reading/statements-to-read.csv": "2b7dd261f3032172115478e4268a4ebadd77dc32fa78f4b0c49de044e59d242e"
+  },
+  "hash_scope": "files retains the before-reading byte hashes. distributed_files records the packaged indexes with added corpus paths.",
+  "purpose": "Rubric and sample inputs fixed before label completion.",
+  "sealed_at": "2026-10-17T19:25:40.482587-07:00"
+}

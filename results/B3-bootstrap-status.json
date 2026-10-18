@@ -1,0 +1,27 @@
+{
+  "failed_fits": 1,
+  "intervals": {
+    "tier_D": {
+      "IRR_bootstrap95_high": 1.6258306991674907,
+      "IRR_bootstrap95_low": 0.6050300960255228,
+      "IRR_point": 1.0862426933192166,
+      "defined_draws": 998,
+      "undefined_or_failed_draws": 1
+    },
+    "tier_W": {
+      "IRR_bootstrap95_high": 1.271034527055238,
+      "IRR_bootstrap95_low": 0.9185992167123739,
+      "IRR_point": 1.0932659398034914,
+      "defined_draws": 998,
+      "undefined_or_failed_draws": 1
+    }
+  },
+  "model_family_fixed_from_primary": "NB2",
+  "not_a_publisher_cluster_resampling_design": true,
+  "percentiles": "nearest-rank 2.5/97.5",
+  "replicates_attempted": 999,
+  "replicates_requested": 999,
+  "seed_integer": "15227979194481155698293624410021222323093764465755446558665676612723982642800",
+  "status": "COMPLETE_WITH_EXPLICIT_FAILED_DRAWS",
+  "stratification": "Rows sampled with replacement within publisher; original publisher Ns retained, total N fixed"
+}

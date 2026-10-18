@@ -1,0 +1,8 @@
+{
+  "resampling": {
+    "bootstrap_replicates": 499,
+    "length_null_replicates": 499,
+    "repository_conditioned_length_null_replicates": 499
+  },
+  "seed": "20261015"
+}
