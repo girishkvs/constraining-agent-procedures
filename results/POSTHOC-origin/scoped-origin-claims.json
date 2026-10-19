@@ -3,7 +3,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "terminal-readme-description",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "6edcf94159d9f46b0759d2e1b59dd545cfaca254",
@@ -34,7 +33,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "terminal-meta-skill-author",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "6edcf94159d9f46b0759d2e1b59dd545cfaca254",
@@ -65,7 +63,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "terminal-ai-subject-matter-negative-case",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "6edcf94159d9f46b0759d2e1b59dd545cfaca254",
@@ -101,7 +98,6 @@
       "marketplace.json"
     ],
     "claim_id": "alireza-generated-platform-artifacts",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "19392f7a08264ed00486a251f5b2098321771f94",
@@ -134,7 +130,6 @@
     ],
     "case_sensitive_exact_paths": [],
     "claim_id": "alireza-loop-library-vendored",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "19392f7a08264ed00486a251f5b2098321771f94",
@@ -165,7 +160,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "alireza-skillopt-engine-vendored",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "19392f7a08264ed00486a251f5b2098321771f94",
@@ -208,7 +202,6 @@
     ],
     "case_sensitive_exact_paths": [],
     "claim_id": "alireza-book-converter-vendored",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "19392f7a08264ed00486a251f5b2098321771f94",
@@ -269,7 +262,6 @@
     ],
     "case_sensitive_exact_paths": [],
     "claim_id": "alireza-openai-derived-notes",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "19392f7a08264ed00486a251f5b2098321771f94",
@@ -340,7 +332,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "sentry-vendoring-practice",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "f57ada2d0b640406ea7e25b11d636c530e77c58b",
@@ -572,7 +563,6 @@
       "agents/code-simplifier.md"
     ],
     "claim_id": "sentry-named-vendored-agent",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "f57ada2d0b640406ea7e25b11d636c530e77c58b",
@@ -634,7 +624,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "sentry-owasp-reference-material",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "f57ada2d0b640406ea7e25b11d636c530e77c58b",
@@ -677,7 +666,6 @@
     ],
     "case_sensitive_exact_paths": [],
     "claim_id": "microsoft-azure-plugin-copy",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "146f047391145d5c16c981ca8774fb722090efba",
@@ -964,7 +952,6 @@
       "docs/llms-full.txt"
     ],
     "claim_id": "microsoft-generated-doc-index",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "146f047391145d5c16c981ca8774fb722090efba",
@@ -1000,7 +987,6 @@
     ],
     "case_sensitive_exact_paths": [],
     "claim_id": "kdense-removed-vendored-document-skills",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
@@ -1031,7 +1017,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "github-third-party-contributions",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "3b674ecaa87504b8ca41edce22b32a2abe1bfcf8",
@@ -4449,7 +4434,6 @@
       "skills/anti-ui-slop/reference/ios.md"
     ],
     "claim_id": "github-derived-ios-reference",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "3b674ecaa87504b8ca41edce22b32a2abe1bfcf8",
@@ -4480,7 +4464,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "github-vendored-markdown-asset",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "3b674ecaa87504b8ca41edce22b32a2abe1bfcf8",
@@ -4513,7 +4496,6 @@
       "skills/.curated/playwright/SKILL.md"
     ],
     "claim_id": "openai-playwright-derived-material",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "49f948faa9258a0c61caceaf225e179651397431",
@@ -4546,7 +4528,6 @@
       "skills/generative-engine-optimization/SKILL.md"
     ],
     "claim_id": "terminal-geo-skill-upstream-adaptation",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "6edcf94159d9f46b0759d2e1b59dd545cfaca254",
@@ -4579,7 +4560,6 @@
       "skills/code-simplifier/SKILL.md"
     ],
     "claim_id": "sentry-skill-own-explicit-attribution",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "f57ada2d0b640406ea7e25b11d636c530e77c58b",
@@ -4632,7 +4612,6 @@
     ],
     "case_sensitive_exact_paths": [],
     "claim_id": "skillopt-marketplace-verbatim-plugin-surface",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "19392f7a08264ed00486a251f5b2098321771f94",
@@ -4684,7 +4663,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "skill-doctor-verbatim-rubrics-only",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "19392f7a08264ed00486a251f5b2098321771f94",
@@ -4743,7 +4721,6 @@
     "case_sensitive_directory_prefixes": [],
     "case_sensitive_exact_paths": [],
     "claim_id": "memory-concept-no-code-disclosure",
-    "definite_scope_is_not_proof_of_byte_identical_copy_or_independent_authorship": true,
     "evidence": [
       {
         "commit": "19392f7a08264ed00486a251f5b2098321771f94",

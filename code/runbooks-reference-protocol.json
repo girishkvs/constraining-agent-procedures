@@ -5,7 +5,6 @@
     "intervals": "2.5% and 97.5% nearest-rank endpoints among defined draws; record defined and undefined counts. Null central ranges are reference bands, bootstrap ranges are descriptive intervals, not population confidence guarantees.",
     "length_null": "Exact multivariate hypergeometric marginals over per-document eligible statement slots, preserving observed total P and per-document slot capacities. Uniform distinct-slot allocation without replacement.",
     "length_null_replicates": 499,
-    "limits": "Pinned censuses, shared templates, code and source branches do not establish population generality, semantic precision/recall, instruction coverage, task adherence or safety.",
     "null_p": "(1 + null draws >= observed)/(499+1), descriptive upper-tail reference only; no multiplicity-adjusted or causal hypothesis claim.",
     "rng_revision": "Existing NumPy 2.4.6 PCG64 Generator, SHA-256(seed|purpose|corpus|group|arm|segmentation|triggers) seed integer. Same sampling laws as legacy; not bit-identical legacy random.Random draws.",
     "serial": "499 sequential draws in each frozen key, not data-adaptive draws. Overlap rules share P null and bootstrap document draws."

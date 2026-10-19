@@ -36,7 +36,8 @@ reproduced from here.
 Every document is pinned to a commit. The publishers and selection rules were fixed before
 measurement; the selection is purposive, not a census. Only the entry file of each
 procedure is counted. Scripts and other files bundled with a skill are not included.
-Nothing in `corpus/` was installed or run, and nothing in it should be.
+Nothing in `corpus/` was installed or run for the counts. The agent runs in
+`results/POSTHOC-agent-runs/` ran one procedure, `git-cleanup`, on sandbox repositories.
 
 One GitLab filename contains a colon, which Windows cannot store. It is kept as
 `component_saturation_slo_out_of_bounds%3Aredis_memory.md`, and `MANIFEST.csv` keeps the
@@ -52,16 +53,17 @@ original file at its pinned commit, and no count changes.
 | In the paper | File |
 |---|---|
 | Table 1, public corpora | `results/D1-cross-corpus.csv` |
-| Table 2, public procedures | `results/E1-SC-style-six-rows.csv`; all groups in `results/direct-grid-and-publisher-results.json` |
+| Table A2, all twelve configurations | `results/E1-SC-style-six-rows.csv`; all groups in `results/direct-grid-and-publisher-results.json` |
 | Five large publishers | `results/E3-within-publisher-concentration.csv` |
 | Table A1 | `results/document-primary-counts-tiers-covariates.csv` (one row per procedure), `corpus/PINS.csv` |
 | Length-only reference (499 draws) | `results/direct-length-reference.json` |
 | Reading of matched statements, read strictly | `labels/strict-reading/scores.json` |
+| Intervals for the corrected top-tenth share (48 percent) and the share that forbids something | `results/POSTHOC-reading-intervals/` |
 | Limits in 30 procedures with no prohibition match | `labels/strict-reading/scores.json` |
 | Reading of the command classes (16 of 30 agree) | `labels/scored-summary.json` |
-| Table 3, prohibition matches per document | `results/D3-SC-P-bins.csv` |
-| Runbooks and procedures at 250 to 999 words | `results/D2-fixed-length-bands.csv` |
-| Table 4, command classes | `results/B1-primary-tiers.csv`, `results/B3-primary-tier-IRR-bootstrap.csv` |
+| Prohibition matches per document, by bin | `results/D3-SC-P-bins.csv` |
+| Runbooks and procedures by length band | `results/D2-fixed-length-bands.csv` |
+| Table A3, command classes | `results/B1-primary-tiers.csv`, `results/B3-primary-tier-IRR-bootstrap.csv` |
 | Length, file type, publisher, steps and headings | `results/B3-model-results.json`, `results/B3-all-model-coefficients.csv` |
 | Other ways of coding command classes, including inline code | `results/B5-sensitivity-tier-tables.csv`, `results/B3-model-results.json` (model `V-inline`) |
 | Inline code with commands inside matching statements dropped | `results/POSTHOC-guarded-inline/` |
@@ -70,6 +72,10 @@ original file at its pinned commit, and no count changes.
 | 48 of 162 procedures with commands and no prohibition match | `results/document-primary-counts-tiers-covariates.csv` |
 | Contractions such as *don't* | `results/POSTHOC-contractions/` |
 | 32 files missed by the origin screen | `results/POSTHOC-origin/` |
+| Runbooks against their own length-only reference | `results/gitlab-configuration-results.csv`, `results/openshift-configuration-results.csv` |
+| OpenShift's repeated support-case sentence (80 of 229 matches) | `results/POSTHOC-openshift-sentence/` |
+| Sampling by explicit constraint against a uniform draw | `results/POSTHOC-sampling-test/` |
+| 24 agent runs of `git-cleanup` | `results/POSTHOC-agent-runs/` |
 
 Per-document counts for every corpus are in `results/*-document-results.csv.gz`.
 
@@ -100,6 +106,10 @@ the first two checks, which rewrite their reports in `results/`.
 | Scores the strict reading and the read of 30 procedures | `python code/score_strict_reading.py` | `reproduced/strict-reading-scores.json` |
 | Codes inline commands, dropping those inside matching statements | `python code/posthoc_guarded_inline.py` | `reproduced/POSTHOC-guarded-inline/` |
 | Runs the length-only reference for topic words | `python code/posthoc_topic_words.py` | `reproduced/POSTHOC-topic-words/` |
+| Compares stratified and uniform draws of 100 procedures | `python code/posthoc_sampling_test.py` | `reproduced/POSTHOC-sampling-test.json` |
+| Gives intervals for the corrected top-tenth share and the share that forbids something | `python code/posthoc_reading_intervals.py` | `reproduced/POSTHOC-reading-intervals.json` |
+| Counts OpenShift's repeated sentence and compares rates without it | `python code/posthoc_openshift_sentence.py` | `reproduced/POSTHOC-openshift-sentence.json` |
+| Builds the sandbox repositories for the agent runs | `python code/posthoc_agent_runs_setup.py '<runs json>' <folder>` | the repositories; the runs themselves need an agent harness (`results/POSTHOC-agent-runs/README.md`) |
 
 Run the measurement before the regression. The regression leaves out the four procedures
 with no prose, since length enters as log words. It made 999 bootstrap draws within
@@ -125,7 +135,8 @@ publisher; one could not be fitted, so the intervals use 998.
 - Contractions were not triggers. Adding them is a separate check, made after the main
   measurement.
 
-These are counts of wording. They do not show whether any agent followed a rule.
+These are counts of wording. They do not show whether any agent followed a rule; the agent
+runs in `results/POSTHOC-agent-runs/` show how such a check can be recorded.
 
 ## Reading checks
 
@@ -137,13 +148,14 @@ group; `labels/sampling-design.json` gives the pool sizes, sample sizes and seed
 
 That first reading asked whether a statement is an operative instruction, and some of its
 answers judged the whole source line. `labels/strict-reading/` holds a second, stricter
-reading of the same 100 statements, made after the main measurement. Two readers, working
+reading of the same 100 statements, made after the main measurement. Two analysts, working
 apart and blind to each statement's group, judged each statement on its own: does it
 instruct, forbid or require? The paper counts a statement only where both said yes. The
-same readers read 30 procedures, drawn at random from those with no prohibition match, for
+same analysts read 30 procedures, drawn at random from those with no prohibition match, for
 limits written in other words. The rubric is `labels/strict-reading/READ-ME.md`; the hashes
 of everything they were given, recorded before reading, are in `SEAL-before-reading.json`.
 The paper uses the strict reading for statements and the first reading for command classes.
+Coding was tool-assisted in both readings; the author reviewed the labels.
 
 ## Licenses
 

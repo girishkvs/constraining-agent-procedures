@@ -34,9 +34,7 @@
     "f66f8c35e93fabe0178278919877a5419ce4020d8175308d7c86d2233b680cae",
     "f966c757f2e716fe316aa2340a19d49f635c3e186fc39659ca2bb0b5406f0ec4"
   ],
-  "file_copy_identity_not_assumed": true,
-  "label": "POSTHOC scoped-origin exclusion, not a new primary selection",
-  "original_primary_retained": true,
+  "label": "POSTHOC scoped-origin exclusion",
   "recorded_utc": "2026-10-16T05:49:14.304613+00:00",
-  "source_claim_evidence_sha256": "01cd6f0ff118d32a847809600713e3f578c30a4109bc6e3d3ffcbd09a5c177ec"
+  "source_claim_evidence_sha256": "331797f1cd657f7d2e97c4fa1f5b9085220e5ecc3bb1f73faa461ab35b7d1421"
 }

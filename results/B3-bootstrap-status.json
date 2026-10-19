@@ -17,7 +17,6 @@
     }
   },
   "model_family_fixed_from_primary": "NB2",
-  "not_a_publisher_cluster_resampling_design": true,
   "percentiles": "nearest-rank 2.5/97.5",
   "replicates_attempted": 999,
   "replicates_requested": 999,

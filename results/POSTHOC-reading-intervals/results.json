@@ -1,0 +1,36 @@
+{
+ "inputs": {
+  "read_top": 35,
+  "forbids_top": 28,
+  "read_rest": 35,
+  "forbids_rest": 25,
+  "matches_top_tenth": 1848,
+  "matches_rest": 2232
+ },
+ "unadjusted_top_tenth_share": 0.4529,
+ "corrected_top_tenth_share": 0.4811,
+ "weighted_precision": 0.7531,
+ "draws": 100000,
+ "seed": 20261019,
+ "percentiles": "nearest-rank 2.5/97.5",
+ "parametric_bootstrap95": {
+  "corrected_top_tenth_share": [
+   0.4151,
+   0.554
+  ],
+  "weighted_precision": [
+   0.6491,
+   0.8518
+  ]
+ },
+ "jeffreys95": {
+  "corrected_top_tenth_share": [
+   0.4149,
+   0.5516
+  ],
+  "weighted_precision": [
+   0.6407,
+   0.8389
+  ]
+ }
+}

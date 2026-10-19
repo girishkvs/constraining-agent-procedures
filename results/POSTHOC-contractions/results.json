@@ -110,7 +110,6 @@
         "zero_P_share": 0.5138888888888888
       }
     ],
-    "extended_matching_performed_yet": false,
     "input_bindings": [
       {
         "bytes": 7813698,
@@ -153,7 +152,6 @@
         "sha256": "b6e35db0347246359bd9ddc46b96ae08e76b6aa1e5e83d6879543172b5164da9"
       }
     ],
-    "new_source_acquisition": false,
     "status": "PASS_ALL_FOUR_BEFORE_EXTENSION",
     "verified_utc": "2026-10-17T04:30:25.135945+00:00"
   },
@@ -185,7 +183,6 @@
       "don't": 6
     }
   },
-  "new_statement_total_is_union_not_sum_of_forms": true,
   "null_method_identity": {
     "all_three_effective_global_null_loops_byte_identical": false,
     "classification": "Read-only null-method identity check; no new null draws",

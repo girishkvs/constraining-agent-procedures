@@ -1,0 +1,48 @@
+{
+ "configuration": "no_code_examples, sentence, broad",
+ "sentence_pattern": "(?i)if you cannot resolve the issue",
+ "openshift": {
+  "documents": 288,
+  "P": 229,
+  "P_from_sentence": 80,
+  "documents_with_sentence": 80
+ },
+ "agent_procedures": {
+  "documents": 1495,
+  "P": 4080
+ },
+ "ratio_to_agent_rate": {
+  "as_counted": 0.66,
+  "sentence_set_aside": 0.44
+ },
+ "bands": [
+  {
+   "prose_words": "1-249",
+   "openshift_documents": 200,
+   "agent_documents": 469,
+   "ratio_as_counted": 1.09,
+   "ratio_sentence_set_aside": 0.64
+  },
+  {
+   "prose_words": "250-499",
+   "openshift_documents": 60,
+   "agent_documents": 466,
+   "ratio_as_counted": 0.43,
+   "ratio_sentence_set_aside": 0.31
+  },
+  {
+   "prose_words": "500-999",
+   "openshift_documents": 27,
+   "agent_documents": 363,
+   "ratio_as_counted": 0.52,
+   "ratio_sentence_set_aside": 0.46
+  },
+  {
+   "prose_words": "1000-1999",
+   "openshift_documents": 1,
+   "agent_documents": 160,
+   "ratio_as_counted": 0.15,
+   "ratio_sentence_set_aside": 0.15
+  }
+ ]
+}

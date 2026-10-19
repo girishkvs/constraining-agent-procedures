@@ -1,0 +1,45 @@
+{
+ "corpus": {
+  "N": 1495,
+  "P_total": 4080,
+  "mean_P": 2.729,
+  "strata_sizes": {
+   "none": 462,
+   "1-4": 771,
+   "5+": 262
+  },
+  "share_none": 0.309
+ },
+ "budget": 100,
+ "allocation": {
+  "none": 33,
+  "1-4": 33,
+  "5+": 34
+ },
+ "draws": 10000,
+ "seed": 20261018,
+ "uniform": {
+  "P_covered": 272.74,
+  "with_any_P": 69.04,
+  "with_none": 30.96,
+  "from_top_tenth": 10.04,
+  "mean_P_estimate": 2.73,
+  "mean_P_estimate_sd": 0.425,
+  "prose_words_read": 54616.49
+ },
+ "stratified": {
+  "P_covered": 388.03,
+  "with_any_P": 67.0,
+  "with_none": 33.0,
+  "from_top_tenth": 19.51,
+  "weighted_mean_P_estimate": 2.73,
+  "weighted_mean_P_estimate_sd": 0.214,
+  "weighted_share_none_estimate": 0.309,
+  "prose_words_read": 65739.4
+ },
+ "ratio_P_covered": 1.42,
+ "ratio_from_top_tenth": 1.94,
+ "sd_ratio_mean_estimate": 0.5,
+ "ratio_prose_words_read": 1.2,
+ "ratio_P_covered_per_word": 1.18
+}

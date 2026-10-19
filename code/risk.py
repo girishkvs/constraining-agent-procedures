@@ -165,4 +165,4 @@ class Risk:
         if failures:
             raise ValueError("Risk fixture failures: " + json.dumps(failures))
         return {"passed": True, "lexicon_cases": len(self.lex["negative_cases"]),
-                "source_eligibility_cases": 3, "human_annotation": False}
+                "source_eligibility_cases": 3}

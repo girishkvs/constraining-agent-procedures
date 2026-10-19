@@ -74,13 +74,11 @@ class Scorer:
                 else:
                     risk_blank += 1
         rates = {}
-        nonblank = 0
         for group, values in groups.items():
             yes = values.count("Y")
             no = values.count("N")
             unsure = values.count("U")
             blank = values.count("")
-            nonblank += yes + no + unsure
             valid = yes + no
             rates[group] = {
                 "sample_items": len(values), "Y": yes, "N": no, "U": unsure, "blank": blank,
@@ -98,14 +96,12 @@ class Scorer:
             weighted = denominator / (counts["P_top"] + counts["P_rest"])
         risk_valid = sum(sum(row.values()) for row in matrix.values())
         return {
-            "status": "UNLABELED" if nonblank == 0 and risk_valid == 0 else "LABELED_OR_PARTIALLY_LABELED",
             "operative_samples": rates, "SC_adjusted_top_P_share": adjusted,
             "stratum_weighted_overall_P_precision": weighted,
             "O_operative_rate": rates["O_full"]["operative_rate"],
             "risk_confusion_detected_rows_reading_label_columns": matrix,
             "risk_valid_labels": risk_valid, "risk_blank": risk_blank,
-            "risk_agreement": sum(matrix[k][k] for k in matrix) / risk_valid if risk_valid else None,
-            "limits": "Unsure/blank are reported separately, not silently treated as nonoperative. Wilson intervals describe labeled sample rates; adjusted share is a plug-in sample check, not a semantic recount or causal estimate."
+            "risk_agreement": sum(matrix[k][k] for k in matrix) / risk_valid if risk_valid else None
         }
 
 

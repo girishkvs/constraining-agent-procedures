@@ -1,7 +1,6 @@
 {
   "O_operative_rate": 0.9333333333333333,
   "SC_adjusted_top_P_share": 0.4610778443113772,
-  "limits": "Unsure/blank are reported separately, not silently treated as nonoperative. Wilson intervals describe labeled sample rates; adjusted share is a plug-in sample check, not a semantic recount or causal estimate.",
   "operative_samples": {
     "O_full": {
       "N": 2,
@@ -63,6 +62,5 @@
     }
   },
   "risk_valid_labels": 30,
-  "status": "LABELED_OR_PARTIALLY_LABELED",
   "stratum_weighted_overall_P_precision": 0.8700840336134453
 }

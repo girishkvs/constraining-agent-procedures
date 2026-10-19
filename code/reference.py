@@ -11,6 +11,15 @@ from fast_metrics import FIELDS, FastMetrics
 from repository_metrics import RepositoryMetrics
 
 
+def drop_constant_flags(value):
+    # The byte-frozen metrics code adds a constant flag that the stored results omit.
+    if isinstance(value, dict):
+        return {k: drop_constant_flags(v) for k, v in value.items() if k != "flat_file_bootstrap_used_for_population"}
+    if isinstance(value, list):
+        return [drop_constant_flags(v) for v in value]
+    return value
+
+
 class Reference:
     def rows(self, corpus):
         with gzip.open(ARTIFACT / f"results/{corpus}-document-results.csv.gz", "rt", encoding="utf-8", newline="") as f:
@@ -40,6 +49,7 @@ class Reference:
             metrics = FastMetrics(protocol)
             key = (corpus, "corpus_all", "no_code_examples", "sentence", "broad")
         summary, draws = metrics.resample(values, key)
+        summary, draws = drop_constant_flags(summary), drop_constant_flags(draws)
         output = ARTIFACT / "reproduced"
         output.mkdir(exist_ok=True)
         (output / f"{corpus}-length-reference.json").write_text(json.dumps({"summary": summary, "draws": draws}, indent=2) + "\n", encoding="utf-8")

@@ -546,14 +546,12 @@
           898,
           1974
         ],
-        "flat_file_bootstrap_used_for_population": false,
         "maximum_file_identities_per_draw": 3681,
         "minimum_file_identities_per_draw": 253,
         "repositories": 12,
         "selected_repository_index_stream_sha256": "313ad1c2bb4b511b82c25477af172bb67f25bb98dc65dcde32561f1e1e81ca31",
         "unit": "repository_cluster"
       },
-      "conditional_descriptive_not_population_confidence": true,
       "control": "ordinary_prose_all_entrypoint_identities",
       "entrypoints": 1495,
       "length_null": {
@@ -604,8 +602,7 @@
           "observed": 0.30903010033444817,
           "upper_tail_reference_p": 0.002
         }
-      },
-      "supporting_not_primary_question": true
+      }
     },
     {
       "bootstrap": {
@@ -1149,14 +1146,12 @@
           1281,
           2218
         ],
-        "flat_file_bootstrap_used_for_population": false,
         "maximum_file_identities_per_draw": 3558,
         "minimum_file_identities_per_draw": 263,
         "repositories": 12,
         "selected_repository_index_stream_sha256": "b6ee0a56bbea9fab7f0d4c3c62902e9c49d158fdca79dbea123436234bde3272",
         "unit": "repository_cluster"
       },
-      "conditional_descriptive_not_population_confidence": true,
       "control": "ordinary_prose_normalized_whole_file_unique",
       "entrypoints": 1491,
       "length_null": {
@@ -1207,8 +1202,7 @@
           "observed": 0.3085177733065057,
           "upper_tail_reference_p": 0.002
         }
-      },
-      "supporting_not_primary_question": true
+      }
     }
   ]
 }

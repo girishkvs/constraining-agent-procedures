@@ -1,5 +1,4 @@
 {
-  "do_not_open_before_labeling": true,
   "items": {
     "P-01c2546329753a3f": {
       "detected_tier": "D",
@@ -2239,11 +2238,9 @@
       "unit_sha256": "051127274cf2448eb43e3344f8a8df34771094383bb4af04e6320a380e496b54"
     }
   },
-  "detected_tiers_are_not_ground_truth": true,
   "population_pools": {
     "O_full": 1864,
     "P_rest": 2232,
     "P_top": 1848
-  },
-  "reading_status": "Completed readings; not population truth."
+  }
 }

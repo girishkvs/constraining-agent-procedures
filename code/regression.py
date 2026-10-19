@@ -102,7 +102,7 @@ class Models(Analysis):
             "N": len(data), "dropped_zero_word_ids": [r["id"] for r in docs if r["prose_words"] == 0],
             "tier_counts_in_model": dict(collections.Counter(data["tier"])),
             "publisher_FE": specification != "tier_length_only", "family_FE": specification != "tier_length_only",
-            "log_words_is_estimated_predictor_not_offset": True, "covariance": "HC0",
+            "covariance": "HC0",
             "log_likelihood": float(result.llf), "AIC": float(result.aic), "BIC": float(result.bic),
             "coefficients": coefficients, "warnings": captured[:12]
         }
@@ -158,8 +158,7 @@ class Models(Analysis):
         draws = self.bootstrap(fitted_primary)
         self.write("B3-model-results.json", {
             "point_models": records, "primary_full_bootstrap": draws,
-            "elapsed_seconds": time.monotonic() - started, "risk_labels_human_validated": False,
-            "noncausal_observational_command_proxy": True
+            "elapsed_seconds": time.monotonic() - started
         })
 
     def bootstrap(self, fitted):
@@ -215,7 +214,7 @@ class Models(Analysis):
             "replicates_attempted": 999, "failed_fits": len(failures), "intervals": intervals,
             "stratification": "Rows sampled with replacement within publisher; original publisher Ns retained, total N fixed",
             "seed_integer": str(self.seed("publisher-stratified-NB-bootstrap-999")),
-            "not_a_publisher_cluster_resampling_design": True, "percentiles": "nearest-rank 2.5/97.5"
+            "percentiles": "nearest-rank 2.5/97.5"
         }
         self.write("B3-bootstrap-status.json", result)
         self.csv("tables/B3-primary-tier-IRR-bootstrap.csv", [{"term": k, **v} for k, v in intervals.items()])

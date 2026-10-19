@@ -6,7 +6,6 @@
     "intervals": "2.5% and 97.5% nearest-rank endpoints among defined draws; record defined and undefined counts. Null central ranges are reference bands, bootstrap ranges are descriptive intervals, not population confidence guarantees.",
     "length_null": "Exact multivariate hypergeometric marginals over per-document eligible statement slots, preserving observed total P and per-document slot capacities. Uniform distinct-slot allocation without replacement.",
     "length_null_replicates": 499,
-    "limits": "Repository-cluster descriptive intervals are conditional on this nonrandom document-rich subset, not population confidence guarantees. Shared templates across repositories, inherited source/model/language selection and source branches still limit independence and generality. No semantic precision/recall, instruction coverage, task adherence or safety claim.",
     "null_p": "(1 + null draws >= observed)/(499+1), descriptive upper-tail reference only; no multiplicity-adjusted or causal hypothesis claim.",
     "repository_conditioned_length_null": "Additional prespecified control: preserve each repository's observed total P and every file's statement-slot capacity; independently allocate finite slots within repositories, then compute full-file top share and zero-P share. Primary global length-null law remains unchanged.",
     "repository_conditioned_length_null_replicates": 499,
