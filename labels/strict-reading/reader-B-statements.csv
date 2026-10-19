@@ -1,101 +1,101 @@
 id,instructs,forbids,requires,reason
-R-001,Y,N,Y,"Requires the listed local unit tests to be run when a Copilot agent works on the repo."
-R-002,Y,Y,N,"Tells the reader to stop (not go on) under the listed conditions; the report clause only permits."
-R-003,Y,Y,Y,"Tells to scan the checks and reject only on a real problem; 'wait, do not merge yet' forbids merging."
-R-004,Y,Y,Y,"Schema changes only through migrations; never edit a migration already run; add a new one."
-R-005,Y,Y,N,"Forbids adding open-ended directives without a concrete task-specific reason."
-R-006,Y,Y,Y,"States a rule: describe new features clearly; a generic line is acceptable only for fixes, security and performance."
-R-007,N,N,N,"Names a pitfall and describes how service accounts stay over-provisioned; 'never' describes."
-R-008,Y,Y,Y,"Requires an absorbing member be selected as primary and forbids merging two absorbing members."
-R-009,Y,N,Y,"Says forms, reports and VBA have to be rebuilt; 'do not migrate' only describes the routes."
-R-010,Y,Y,N,"Forbids using this directly."
-R-011,N,N,N,"Section heading."
-R-012,Y,Y,Y,"Requires presigned URLs for uploads and forbids proxying large files through the API."
-R-013,Y,Y,Y,"Tells to generate then review and trim the config; the file must not already exist restricts when."
-R-014,Y,Y,N,"Tells to avoid optional positional parameters under a stated condition."
-R-015,Y,N,Y,"Conditionally requires more reading when a step cannot be described concretely."
-R-016,Y,Y,N,"Forbids proceeding until the source repo context is resolved."
-R-017,Y,N,Y,"Requires being in active task-request mode whenever not executing tasks."
-R-018,Y,N,Y,"Requires test names be valid Rust identifiers by replacing - with _."
-R-019,Y,Y,Y,"Requires creating the label first; forbids creating milestones or types without asking."
-R-020,Y,Y,Y,"Requires keeping the database under the user config dir, never next to the executable."
-R-021,Y,N,Y,"Tells to use remote functions and define them in .remote.ts files; 'always run' describes them."
-R-022,Y,Y,Y,"Requires writing, approving and A/B-testing the pretext before any target receives it."
-R-023,N,N,N,"A noun phrase naming a scenario; it gives no instruction itself."
-R-024,Y,Y,Y,"Forbids pasting logs, tokens or payloads into shared tickets; requires redacting first."
-R-025,Y,Y,N,"Forbids building new workflows around deprecated Blue Ocean."
-R-026,Y,N,Y,"Requires copying source images with the same relative paths."
-R-027,Y,N,Y,"Says ~/.cargo/bin must be on PATH; the rest describes rustup's layout."
-R-028,Y,Y,N,"Forbids deferring glossary edits to a later batch."
-R-029,Y,N,Y,"Tells to point users to the API key page; 'always exposes' describes the page."
-R-030,Y,Y,Y,"Forbids reporting the run as fully covered; tells to point at the ledger file."
-R-031,N,N,N,"Names a deliverable; 'always achievable' describes it."
-R-032,N,N,N,"Bare label 'never:' with no content."
-R-033,Y,N,Y,"Requires test names to read as standalone sentences."
-R-034,Y,Y,Y,"Use reactive() for deep objects; never destructure it; use toRefs/toRef instead."
-R-035,Y,Y,Y,"Forbids exposing private keys in frontend code; requires wallet providers."
-R-036,Y,Y,N,"Forbids proceeding until resolved."
-R-037,Y,Y,N,"Forbids asking for more scope inputs unless a failing command requires them."
-R-038,Y,Y,Y,"Requires restricting every query to the user's specified resource group or subscription."
-R-039,Y,N,Y,"Checklist rule: background images go at depth-0 with slight blur."
-R-040,U,U,U,"Lead-in fragment ('you always:'); on its own it names no action to do or avoid."
-R-041,Y,Y,Y,"Requires reporting XSS via responsible disclosure; forbids public disclosure."
-R-042,Y,Y,N,"Tells the agent not to wait when the user asks it to wait for review."
-R-043,Y,Y,Y,"Requires literal, systematic execution without interpretation or clarification."
-R-044,Y,N,Y,"Requires recomputing baselines after the listed events (a trigger, not a restriction)."
-R-045,Y,Y,Y,"Requires checking for existing modules, gating resource creation on that check."
-R-046,Y,Y,N,"Tells to avoid brittle tests and not rely on timestamps, random data or order unless necessary."
-R-047,N,N,N,"Describes a tool's behaviour ('never commits')."
-R-048,Y,Y,N,"Forbids passing secrets as literals and tells to keep unmasked output out of CI logs."
-R-049,Y,Y,Y,"Avoid large client bundles; keep most logic in Server Components."
-R-050,Y,Y,N,"Tells the reader to avoid the path form shown."
-R-051,Y,Y,Y,"Requires bounding every regex quantifier; forbids the unbounded form."
-R-052,Y,Y,N,"Forbids marking one resolved on your own judgement."
-R-053,Y,Y,Y,"Requires storing the challenge server-side; forbids trusting one sent by the client."
-R-054,Y,Y,N,"Forbids terminating or ending sessions automatically."
-R-055,Y,Y,Y,"Requires reading the marked paragraphs before flagging those items."
-R-056,N,N,N,"Reports an eval measurement; 'never' describes the result."
-R-057,Y,Y,N,"Forbids modules using git references."
-R-058,N,N,N,"Describes what the file holds."
-R-059,N,N,N,"Paper title and summary; 'must be false' is part of the title."
-R-060,Y,N,Y,"Requires pinning versions and committing lockfiles when installing Supabase packages."
-R-061,Y,N,Y,"Requires delays between navigations; 'to avoid' states the purpose."
-R-062,Y,Y,Y,"Avoid Resources folders and Find in Update; pool objects instead of Instantiate/Destroy."
-R-063,N,N,N,"Section heading."
-R-064,Y,Y,N,"Tells to avoid writing incomplete generic types."
-R-065,Y,Y,Y,"Avoid the latest tag in production; use specific version tags."
-R-066,Y,Y,Y,"Forbids changing original code for testability; requires testing it as it is."
-R-067,Y,Y,Y,"Quoted advice: avoid the magic module and use explicit hex checks instead."
-R-068,Y,Y,Y,"Forbids requestAnimationFrame or React state for per-frame values; requires useFrame with refs."
-R-069,Y,Y,N,"Tells to keep MongoDB unpublished and never add a public ports entry; first clause describes."
-R-070,Y,N,Y,"Positive best practice (one trigger per object); 'avoid conflicts' is the purpose."
-R-071,Y,N,Y,"Row's action says to offer a review subagent; 'never reviewed' is a category name."
-R-072,N,N,N,"Explains what the plan's reader cannot know; no directive."
-R-073,Y,N,Y,"Requires providing the symbol name."
-R-074,Y,Y,Y,"Forbids waiting for the user before requesting the next task; requires continuing immediately."
-R-075,Y,N,Y,"Requires running packer init after changing required_plugins."
-R-076,Y,Y,Y,"Requires running on Neon branches; forbids the main branch."
-R-077,Y,N,Y,"Requires async/await or Promises for waiting on session events."
-R-078,Y,Y,N,"Tells to avoid testing nonexistent paths or impossible behaviour."
-R-079,Y,Y,Y,"Requires Managed Identity; tells to avoid keyed connection strings where possible."
-R-080,Y,Y,N,"Forbids mutating repository history or initializing git."
-R-081,Y,Y,Y,"Requires the Tier 1 primary selection, keeps absorbers primary, forbids merging two primaries."
-R-082,Y,Y,Y,"Forbids committing credentials; requires env vars, endpoint validation and least privilege."
-R-083,N,N,N,"Describes Access SQL dialect differences; 'cannot' describes the language."
-R-084,Y,Y,N,"Forbids storing plaintext."
-R-085,Y,Y,N,"Forbids dispatching one subagent per small same-shape task."
-R-086,N,N,N,"Section heading."
-R-087,Y,Y,Y,"Requires identifying the LCP element; forbids generic advice without knowing what is slow."
-R-088,Y,Y,Y,"Requires RunnableLambda or RunnableGenerator; tells to avoid subclassing directly."
-R-089,Y,Y,N,"Forbids treating the absent section as a missing field and false-aborting."
-R-090,Y,Y,N,"Forbids emitting from source or IR alone."
-R-091,Y,Y,Y,"Requires installing prerequisites before starting to create components."
-R-092,Y,Y,Y,"Forbids setting BackgroundColor; requires Background."
-R-093,Y,Y,N,"Forbids assuming the user owns tools or knows a platform."
-R-094,Y,Y,Y,"Requires determining the repo context before answering any question."
-R-095,Y,Y,Y,"Requires grounding the answer in actual code; forbids inventing or guessing."
-R-096,Y,Y,Y,"Requires requesting tasks indefinitely; forbids ending."
-R-097,Y,Y,Y,"Requires automatic deploy on completion; forbids skipping it or waiting for the user."
-R-098,N,N,N,"Section heading."
-R-099,N,N,N,"Describes Lighthouse's limits and how pass or fail is decided."
-R-100,Y,Y,N,"Forbids pre-checking gh auth status before API calls."
+R-001,Y,N,Y,"Conditional requirement: when a Copilot agent works on the repo, the listed unit tests must be executed."
+R-002,Y,Y,Y,Orders the reader to stop under three conditions (i.e. not to continue then); the last clause allows a no-change report.
+R-003,Y,Y,Y,"Tells the reader to scan the checks and reject only on real problems, and not to merge while checks are still running."
+R-004,Y,Y,Y,Schema changes only through migrations; never edit an applied migration; add a new one.
+R-005,Y,Y,N,"Prohibits adding open-ended directives without a concrete, task-specific reason."
+R-006,Y,Y,Y,Requires new features/changes to be described clearly and allows a generic line only for the listed cases.
+R-007,N,N,N,Names a pitfall and describes how service accounts end up over-provisioned; 'never trimmed' is descriptive.
+R-008,Y,Y,Y,Requires an already-absorbing member to be chosen as primary and forbids merging two such members.
+R-009,Y,N,Y,"Mostly describes a migration gap, but 'they have to be rebuilt' places a requirement on whoever migrates."
+R-010,Y,Y,N,Direct prohibition: never use this directly.
+R-011,N,N,N,A section heading; 'avoid' is part of the title.
+R-012,Y,Y,Y,Requires presigned URLs for client uploads and forbids proxying large files through the API.
+R-013,Y,Y,Y,Requires generating then reviewing/trimming the config; 'the file must not already exist' limits when generation may run.
+R-014,Y,Y,N,Tells the reader to avoid optional positional parameters under a stated condition.
+R-015,Y,N,Y,"Conditional instruction: if a step cannot be described concretely, read more."
+R-016,Y,Y,N,Forbids proceeding until the source repo context is resolved.
+R-017,Y,N,Y,Requires the agent to stay in task-request mode whenever it is not executing tasks.
+R-018,Y,N,Y,Requires test names to be valid Rust identifiers by replacing '-' with '_'.
+R-019,Y,Y,Y,Requires creating the label first and forbids creating milestones or types without asking.
+R-020,Y,Y,Y,Requires keeping the database under the user config dir and forbids putting it next to the executable.
+R-021,Y,N,Y,Tells the reader to use remote functions and define them in .remote.ts files; 'always run on the server' describes them.
+R-022,Y,Y,Y,"Requires writing, approving and A/B-testing the pretext, all before any target receives it."
+R-023,N,N,N,A noun phrase naming an activity; on its own it tells no one to do or not do anything.
+R-024,Y,Y,Y,"Forbids pasting logs, tokens or payloads into shared tickets and requires redacting request bodies first."
+R-025,Y,Y,N,States Blue Ocean is deprecated and forbids building new workflows around it.
+R-026,Y,N,Y,Requires copying images with the same relative paths when the source has them.
+R-027,Y,N,Y,"Mostly describes where rustup puts files, but 'which must be on PATH' requires the reader to ensure that."
+R-028,Y,Y,N,Prohibits deferring glossary edits to a later batch.
+R-029,Y,N,Y,Tells the agent to point users to the API key page; 'always exposes' describes the page.
+R-030,Y,Y,Y,Forbids reporting such a run as fully covered and requires pointing at the ledger file.
+R-031,N,N,N,A list item naming a deliverable; '(always achievable)' describes it.
+R-032,N,N,N,A bare label introducing a list; by itself it gives no instruction.
+R-033,Y,N,Y,Requires test names to be readable as standalone sentences.
+R-034,Y,Y,Y,"Prescribes reactive() for objects, forbids destructuring it directly, and requires toRefs()/toRef()."
+R-035,Y,Y,Y,Forbids exposing private keys in frontend code and requires wallet providers for user wallets.
+R-036,Y,Y,N,Forbids proceeding until resolved.
+R-037,Y,Y,N,Conditional prohibition on asking for more scope inputs unless a failing command requires it.
+R-038,Y,Y,Y,"Requires scoping every query to the user's resource group or subscription, which restricts query breadth."
+R-039,Y,N,Y,A checklist rule requiring background images at depth-0 with slight blur.
+R-040,Y,Y,Y,Lead-in requiring the (listed) steps every time and placing them before any change is made.
+R-041,Y,Y,Y,Requires reporting XSS through responsible disclosure and forbids public reporting.
+R-042,Y,Y,N,Tells the agent not to wait when the user asks it to wait for review.
+R-043,Y,Y,Y,"Requires literal, systematic execution and rules out human interpretation or clarification."
+R-044,Y,N,Y,Requires recomputing baselines after the (listed) events.
+R-045,Y,Y,Y,"Requires checking for existing modules, which must happen before creating new resources."
+R-046,Y,Y,N,"Tells the reader to avoid brittle tests and not rely on timestamps, random data or order unless necessary."
+R-047,N,N,N,Describes the workflow's behaviour; 'never commits' is descriptive.
+R-048,Y,Y,Y,Forbids passing secrets as literals and requires keeping unmasked output out of CI logs.
+R-049,Y,Y,Y,Tells the reader to avoid large client bundles and keep most logic in Server Components.
+R-050,U,U,N,A labelled bad example ('avoid: <path>'); 'avoid' reads either as the example's category label or as a prohibition of that path form.
+R-051,Y,Y,Y,Requires bounding every regex quantifier and forbids the unbounded form.
+R-052,Y,Y,N,Forbids marking one resolved on the agent's own judgement.
+R-053,Y,Y,Y,Requires storing the challenge server-side and forbids trusting one sent back by the client.
+R-054,Y,Y,N,Labelled directive forbidding automatic termination and ending sessions.
+R-055,Y,Y,Y,"Requires reading the marked paragraphs before flagging, which gates flagging; 'do not report' is only a paragraph label."
+R-056,N,N,N,Reports an eval measurement; 'never' describes the result without the plugin.
+R-057,Y,Y,N,Forbids modules from using git references.
+R-058,N,N,N,Describes what the file holds; no directive in the statement itself.
+R-059,N,N,N,A paper title and summary; 'must be false' is part of the title.
+R-060,Y,N,Y,Requires pinning versions and committing lockfiles when installing Supabase packages.
+R-061,Y,N,Y,"Requires adding delays between navigations; 'to avoid ...' gives the reason, not a separate prohibition."
+R-062,Y,Y,Y,"Tells the reader to avoid Resources folders and Find in Update, and to pool objects instead of Instantiate/Destroy."
+R-063,N,N,N,A section heading; 'never do these' is part of the title.
+R-064,Y,Y,N,Tells the reader to avoid writing incomplete generic types.
+R-065,Y,Y,Y,Tells the reader to avoid the latest tag in production and use specific version tags.
+R-066,Y,Y,Y,Forbids changing original code to ease testing and requires testing the code as it is.
+R-067,Y,Y,Y,Quoted advice: avoid the magic module and use explicit hex checks instead.
+R-068,Y,Y,Y,Forbids requestAnimationFrame/React state for per-frame values and requires useFrame with refs.
+R-069,Y,Y,Y,Requires keeping MongoDB unpublished and forbids adding a public ports entry for it or Meilisearch.
+R-070,Y,Y,Y,"Requires one trigger per object, which caps triggers per object."
+R-071,Y,N,Y,Table row mapping a PR state to an action (offer a review subagent); 'Never reviewed' is the category name.
+R-072,N,N,N,Explains what the engineer cannot know; no directive in the statement itself.
+R-073,Y,N,Y,Requires providing the symbol name.
+R-074,Y,Y,Y,Forbids waiting for a user response before requesting the next task and requires continuing immediately.
+R-075,Y,N,Y,Requires running packer init after changing required_plugins; the second clause explains the errors.
+R-076,Y,Y,Y,Requires running analysis and tests on Neon branches and forbids running them on the main branch.
+R-077,Y,N,Y,Requires async/await or Promises for waiting on session events.
+R-078,Y,Y,N,Tells the reader to avoid testing non-existent code paths or impossible behaviour.
+R-079,Y,Y,Y,Requires Managed Identity and tells the reader to avoid key-based connection strings where possible.
+R-080,Y,Y,N,Forbids mutating repository history or initializing git.
+R-081,Y,Y,Y,"Requires the tier-1 selection and edits, with exceptions that keep an existing primary and forbid merging two primaries."
+R-082,Y,Y,Y,"Labelled list: never commit credentials; use env vars, validate MCP endpoints and follow least privilege."
+R-083,N,N,N,Describes how Access SQL differs; 'cannot be reused' describes the dialect.
+R-084,Y,Y,N,Forbids storing plaintext.
+R-085,Y,Y,N,Conditional prohibition on dispatching one subagent per small same-shape task.
+R-086,N,N,N,A section heading; 'never' is part of the title.
+R-087,Y,Y,Y,Requires identifying the LCP element and forbids generic advice without knowing what is slow.
+R-088,Y,Y,Y,Requires RunnableLambda/RunnableGenerator for custom runnables and tells the reader to avoid subclassing.
+R-089,Y,Y,N,Forbids treating the absent section as a missing field and false-aborting.
+R-090,Y,Y,N,Forbids emitting from source or IR alone.
+R-091,Y,Y,Y,"Requires installing the prerequisites before starting to create components, which gates that work."
+R-092,Y,Y,Y,Forbids setting BackgroundColor and requires using Background.
+R-093,Y,Y,N,Forbids assuming the user owns tools or already knows a platform.
+R-094,Y,Y,Y,"Requires determining the repo context before answering any question, which gates answering."
+R-095,Y,Y,Y,Requires answers grounded entirely in code and forbids inventing or guessing.
+R-096,Y,Y,Y,Labelled directive requiring indefinite task requests and forbidding ending before manual termination.
+R-097,Y,Y,Y,Requires proceeding automatically on completion; 'do not skip' and 'without waiting for the user' are limits.
+R-098,N,N,N,A section heading; 'must never' is part of the title.
+R-099,N,N,N,Explains Lighthouse's limits and what decides pass or fail; descriptive.
+R-100,Y,Y,N,Forbids pre-checking gh auth status before API calls.

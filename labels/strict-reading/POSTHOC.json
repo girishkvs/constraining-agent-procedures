@@ -3,7 +3,7 @@
     {
       "byte_exact": true,
       "path": "labels/strict-reading/READ-ME.md",
-      "sha256": "e527446718389b82710125df36bf002f1f8d00f54a59e2b49981826486734a06"
+      "sha256": "a3a028fcf8cd8b465d78cbf49cf34af5dc18b8bd8858d99af1277d4fc8909ff4"
     },
     {
       "byte_exact": true,
@@ -13,22 +13,22 @@
     {
       "byte_exact": true,
       "path": "labels/strict-reading/reader-A-statements.csv",
-      "sha256": "98a2bbdff0b6fdaedb4eae897bd389c3e692e8fa17dcd21b3e2a09fdc62e5438"
+      "sha256": "b6160089f82c3db2b59b02121dd38f53e043819bbe6f2d3081c8ec0d72974277"
     },
     {
       "byte_exact": true,
       "path": "labels/strict-reading/reader-A-procedures.csv",
-      "sha256": "12dd8b15673403e293c9aed27786ac98e60ea97f8edf9b539094ea361d56d810"
+      "sha256": "9caff76520d670497b29e44b9165dc181887b8534120c397a5e79125b140880f"
     },
     {
       "byte_exact": true,
       "path": "labels/strict-reading/reader-B-statements.csv",
-      "sha256": "dec9c3ce044a42eae2f2c34312858dbd30f49ca802ae0e36c32a95be75d43f6c"
+      "sha256": "a2e68fdeff36c6a23d404d550d8b6286cf9848e4a5565b0d96397db7050a83f3"
     },
     {
       "byte_exact": true,
       "path": "labels/strict-reading/reader-B-procedures.csv",
-      "sha256": "89f25373b3fb5b5f9f4a03e3747aedb42183c45684eeeab577e0676a2543468b"
+      "sha256": "baf68558be60336c0c9af987642788c10876c4e0144688d55bb7213c54c4e268"
     }
   ],
   "classification": "POSTHOC",

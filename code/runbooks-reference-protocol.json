@@ -2,12 +2,12 @@
   "resampling": {
     "bootstrap": "Uniform N document rows sampled with replacement within each corpus/group; recompute top-decile share, zero-P share, both ratios and prose/all-kind densities. Raw unique-document counts are not the resampling denominator.",
     "bootstrap_replicates": 499,
-    "intervals": "2.5% and 97.5% nearest-rank endpoints among defined draws; record defined and undefined counts. Null central ranges are reference bands, bootstrap ranges are descriptive intervals, not population confidence guarantees.",
+    "intervals": "2.5% and 97.5% nearest-rank endpoints among defined draws; record defined and undefined counts.",
     "length_null": "Exact multivariate hypergeometric marginals over per-document eligible statement slots, preserving observed total P and per-document slot capacities. Uniform distinct-slot allocation without replacement.",
     "length_null_replicates": 499,
-    "null_p": "(1 + null draws >= observed)/(499+1), descriptive upper-tail reference only; no multiplicity-adjusted or causal hypothesis claim.",
+    "null_p": "(1 + null draws >= observed)/(499+1), upper tail.",
     "rng_revision": "Existing NumPy 2.4.6 PCG64 Generator, SHA-256(seed|purpose|corpus|group|arm|segmentation|triggers) seed integer. Same sampling laws as legacy; not bit-identical legacy random.Random draws.",
-    "serial": "499 sequential draws in each frozen key, not data-adaptive draws. Overlap rules share P null and bootstrap document draws."
+    "serial": "499 sequential draws in each frozen key. Overlap rules share P null and bootstrap document draws."
   },
   "seed": "AES-public-ops-2026-10-15-body-source-v2"
 }

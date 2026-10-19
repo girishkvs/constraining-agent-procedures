@@ -176,29 +176,7 @@
           "A": {
             "P_top": {
               "n": 35,
-              "instructs_Y": 31,
-              "forbids_Y": 29,
-              "U_any": 0
-            },
-            "P_rest": {
-              "n": 35,
-              "instructs_Y": 27,
-              "forbids_Y": 25,
-              "U_any": 0
-            },
-            "O_full": {
-              "n": 30,
-              "instructs_Y": 26,
-              "requires_Y": 26,
-              "U_any": 0
-            },
-            "zero_match_limit_Y": 17,
-            "zero_match_limit_U": 0
-          },
-          "B": {
-            "P_top": {
-              "n": 35,
-              "instructs_Y": 31,
+              "instructs_Y": 30,
               "forbids_Y": 28,
               "U_any": 0
             },
@@ -210,11 +188,33 @@
             },
             "O_full": {
               "n": 30,
-              "instructs_Y": 26,
-              "requires_Y": 26,
+              "instructs_Y": 25,
+              "requires_Y": 25,
               "U_any": 1
             },
-            "zero_match_limit_Y": 16,
+            "zero_match_limit_Y": 17,
+            "zero_match_limit_U": 0
+          },
+          "B": {
+            "P_top": {
+              "n": 35,
+              "instructs_Y": 30,
+              "forbids_Y": 28,
+              "U_any": 1
+            },
+            "P_rest": {
+              "n": 35,
+              "instructs_Y": 27,
+              "forbids_Y": 25,
+              "U_any": 0
+            },
+            "O_full": {
+              "n": 30,
+              "instructs_Y": 27,
+              "requires_Y": 27,
+              "U_any": 0
+            },
+            "zero_match_limit_Y": 17,
             "zero_match_limit_U": 0
           }
         },
@@ -227,11 +227,11 @@
               0.6411,
               0.8996
             ],
-            "instructs_Y": 31,
-            "instructs_rate": 0.8857,
+            "instructs_Y": 30,
+            "instructs_rate": 0.8571,
             "instructs_wilson95": [
-              0.7405,
-              0.9546
+              0.7062,
+              0.9374
             ]
           },
           "P_rest": {
@@ -251,23 +251,23 @@
           },
           "O_full": {
             "n": 30,
-            "requires_Y": 26,
-            "requires_rate": 0.8667,
+            "requires_Y": 25,
+            "requires_rate": 0.8333,
             "requires_wilson95": [
-              0.7032,
-              0.9469
+              0.6644,
+              0.9266
             ],
-            "instructs_Y": 26,
-            "instructs_rate": 0.8667,
+            "instructs_Y": 25,
+            "instructs_rate": 0.8333,
             "instructs_wilson95": [
-              0.7032,
-              0.9469
+              0.6644,
+              0.9266
             ]
           },
           "adjusted_top_share_forbids": 0.4811,
           "weighted_P_precision_forbids": 0.7531,
-          "adjusted_top_share_instructs": 0.4873,
-          "weighted_P_precision_instructs": 0.8232,
+          "adjusted_top_share_instructs": 0.4792,
+          "weighted_P_precision_instructs": 0.8102,
           "zero_match_limit": {
             "n": 30,
             "Y": 16,
@@ -281,17 +281,17 @@
         "either_Y": {
           "P_top": {
             "n": 35,
-            "forbids_Y": 29,
-            "forbids_rate": 0.8286,
+            "forbids_Y": 28,
+            "forbids_rate": 0.8,
             "forbids_wilson95": [
-              0.6732,
-              0.919
+              0.6411,
+              0.8996
             ],
-            "instructs_Y": 31,
-            "instructs_rate": 0.8857,
+            "instructs_Y": 30,
+            "instructs_rate": 0.8571,
             "instructs_wilson95": [
-              0.7405,
-              0.9546
+              0.7062,
+              0.9374
             ]
           },
           "P_rest": {
@@ -311,59 +311,59 @@
           },
           "O_full": {
             "n": 30,
-            "requires_Y": 26,
-            "requires_rate": 0.8667,
+            "requires_Y": 27,
+            "requires_rate": 0.9,
             "requires_wilson95": [
-              0.7032,
-              0.9469
+              0.7438,
+              0.9654
             ],
-            "instructs_Y": 26,
-            "instructs_rate": 0.8667,
+            "instructs_Y": 27,
+            "instructs_rate": 0.9,
             "instructs_wilson95": [
-              0.7032,
-              0.9469
+              0.7438,
+              0.9654
             ]
           },
-          "adjusted_top_share_forbids": 0.4899,
-          "weighted_P_precision_forbids": 0.7661,
-          "adjusted_top_share_instructs": 0.4873,
-          "weighted_P_precision_instructs": 0.8232,
+          "adjusted_top_share_forbids": 0.4811,
+          "weighted_P_precision_forbids": 0.7531,
+          "adjusted_top_share_instructs": 0.4792,
+          "weighted_P_precision_instructs": 0.8102,
           "zero_match_limit": {
             "n": 30,
-            "Y": 17,
-            "rate": 0.5667,
+            "Y": 18,
+            "rate": 0.6,
             "wilson95": [
-              0.392,
-              0.7262
+              0.4232,
+              0.7541
             ]
           }
         },
         "agreement": {
           "instructs_all_100": {
-            "kappa": 0.963,
-            "raw": 99
+            "kappa": 0.895,
+            "raw": 97
           },
           "forbids_P_70": {
-            "kappa": 0.96,
+            "kappa": 0.962,
             "raw": 69
           },
           "requires_O_30": {
-            "kappa": 0.858,
-            "raw": 29
+            "kappa": 0.718,
+            "raw": 28
           },
           "limit_Z_30": {
-            "kappa": 0.933,
-            "raw": 29
+            "kappa": 0.864,
+            "raw": 28
           }
         },
         "disagreements_forbids_P": [
           {
-            "id": "R-070",
+            "id": "R-050",
             "stratum": "P_top",
-            "A": "Y",
-            "B": "N",
-            "A_reason": "Requires one trigger per object, imposing a one-trigger limit.",
-            "B_reason": "Positive best practice (one trigger per object); 'avoid conflicts' is the purpose."
+            "A": "N",
+            "B": "U",
+            "A_reason": "An annotated example is labeled avoid and described as having a resolution risk.",
+            "B_reason": "A labelled bad example ('avoid: <path>'); 'avoid' reads either as the example's category label or as a prohibition of that path form."
           }
         ],
         "note": "POSTHOC strict scoring. Rubric: labels/strict-reading/READ-ME.md. Input hashes: labels/strict-reading/SEAL-before-reading.json."
@@ -373,29 +373,7 @@
           "A": {
             "P_top": {
               "n": 35,
-              "instructs_Y": 31,
-              "forbids_Y": 29,
-              "U_any": 0
-            },
-            "P_rest": {
-              "n": 35,
-              "instructs_Y": 27,
-              "forbids_Y": 25,
-              "U_any": 0
-            },
-            "O_full": {
-              "n": 30,
-              "instructs_Y": 26,
-              "requires_Y": 26,
-              "U_any": 0
-            },
-            "zero_match_limit_Y": 17,
-            "zero_match_limit_U": 0
-          },
-          "B": {
-            "P_top": {
-              "n": 35,
-              "instructs_Y": 31,
+              "instructs_Y": 30,
               "forbids_Y": 28,
               "U_any": 0
             },
@@ -407,11 +385,33 @@
             },
             "O_full": {
               "n": 30,
-              "instructs_Y": 26,
-              "requires_Y": 26,
+              "instructs_Y": 25,
+              "requires_Y": 25,
               "U_any": 1
             },
-            "zero_match_limit_Y": 16,
+            "zero_match_limit_Y": 17,
+            "zero_match_limit_U": 0
+          },
+          "B": {
+            "P_top": {
+              "n": 35,
+              "instructs_Y": 30,
+              "forbids_Y": 28,
+              "U_any": 1
+            },
+            "P_rest": {
+              "n": 35,
+              "instructs_Y": 27,
+              "forbids_Y": 25,
+              "U_any": 0
+            },
+            "O_full": {
+              "n": 30,
+              "instructs_Y": 27,
+              "requires_Y": 27,
+              "U_any": 0
+            },
+            "zero_match_limit_Y": 17,
             "zero_match_limit_U": 0
           }
         },
@@ -424,11 +424,11 @@
               0.6411,
               0.8996
             ],
-            "instructs_Y": 31,
-            "instructs_rate": 0.8857,
+            "instructs_Y": 30,
+            "instructs_rate": 0.8571,
             "instructs_wilson95": [
-              0.7405,
-              0.9546
+              0.7062,
+              0.9374
             ]
           },
           "P_rest": {
@@ -448,23 +448,23 @@
           },
           "O_full": {
             "n": 30,
-            "requires_Y": 26,
-            "requires_rate": 0.8667,
+            "requires_Y": 25,
+            "requires_rate": 0.8333,
             "requires_wilson95": [
-              0.7032,
-              0.9469
+              0.6644,
+              0.9266
             ],
-            "instructs_Y": 26,
-            "instructs_rate": 0.8667,
+            "instructs_Y": 25,
+            "instructs_rate": 0.8333,
             "instructs_wilson95": [
-              0.7032,
-              0.9469
+              0.6644,
+              0.9266
             ]
           },
           "adjusted_top_share_forbids": 0.4811,
           "weighted_P_precision_forbids": 0.7531,
-          "adjusted_top_share_instructs": 0.4873,
-          "weighted_P_precision_instructs": 0.8232,
+          "adjusted_top_share_instructs": 0.4792,
+          "weighted_P_precision_instructs": 0.8102,
           "zero_match_limit": {
             "n": 30,
             "Y": 16,
@@ -478,17 +478,17 @@
         "either_Y": {
           "P_top": {
             "n": 35,
-            "forbids_Y": 29,
-            "forbids_rate": 0.8286,
+            "forbids_Y": 28,
+            "forbids_rate": 0.8,
             "forbids_wilson95": [
-              0.6732,
-              0.919
+              0.6411,
+              0.8996
             ],
-            "instructs_Y": 31,
-            "instructs_rate": 0.8857,
+            "instructs_Y": 30,
+            "instructs_rate": 0.8571,
             "instructs_wilson95": [
-              0.7405,
-              0.9546
+              0.7062,
+              0.9374
             ]
           },
           "P_rest": {
@@ -508,59 +508,59 @@
           },
           "O_full": {
             "n": 30,
-            "requires_Y": 26,
-            "requires_rate": 0.8667,
+            "requires_Y": 27,
+            "requires_rate": 0.9,
             "requires_wilson95": [
-              0.7032,
-              0.9469
+              0.7438,
+              0.9654
             ],
-            "instructs_Y": 26,
-            "instructs_rate": 0.8667,
+            "instructs_Y": 27,
+            "instructs_rate": 0.9,
             "instructs_wilson95": [
-              0.7032,
-              0.9469
+              0.7438,
+              0.9654
             ]
           },
-          "adjusted_top_share_forbids": 0.4899,
-          "weighted_P_precision_forbids": 0.7661,
-          "adjusted_top_share_instructs": 0.4873,
-          "weighted_P_precision_instructs": 0.8232,
+          "adjusted_top_share_forbids": 0.4811,
+          "weighted_P_precision_forbids": 0.7531,
+          "adjusted_top_share_instructs": 0.4792,
+          "weighted_P_precision_instructs": 0.8102,
           "zero_match_limit": {
             "n": 30,
-            "Y": 17,
-            "rate": 0.5667,
+            "Y": 18,
+            "rate": 0.6,
             "wilson95": [
-              0.392,
-              0.7262
+              0.4232,
+              0.7541
             ]
           }
         },
         "agreement": {
           "instructs_all_100": {
-            "kappa": 0.963,
-            "raw": 99
+            "kappa": 0.895,
+            "raw": 97
           },
           "forbids_P_70": {
-            "kappa": 0.96,
+            "kappa": 0.962,
             "raw": 69
           },
           "requires_O_30": {
-            "kappa": 0.858,
-            "raw": 29
+            "kappa": 0.718,
+            "raw": 28
           },
           "limit_Z_30": {
-            "kappa": 0.933,
-            "raw": 29
+            "kappa": 0.864,
+            "raw": 28
           }
         },
         "disagreements_forbids_P": [
           {
-            "id": "R-070",
+            "id": "R-050",
             "stratum": "P_top",
-            "A": "Y",
-            "B": "N",
-            "A_reason": "Requires one trigger per object, imposing a one-trigger limit.",
-            "B_reason": "Positive best practice (one trigger per object); 'avoid conflicts' is the purpose."
+            "A": "N",
+            "B": "U",
+            "A_reason": "An annotated example is labeled avoid and described as having a resolution risk.",
+            "B_reason": "A labelled bad example ('avoid: <path>'); 'avoid' reads either as the example's category label or as a prohibition of that path form."
           }
         ],
         "note": "POSTHOC strict scoring. Rubric: labels/strict-reading/READ-ME.md. Input hashes: labels/strict-reading/SEAL-before-reading.json."
@@ -593,8 +593,8 @@
     },
     {
       "check": "POSTHOC strict O_full",
-      "actual": 26,
-      "expected": 26,
+      "actual": 25,
+      "expected": 25,
       "pass": true
     },
     {

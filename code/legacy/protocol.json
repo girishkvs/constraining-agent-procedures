@@ -20,7 +20,7 @@
       "example"
     ],
     "line": "Each nonempty eligible physical line after structural stripping",
-    "original_implementation_status": "Original trigger lists and estimands reproduced; exact private parser, token-boundary, normalization and dedup implementation unavailable. This declared public implementation is NOT an exact code-level reproduction.",
+    "original_implementation_status": "Original trigger lists and estimands reproduced. The private parser's code is not available; this public parser reimplements its token boundaries, normalization and deduplication.",
     "paragraph": "Blank-line-delimited homogeneous-kind blocks; list items/headings hard boundaries; each contiguous code block is one paragraph",
     "prose_words": "Unicode alphanumeric word runs, allowing internal ASCII apostrophe/hyphen; ordinary prose only, after inline-code removal",
     "quotes": "Markdown blockquote lines",

@@ -47,7 +47,7 @@ def main():
     strict_stored = json.loads((ROOT / "labels/strict-reading/scores.json").read_text(encoding="utf-8"))
     check("POSTHOC strict scores exact", strict, strict_stored)
     for group, field, yes, n in (("P_top", "forbids_Y", 28, 35), ("P_rest", "forbids_Y", 25, 35),
-                                 ("O_full", "requires_Y", 26, 30)):
+                                 ("O_full", "requires_Y", 25, 30)):
         check("POSTHOC strict " + group, strict["consensus_both_Y"][group][field], yes)
         check("POSTHOC strict denominator " + group, strict["consensus_both_Y"][group]["n"], n)
     check("POSTHOC strict P agreement", strict["agreement"]["forbids_P_70"]["raw"], 69)

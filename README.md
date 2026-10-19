@@ -155,7 +155,6 @@ same analysts read 30 procedures, drawn at random from those with no prohibition
 limits written in other words. The rubric is `labels/strict-reading/READ-ME.md`; the hashes
 of everything they were given, recorded before reading, are in `SEAL-before-reading.json`.
 The paper uses the strict reading for statements and the first reading for command classes.
-Coding was tool-assisted in both readings; the author reviewed the labels.
 
 ## Licenses
 

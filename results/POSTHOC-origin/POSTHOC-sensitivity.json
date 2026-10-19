@@ -4,7 +4,7 @@
     "sha256": "6e14433e589972d96436e334963c39383fb09e9864d374e66034deffe1cf448b"
   },
   "excluded_id_manifest_sha256": "44ec75929213449cb77f5c8b69b701354b259424f2b9e577225cb62f5ca789a9",
-  "label": "POSTHOC ONLY; original full 1495 primary preserved",
+  "label": "Post hoc; the primary results keep all 1,495 files",
   "recorded_utc": "2026-10-16T05:49:55.605325+00:00",
   "rows": [
     {

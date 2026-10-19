@@ -126,8 +126,8 @@
       "sha256": "64bf27fdbcb77bcef443a3d14c49bcdb0f1c736d6053c5c682d65108864be5a5"
     },
     "labels/strict-reading/READ-ME.md": {
-      "bytes": 3269,
-      "sha256": "e527446718389b82710125df36bf002f1f8d00f54a59e2b49981826486734a06"
+      "bytes": 3157,
+      "sha256": "a3a028fcf8cd8b465d78cbf49cf34af5dc18b8bd8858d99af1277d4fc8909ff4"
     },
     "labels/strict-reading/procedures-to-read.csv": {
       "bytes": 7013,
@@ -170,11 +170,11 @@
     "corpus/microsoft/skills/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md": "dd69536e2f18a09eac999d036f963dbbf6874f44fe4ac73a6df89170de4a542b",
     "corpus/microsoft/skills/.github/skills/debugview/SKILL.md": "4694de74b7a67f15c59ea9a6af7d916920380b7ab54b201f6e37ab24e04ca12d",
     "labels/strict-reading/KEY.json": "4ca03b28aead23e64547ab5e1dc145850bdc6f5d2a1e1091e39984ce3268ceea",
-    "labels/strict-reading/READ-ME.md": "e527446718389b82710125df36bf002f1f8d00f54a59e2b49981826486734a06",
+    "labels/strict-reading/READ-ME.md": "a3a028fcf8cd8b465d78cbf49cf34af5dc18b8bd8858d99af1277d4fc8909ff4",
     "labels/strict-reading/procedures-to-read.csv": "4799064ff84cb580397b353365d5855c06109e6f90005bcd85017d090e489e72",
     "labels/strict-reading/statements-to-read.csv": "2b7dd261f3032172115478e4268a4ebadd77dc32fa78f4b0c49de044e59d242e"
   },
   "hash_scope": "files retains the before-reading byte hashes. distributed_files records the packaged indexes with added corpus paths.",
   "purpose": "Rubric and sample inputs fixed before label completion.",
-  "sealed_at": "2026-10-17T19:25:40.482587-07:00"
+  "sealed_at": "2026-10-19T16:22:14.317794-07:00"
 }

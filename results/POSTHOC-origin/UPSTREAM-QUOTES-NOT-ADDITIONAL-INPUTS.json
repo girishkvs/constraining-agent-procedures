@@ -1,6 +1,0 @@
-{
-  "definite_posthoc_exclusion_count": 32,
-  "original_population_retained": 1495,
-  "posthoc_sensitivity_population": 1463,
-  "scope": "The scoped-origin-claims.json file preserves bounded provenance quotes. Quoted material is evidence about retained entries, not extra procedure input or another independent source."
-}

@@ -1,8 +1,8 @@
 # Reading task
 
 You are reading short statements and a few documents from public agent procedures (skills, agent
-definitions, prompts and instruction files). Work only from the files in this folder. Do not open any
-other file or folder on this machine, and do not search for other copies of these texts.
+definitions, prompts and instruction files). Judge them from this packet alone; do not look up their
+sources or other copies of these texts.
 
 There is no expected answer and no target rate. Read each item on its own and answer what it says.
 
@@ -56,5 +56,4 @@ For `N`, leave `quote` and `line` empty.
 
 ## When you are done
 
-Check both files have every id exactly once and only `Y`, `N` or `U` in the answer columns. Then reply
-with the counts of `Y`, `N` and `U` for each question.
+Check that both files have every id exactly once and only `Y`, `N` or `U` in the answer columns.
