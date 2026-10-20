@@ -1,0 +1,10 @@
+{
+ "sealed_at": "2026-10-19T21:45:43-07:00",
+ "files": {
+  "packet/READ-ME.md": "8765cda4ee251a7351b50bbc1a335b0d55bab03588a2591f931b33de88aba1d8",
+  "packet/statements-to-read.csv": "0b75d7de4887a1303884b4218409506957fc5cbe3690fe892624f9e351685d19"
+ },
+ "key": {
+  "key/KEY.json": "22c18b413f88f130618652f0a57bbe09c59d5b51c8db9a5d98d2106454be3ccf"
+ }
+}

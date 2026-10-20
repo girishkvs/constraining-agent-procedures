@@ -19,7 +19,7 @@
     {
       "bytes": 567,
       "path": "CITATION.cff",
-      "sha256": "c3a6ac7b3fca2bc49ed7687f0ab5d9cdc4973dbdf9462f6319ab9b80aa34dc0c"
+      "sha256": "3283fcaaad3e7d820ba6e207d914287532eb9d6b3515b35b714588e3c11da689"
     },
     {
       "bytes": 861,
@@ -122,6 +122,11 @@
       "sha256": "742673e1a6e3adf98c83065edc911e2c18cf2e49c1518f07faf62bdb6907c0d8"
     },
     {
+      "bytes": 7879,
+      "path": "code/posthoc_runbook_reading.py",
+      "sha256": "c37750bcec2bb16782631cdba596ddf58b445ac44fd99d7d8ec854368111c45f"
+    },
+    {
       "bytes": 3804,
       "path": "code/posthoc_sampling_test.py",
       "sha256": "28e3f4b3c4c4cd8c8ff8c7ba1bd1fe80105f6081494a91199628f40a5accd852"
@@ -130,6 +135,11 @@
       "bytes": 6264,
       "path": "code/posthoc_topic_words.py",
       "sha256": "e63eae50cefd729039c3ed98d1633f2d02028009541d4104ea62dacbc06e0514"
+    },
+    {
+      "bytes": 5212,
+      "path": "code/posthoc_triggers.py",
+      "sha256": "d8c360ccf6b8cc9128bd46c20d78ee2b942c9c5fc259494bdc776155213e6fc1"
     },
     {
       "bytes": 4563,
@@ -24527,9 +24537,9 @@
       "sha256": "c1b9df1275e769f3dbab000d1e457a2d4b0f28eb5da6c77e48dc37eeba202ed7"
     },
     {
-      "bytes": 12589,
+      "bytes": 13342,
       "path": "README.md",
-      "sha256": "8b825ccaa91c12b95e1264961a56df7cb05b9aceb3616f8ce98f7d900fbb6da4"
+      "sha256": "00197963eb3d6ab057db918ab594e0ed27a60a0b6a7c6bbffe034bcdafa66356"
     },
     {
       "bytes": 224,
@@ -24687,9 +24697,9 @@
       "sha256": "8503a46da6be6bd2b8eb03a6c72671a1eb3e593cdf6da046b14fe676a4e15029"
     },
     {
-      "bytes": 4515,
+      "bytes": 4749,
       "path": "results/POSTHOC-agent-runs/README.md",
-      "sha256": "a6e6f73bb47c23b13095aaae1efd15ea83844bb5d04bd88c16b4d8906d67a070"
+      "sha256": "f5b2da862cf0a77f4d32bc39ee67b4537e340c133a40b548ef5ee01411e48fb1"
     },
     {
       "bytes": 5353,
@@ -24700,6 +24710,36 @@
       "bytes": 706,
       "path": "results/POSTHOC-agent-runs/summary.json",
       "sha256": "a0f2bca11ba9f4b224f58a12c14648dfd5e489985d1201361a9f2d972ea82c38"
+    },
+    {
+      "bytes": 34732,
+      "path": "results/POSTHOC-agent-runs-2/final-messages.jsonl",
+      "sha256": "363d2dfaa2359167a598a1514b6bbe7b376d24be5200fb6b2403c3ce3f0ec4d6"
+    },
+    {
+      "bytes": 104652,
+      "path": "results/POSTHOC-agent-runs-2/git-commands.jsonl",
+      "sha256": "0c42bd80086e0676bb130f04023bfbbe91d3bb07f3c46f140cbe98c6438a3f10"
+    },
+    {
+      "bytes": 4369,
+      "path": "results/POSTHOC-agent-runs-2/README.md",
+      "sha256": "f9abe70c98b0e3c649907be53c4a343835ccf5e1742af7eaeec0c7435425e975"
+    },
+    {
+      "bytes": 13812,
+      "path": "results/POSTHOC-agent-runs-2/runs-plan.json",
+      "sha256": "6a2f8f8e7d173c900b96c2e3b72ef1cc157a3b44242e553633d6e24919940fb6"
+    },
+    {
+      "bytes": 8052,
+      "path": "results/POSTHOC-agent-runs-2/runs.csv",
+      "sha256": "8080c2f5a495716f2fd6b1dabf72f466f3d0d952b4b2688c06bcc77c4b80fd51"
+    },
+    {
+      "bytes": 915,
+      "path": "results/POSTHOC-agent-runs-2/summary.json",
+      "sha256": "375d5a08924ac9e0066a61147e19275c974b5a696cd421295233dd48760a9bac"
     },
     {
       "bytes": 3735,
@@ -24797,6 +24837,46 @@
       "sha256": "fe34eec1ac47af6b805bc952a955cf826d1c7856a40735dcef61f6f3fe19dc7f"
     },
     {
+      "bytes": 34958,
+      "path": "results/POSTHOC-runbook-reading/KEY.json",
+      "sha256": "22c18b413f88f130618652f0a57bbe09c59d5b51c8db9a5d98d2106454be3ccf"
+    },
+    {
+      "bytes": 2000,
+      "path": "results/POSTHOC-runbook-reading/READ-ME.md",
+      "sha256": "8765cda4ee251a7351b50bbc1a335b0d55bab03588a2591f931b33de88aba1d8"
+    },
+    {
+      "bytes": 9250,
+      "path": "results/POSTHOC-runbook-reading/reader-A-statements.csv",
+      "sha256": "4adfdbe3d600942f2a7528a2c38cc1076eba058b74434c4721ab6b3f8e3f7d3c"
+    },
+    {
+      "bytes": 8556,
+      "path": "results/POSTHOC-runbook-reading/reader-B-statements.csv",
+      "sha256": "1500b2d26c77f9e7f8b566d119b111ec13df63a037388dd19f48f35721aa29ac"
+    },
+    {
+      "bytes": 2045,
+      "path": "results/POSTHOC-runbook-reading/README.md",
+      "sha256": "7a02f657e3f876b52b9a5d51f8a335aa73c638873e393d4513cca1c412f8792c"
+    },
+    {
+      "bytes": 1344,
+      "path": "results/POSTHOC-runbook-reading/scores.json",
+      "sha256": "888ad2a23702b2134c70f0da74f3d3a735a4b4aeb8b8fc36980fc10d1991d66c"
+    },
+    {
+      "bytes": 362,
+      "path": "results/POSTHOC-runbook-reading/SEAL-before-reading.json",
+      "sha256": "4dff1704ac6db625f6e22640f1c999df1cc085dbe81965c56eee99e70f20f729"
+    },
+    {
+      "bytes": 41588,
+      "path": "results/POSTHOC-runbook-reading/statements-to-read.csv",
+      "sha256": "0b75d7de4887a1303884b4218409506957fc5cbe3690fe892624f9e351685d19"
+    },
+    {
       "bytes": 1281,
       "path": "results/POSTHOC-sampling-test/README.md",
       "sha256": "356e632a6db8a379ae2babd052e34ddd9f9586370321d8c49e49807fc80e5c39"
@@ -24852,6 +24932,16 @@
       "sha256": "701f94406c2a31d456650a4f0731867b1943c6b46576d8965ca7b32cfdb653ff"
     },
     {
+      "bytes": 1551,
+      "path": "results/POSTHOC-triggers/README.md",
+      "sha256": "728ee3be6c86b3295690067cee753b1b6c350af9df00282660abd4b9798c02d1"
+    },
+    {
+      "bytes": 3900,
+      "path": "results/POSTHOC-triggers/results.json",
+      "sha256": "5f848ba5280d8e5d48944432045d4b675fe7c546bea3f8cdab98c985292b9ba9"
+    },
+    {
       "bytes": 4828,
       "path": "results/reproduction-checks.json",
       "sha256": "970dcae5ecce92d611f1c855b442f213eeb68d23667ac52f2f320af95bdf70ae"
@@ -24894,12 +24984,12 @@
   ],
   "summary": {
     "(root)": {
-      "bytes": 18406,
+      "bytes": 19159,
       "files": 8
     },
     "code": {
-      "bytes": 163972,
-      "files": 35
+      "bytes": 177063,
+      "files": 37
     },
     "corpus": {
       "bytes": 28707253,
@@ -24914,13 +25004,13 @@
       "files": 687
     },
     "results": {
-      "bytes": 10340956,
-      "files": 69
+      "bytes": 10613276,
+      "files": 85
     },
     "tests": {
       "bytes": 4686,
       "files": 1
     }
   },
-  "total_bytes": 44104661
+  "total_bytes": 44390825
 }

@@ -1,0 +1,963 @@
+{
+ "design": "35 prohibition matches each from GitLab runbooks, OpenShift runbooks without the repeated support-case sentence, and public agent procedures not in the strict reading; primary configuration; shuffled",
+ "seeds": {
+  "gitlab": 18446676803902545515,
+  "openshift": 5026544189407701131,
+  "direct": 8922953881135603810,
+  "shuffle": 814266503172579576
+ },
+ "rng": "numpy PCG64",
+ "pools": {
+  "gitlab": 799,
+  "openshift": 149,
+  "direct": 4004
+ },
+ "openshift_repeated_sentence_units": 80,
+ "items": {
+  "R-001": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:185",
+   "path": "gitlab-com/runbooks/docs/elastic/advanced-search-in-gitlab.md",
+   "unit_index": 11,
+   "unit_sha256": "acc824b872eb0f9123875b94fb08dc371acdddab1af949dba1cad80062266197",
+   "start_line": 17,
+   "end_line": 17
+  },
+  "R-002": {
+   "corpus": "direct",
+   "doc_id": "716e405e316f3a7a12de0faf72af71fc281916f17ea22de3461446060b24391f",
+   "path": "trailofbits/skills/plugins/fp-check/agents/poc-builder.md",
+   "unit_index": 39,
+   "unit_sha256": "fb37285510af05a5db693c982f6513b1e2e2fc42f9494a0891a54ea55dac2445",
+   "start_line": 87,
+   "end_line": 87
+  },
+  "R-003": {
+   "corpus": "direct",
+   "doc_id": "af6f9f26343cd037e4ec0d3a5787043f4e0c10b92690880890eb2cee6cf0bdb4",
+   "path": "github/awesome-copilot/instructions/wordpress.instructions.md",
+   "unit_index": 9,
+   "unit_sha256": "43d3690fd0e158fbc8c713efd0b140d00f0745a36bf5f66b15c3a3f1c33bec14",
+   "start_line": 14,
+   "end_line": 14
+  },
+  "R-004": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:496",
+   "path": "gitlab-com/runbooks/docs/patroni/alerts/PatroniPrimaryDiskIOSaturated.md",
+   "unit_index": 129,
+   "unit_sha256": "c6ea16ea3cc0b3a4e278bc1b9186b1cbb2a2e4dd4d20798f9bec574ac5f6db61",
+   "start_line": 291,
+   "end_line": 291
+  },
+  "R-005": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:286",
+   "path": "gitlab-com/runbooks/docs/growth/growth-trials-health.md",
+   "unit_index": 37,
+   "unit_sha256": "05d8c70a1d47d703820e31e37b93cd48cbc6a94283c793d10fd8a29d58c9bcc8",
+   "start_line": 83,
+   "end_line": 83
+  },
+  "R-006": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:131",
+   "path": "gitlab-com/runbooks/docs/cloudflare/managing-traffic.md",
+   "unit_index": 133,
+   "unit_sha256": "aa7970c4b02d401827fc4486f9d2b3f307fe234dfe8269135e578eda96d1c82a",
+   "start_line": 169,
+   "end_line": 169
+  },
+  "R-007": {
+   "corpus": "openshift",
+   "doc_id": "openshift:235",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/LowKVMNodesCount.md",
+   "unit_index": 6,
+   "unit_sha256": "e6b4c69be2b77c4a9bb21ad9edb2b33ad1f46e1955c4ff6ebd973646991931a4",
+   "start_line": 11,
+   "end_line": 11
+  },
+  "R-008": {
+   "corpus": "direct",
+   "doc_id": "aee050102f0d36102453121bfb48a446a98998a36a838d12d6c62d3573efdede",
+   "path": "trailofbits/skills/plugins/rust-review/agents/rust-review-worker.md",
+   "unit_index": 113,
+   "unit_sha256": "46e40ebcf1147bdf90963fafd41fc45b3c66722bf1002936b6a13a07eda6745a",
+   "start_line": 189,
+   "end_line": 189
+  },
+  "R-009": {
+   "corpus": "direct",
+   "doc_id": "cf984bafe1e5c0ae563ae1718883cdcf10e0ec7ea834c53c956720d7fd755b70",
+   "path": "alirezarezvani/claude-skills/engineering/memory-engineering/commands/cs-forgetting-audit.md",
+   "unit_index": 25,
+   "unit_sha256": "4ff7b2e7b35e94d8492499487d833613106bfdd6cfff2b8fda23576c1f32821c",
+   "start_line": 60,
+   "end_line": 60
+  },
+  "R-010": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:649",
+   "path": "gitlab-com/runbooks/docs/security-patching/linux-os/linux-os-patching.md",
+   "unit_index": 41,
+   "unit_sha256": "f717faa313e05c2221a702ec75217b08f530080b55d681a874a497ef935fde7a",
+   "start_line": 55,
+   "end_line": 55
+  },
+  "R-011": {
+   "corpus": "openshift",
+   "doc_id": "openshift:59",
+   "path": "openshift/runbooks/alerts/cluster-monitoring-operator/KubePersistentVolumeInodesFillingUp.md",
+   "unit_index": 16,
+   "unit_sha256": "efddd769cdae47ffe29a2c2cf918b949c1d795dfa3bf495f2376dc7bb0e8ab86",
+   "start_line": 52,
+   "end_line": 53
+  },
+  "R-012": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:831",
+   "path": "gitlab-com/runbooks/service_team_engineer_oncall/alert-management.md",
+   "unit_index": 72,
+   "unit_sha256": "9ad80878ed715fd6a1b1bf2b353e344a3dda762a4f3f5c713ccb2dad3d01d88f",
+   "start_line": 113,
+   "end_line": 113
+  },
+  "R-013": {
+   "corpus": "direct",
+   "doc_id": "e6481038bd7f4d51d8298133ec81f55e0cea267eb2352a32baf6b6949ec1275c",
+   "path": "github/awesome-copilot/agents/oracle-to-postgres-migration-expert.agent.md",
+   "unit_index": 22,
+   "unit_sha256": "8bf41ffcd752c365f073c605593289d0d7d44a50cb4c1ce9d057b46eb2f97993",
+   "start_line": 24,
+   "end_line": 24
+  },
+  "R-014": {
+   "corpus": "openshift",
+   "doc_id": "openshift:1",
+   "path": "openshift/runbooks/alerts/advanced-cluster-management-operator/ACMMetricsCollectorFederationError.md",
+   "unit_index": 37,
+   "unit_sha256": "7697081c26384e1468c9be882cc023c86c62f313e3d70625604acb5158e0e8e5",
+   "start_line": 109,
+   "end_line": 110
+  },
+  "R-015": {
+   "corpus": "direct",
+   "doc_id": "0d75cbb5a21ad4958d971f54e1a11927798e11ca2c8ccaf93fcadf4cebd0178e",
+   "path": "TerminalSkills/skills/skills/vitepress/SKILL.md",
+   "unit_index": 8,
+   "unit_sha256": "ad94814ce019717836502aa4a1d8f0adfe9644d23afc2cef754dbfe226285894",
+   "start_line": 43,
+   "end_line": 43
+  },
+  "R-016": {
+   "corpus": "openshift",
+   "doc_id": "openshift:286",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/VirtualMachineStuckInUnhealthyState.md",
+   "unit_index": 13,
+   "unit_sha256": "81151c9d520c82e99fe7483641e59120dc96984cc31160039e2cd5647920cbb4",
+   "start_line": 24,
+   "end_line": 24
+  },
+  "R-017": {
+   "corpus": "openshift",
+   "doc_id": "openshift:232",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/KubemacpoolDown.md",
+   "unit_index": 6,
+   "unit_sha256": "32bfad180e55815bca0bab19dd26a791fbdb1bc44afc8a844f33d30eacab921a",
+   "start_line": 10,
+   "end_line": 10
+  },
+  "R-018": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:353",
+   "path": "gitlab-com/runbooks/docs/kube/k8s-sts-guidelines.md",
+   "unit_index": 51,
+   "unit_sha256": "bded604619fabda7fa8ec696304f84a68fee2b62f6d5992b8738f1de405fc2bf",
+   "start_line": 103,
+   "end_line": 106
+  },
+  "R-019": {
+   "corpus": "openshift",
+   "doc_id": "openshift:90",
+   "path": "openshift/runbooks/alerts/cluster-network-operator/V4SubnetAllocationThresholdExceeded.md",
+   "unit_index": 14,
+   "unit_sha256": "079cc20dfa0e3183154092b86af6afc82777b6433893295a13356ce41748f0ca",
+   "start_line": 36,
+   "end_line": 36
+  },
+  "R-020": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:647",
+   "path": "gitlab-com/runbooks/docs/secrets-manager-gke/README.md",
+   "unit_index": 227,
+   "unit_sha256": "42365362dc8090688eabb3b5ef936992f74dd219d8764c3f0f7d4b9c2e264c60",
+   "start_line": 487,
+   "end_line": 487
+  },
+  "R-021": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:467",
+   "path": "gitlab-com/runbooks/docs/orbit/alerts/nats-server.md",
+   "unit_index": 6,
+   "unit_sha256": "bf4ba2dc12806e8e174ed5f17f88324df1845d6a4b3609d94995a3d916c105af",
+   "start_line": 11,
+   "end_line": 11
+  },
+  "R-022": {
+   "corpus": "openshift",
+   "doc_id": "openshift:274",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/VirtHandlerRESTErrorsBurst.md",
+   "unit_index": 8,
+   "unit_sha256": "41977386ace662bdef6387d7cffae84186927d3868274f42370af2abbda02eed",
+   "start_line": 17,
+   "end_line": 17
+  },
+  "R-023": {
+   "corpus": "openshift",
+   "doc_id": "openshift:287",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/VirtualMachineStuckOnNode.md",
+   "unit_index": 97,
+   "unit_sha256": "1a3b39efd1eff861a32bd9ca93acd5121415c0a1ad0d40187b87e7c61b130599",
+   "start_line": 282,
+   "end_line": 283
+  },
+  "R-024": {
+   "corpus": "direct",
+   "doc_id": "d346ca9be105526c51b6c29a1879d8478e5860e2f5eb72b433a7437cbedaef39",
+   "path": "obra/superpowers/skills/subagent-driven-development/SKILL.md",
+   "unit_index": 154,
+   "unit_sha256": "86da13395af1948384a9fc7f66dd35cca727174955a498d9944090c9fe450e66",
+   "start_line": 346,
+   "end_line": 349
+  },
+  "R-025": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:137",
+   "path": "gitlab-com/runbooks/docs/consul/README.md",
+   "unit_index": 107,
+   "unit_sha256": "11338ad61f12d0e227e9d0e559a28812a4ed16f26940917da8de84ac50680453",
+   "start_line": 259,
+   "end_line": 259
+  },
+  "R-026": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:448",
+   "path": "gitlab-com/runbooks/docs/orbit/README.md",
+   "unit_index": 136,
+   "unit_sha256": "f5657bb0e32d519888b0ede0e57d55b98755c05ba4a6a0f9fa5f74d23231ae35",
+   "start_line": 373,
+   "end_line": 374
+  },
+  "R-027": {
+   "corpus": "openshift",
+   "doc_id": "openshift:18",
+   "path": "openshift/runbooks/alerts/cluster-etcd-operator/TNFResourceStopped.md",
+   "unit_index": 12,
+   "unit_sha256": "69b716e721fc9b007d0253ab81946da8e9f600f8b6d033f710222398379b311f",
+   "start_line": 22,
+   "end_line": 22
+  },
+  "R-028": {
+   "corpus": "direct",
+   "doc_id": "f0220b0906d6d5eaba47706796d65394ab68f28e51c00f6ebed3cd2f137c67c5",
+   "path": "github/awesome-copilot/instructions/winui3.instructions.md",
+   "unit_index": 20,
+   "unit_sha256": "6e1b379f5cb5b6edff3b1708a3e022385093afe30f1fcb534d08caa89620584a",
+   "start_line": 20,
+   "end_line": 20
+  },
+  "R-029": {
+   "corpus": "direct",
+   "doc_id": "e7b7408f8f72bf7f3c377ae798a61adc0a97379f6e74f221d8c9f0db4708835d",
+   "path": "github/awesome-copilot/instructions/python-mcp-server.instructions.md",
+   "unit_index": 54,
+   "unit_sha256": "0bc845f2df9c64b685f18fcb9c864ec75c4ac9337714d0712f40338e1428ca89",
+   "start_line": 42,
+   "end_line": 42
+  },
+  "R-030": {
+   "corpus": "openshift",
+   "doc_id": "openshift:204",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/CnaoDown.md",
+   "unit_index": 6,
+   "unit_sha256": "13dc59f229743500ff489c19fa6623c328fd7133480d87cd83e1581dcf32950c",
+   "start_line": 10,
+   "end_line": 11
+  },
+  "R-031": {
+   "corpus": "direct",
+   "doc_id": "d91a48300c80f8219199f67fc0fac90e067e621dbb571d6f258fbb32486c39c6",
+   "path": "TerminalSkills/skills/skills/hatchet/SKILL.md",
+   "unit_index": 8,
+   "unit_sha256": "fb7f0d5faf127cb96de935fd3cc76ad42b927c66753162ac9933b141e6fd1de6",
+   "start_line": 26,
+   "end_line": 26
+  },
+  "R-032": {
+   "corpus": "direct",
+   "doc_id": "f41b643fe6d9db608019424e2fa066dfd9ea9b38b1050704ddc29754c12ec2ba",
+   "path": "alirezarezvani/claude-skills/engineering-team/skills/senior-devops/SKILL.md",
+   "unit_index": 21,
+   "unit_sha256": "8f2de72b398f5c2170d4ae34a7b2cb52d826ec3157531331c5f86199aae9236c",
+   "start_line": 150,
+   "end_line": 150
+  },
+  "R-033": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:63",
+   "path": "gitlab-com/runbooks/docs/certificates/gcp.md",
+   "unit_index": 10,
+   "unit_sha256": "f681a1a752ff7977c628b0295a10d2326f488dace0ac28fd3d4a4539bc98549c",
+   "start_line": 21,
+   "end_line": 23
+  },
+  "R-034": {
+   "corpus": "openshift",
+   "doc_id": "openshift:266",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/VirtAPIDown.md",
+   "unit_index": 5,
+   "unit_sha256": "b9d79fbe5bdd3f614b039294c9ffd0dda79aa9cc3fe7327af0e4c1dc3e8763b8",
+   "start_line": 9,
+   "end_line": 9
+  },
+  "R-035": {
+   "corpus": "openshift",
+   "doc_id": "openshift:60",
+   "path": "openshift/runbooks/alerts/cluster-monitoring-operator/KubePodNotReady.md",
+   "unit_index": 7,
+   "unit_sha256": "568450dc5d58937c9ce9f05f0cbc0e843f7b4bdcaf8410b227af1997304e574c",
+   "start_line": 10,
+   "end_line": 11
+  },
+  "R-036": {
+   "corpus": "openshift",
+   "doc_id": "openshift:46",
+   "path": "openshift/runbooks/alerts/cluster-logging-operator/CollectorNodeDown.md",
+   "unit_index": 56,
+   "unit_sha256": "97de60cf64945516f9ab53919095765fda8a60e9d107f01257aa67ab36c8f2a6",
+   "start_line": 179,
+   "end_line": 179
+  },
+  "R-037": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:716",
+   "path": "gitlab-com/runbooks/docs/topology-service/topology-service-survival-guide.md",
+   "unit_index": 12,
+   "unit_sha256": "d209bd623c31a2359ee7a93ebfcb656caba0110b1a640237985e41f2ddf72fe0",
+   "start_line": 17,
+   "end_line": 17
+  },
+  "R-038": {
+   "corpus": "direct",
+   "doc_id": "62d57ee90f4dd3c6f3723173223ff6710d8e4c561d2f6f82275031e3de1e4116",
+   "path": "alirezarezvani/claude-skills/engineering/llm-wiki/skills/llm-wiki/SKILL.md",
+   "unit_index": 18,
+   "unit_sha256": "9594e2b42d281efb1880687172127464aa7e822b7ea43e391880a453e550dbfd",
+   "start_line": 51,
+   "end_line": 51
+  },
+  "R-039": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:284",
+   "path": "gitlab-com/runbooks/docs/glql/troubleshooting-guide.md",
+   "unit_index": 63,
+   "unit_sha256": "5566874d13a364a0ea3e46f18548d351c90ddef5cd7364ef95f467cf721c678a",
+   "start_line": 102,
+   "end_line": 102
+  },
+  "R-040": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:681",
+   "path": "gitlab-com/runbooks/docs/siphon/alerts/SiphonEmergencyModeActive.md",
+   "unit_index": 59,
+   "unit_sha256": "c44dbc9b4c0ebc9ec8835b7e14413cb67eb27f8295f6d319d33bf26a342b20e6",
+   "start_line": 74,
+   "end_line": 74
+  },
+  "R-041": {
+   "corpus": "direct",
+   "doc_id": "c12809eedf7320042b83dbcd83a8c51baa17120a6aa910c9a5b7fcdda1b950a0",
+   "path": "github/awesome-copilot/skills/breakdown-feature-implementation/SKILL.md",
+   "unit_index": 6,
+   "unit_sha256": "266b6f77efd1dcf55e61fff9540ca2f1bb2755b965dfaf5f645a7779d3cde826",
+   "start_line": 12,
+   "end_line": 12
+  },
+  "R-042": {
+   "corpus": "direct",
+   "doc_id": "c5bc65f16e6d60bd3b61a7800f10acee1a52ebec0f8296e328702720e5ce8ba1",
+   "path": "TerminalSkills/skills/skills/neovim/SKILL.md",
+   "unit_index": 63,
+   "unit_sha256": "8b34137011de86e341324e387f43a32e119f1bb9e4c9490224489850bd5cadfa",
+   "start_line": 266,
+   "end_line": 266
+  },
+  "R-043": {
+   "corpus": "openshift",
+   "doc_id": "openshift:260",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/SSPTemplateValidatorDown.md",
+   "unit_index": 7,
+   "unit_sha256": "33427a59bfbdc34ee6d21f59925655b8e57c91c6e10c05fa65db4ff832691961",
+   "start_line": 12,
+   "end_line": 13
+  },
+  "R-044": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:151",
+   "path": "gitlab-com/runbooks/docs/data-insights-platform/message-queueing.md",
+   "unit_index": 26,
+   "unit_sha256": "cf58b49a233438f47fcf52ba07e8b361a5d90aabbe0d556af72bd5ce3bdc5698",
+   "start_line": 41,
+   "end_line": 41
+  },
+  "R-045": {
+   "corpus": "openshift",
+   "doc_id": "openshift:100",
+   "path": "openshift/runbooks/alerts/machine-config-operator/MachineConfigControllerPausedPoolKubeletCA.md",
+   "unit_index": 34,
+   "unit_sha256": "bf734e5151b559993a54d751e4619fb770e0ed11bb3987804ba1e3d44c5fbd48",
+   "start_line": 79,
+   "end_line": 80
+  },
+  "R-046": {
+   "corpus": "direct",
+   "doc_id": "a89ea9fef2e7d6b5afcbdc76d1d067460a81f38799327eb3219da390f43d030c",
+   "path": "TerminalSkills/skills/skills/ubiquitous-language/SKILL.md",
+   "unit_index": 14,
+   "unit_sha256": "9e1ad838b997a63dc1be4f04bcea096b355ef3ed3344a6f6f283dbe1298776be",
+   "start_line": 34,
+   "end_line": 34
+  },
+  "R-047": {
+   "corpus": "direct",
+   "doc_id": "6e0b8d5a6e5d0c34081757419f5b54ab268057d1b13d1732702f923cfab7b2c4",
+   "path": "trailofbits/skills/plugins/dimensional-analysis/agents/dimension-propagator.md",
+   "unit_index": 31,
+   "unit_sha256": "2c75c1adf403d0bc1eb65a2932bcd87a0c830e5d2fec9866e2159b9277f6df1d",
+   "start_line": 46,
+   "end_line": 46
+  },
+  "R-048": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:397",
+   "path": "gitlab-com/runbooks/docs/monitoring/deleting-alerts.md",
+   "unit_index": 27,
+   "unit_sha256": "281d6631e8a58afcb630d5db3f19524c055b5a7ae3dada4ffd5469e7e0f11ab5",
+   "start_line": 21,
+   "end_line": 21
+  },
+  "R-049": {
+   "corpus": "direct",
+   "doc_id": "534a560c32819264ec05eb433ce62f78f2c8bd70988094a41f0c1828801703a5",
+   "path": "github/awesome-copilot/instructions/dotnet-maui.instructions.md",
+   "unit_index": 63,
+   "unit_sha256": "b1f670c90d3f9a6386520675d2599dc6c475f10985fb36bfa3cf04c7b66d2202",
+   "start_line": 75,
+   "end_line": 75
+  },
+  "R-050": {
+   "corpus": "direct",
+   "doc_id": "a97b77286296af9098ebb29eb84af803b9b845bb804786b35569184268d3a103",
+   "path": "trailofbits/skills/plugins/dimensional-analysis/agents/dimension-annotator.md",
+   "unit_index": 30,
+   "unit_sha256": "8f5241f016296ce42d6911f4103e0f9d29c116d3356a3668f636098597e402cd",
+   "start_line": 46,
+   "end_line": 46
+  },
+  "R-051": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:710",
+   "path": "gitlab-com/runbooks/docs/teleport/teleport_admin.md",
+   "unit_index": 109,
+   "unit_sha256": "2c65b7e39f9d3ac6659ffd3f56ba9c86b40428bb5ee8cc982114cd4b4b267cfd",
+   "start_line": 198,
+   "end_line": 201
+  },
+  "R-052": {
+   "corpus": "openshift",
+   "doc_id": "openshift:192",
+   "path": "openshift/runbooks/alerts/openshift-container-storage-operator/helpers/sre-to-engineering-escalation.md",
+   "unit_index": 20,
+   "unit_sha256": "3da0e9ae7ccb0e8e1c8955dc839c8424cb796f3d324fac5a84c5eb3ea9eed1a0",
+   "start_line": 52,
+   "end_line": 52
+  },
+  "R-053": {
+   "corpus": "openshift",
+   "doc_id": "openshift:165",
+   "path": "openshift/runbooks/alerts/openshift-container-storage-operator/ODFOperatorNotUpgradeable.md",
+   "unit_index": 6,
+   "unit_sha256": "a9f846a462cddc1ca3abfbe5ed012791c4dd56d7136cb0511ef26d40aaaaa88b",
+   "start_line": 10,
+   "end_line": 11
+  },
+  "R-054": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:677",
+   "path": "gitlab-com/runbooks/docs/sidekiq/sidekiq-survival-guide-for-sres.md",
+   "unit_index": 24,
+   "unit_sha256": "11db64d7db74f215fa70cd6d55734ea3a2f2f75cdb438e4d71a6ee2bd1e592d4",
+   "start_line": 45,
+   "end_line": 46
+  },
+  "R-055": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:580",
+   "path": "gitlab-com/runbooks/docs/pulp/functional-operations.md",
+   "unit_index": 132,
+   "unit_sha256": "7164140546713438f2fa8838b999af7da95afc6a9c3e557e507edfc50e845fba",
+   "start_line": 375,
+   "end_line": 375
+  },
+  "R-056": {
+   "corpus": "openshift",
+   "doc_id": "openshift:190",
+   "path": "openshift/runbooks/alerts/openshift-container-storage-operator/helpers/networkConnectivity.md",
+   "unit_index": 9,
+   "unit_sha256": "eb1eda543759f3c69bca809954b73fdc94efb72dca119857563a464f2807c27c",
+   "start_line": 32,
+   "end_line": 33
+  },
+  "R-057": {
+   "corpus": "openshift",
+   "doc_id": "openshift:271",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/VirtControllerRESTErrorsHigh.md",
+   "unit_index": 20,
+   "unit_sha256": "475e15685d51ddb28f28953e2dd7c68b48a66dc8fe410d51aa70f1943758b4fb",
+   "start_line": 51,
+   "end_line": 52
+  },
+  "R-058": {
+   "corpus": "openshift",
+   "doc_id": "openshift:206",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/DeprecatedMachineType.md",
+   "unit_index": 28,
+   "unit_sha256": "f7b1bd695308740dfc1ec661dda2abfef238e8d33a4dc984e8de8ba703176e94",
+   "start_line": 50,
+   "end_line": 51
+  },
+  "R-059": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:341",
+   "path": "gitlab-com/runbooks/docs/kube/alerts/KubeSchedulingFailures.md",
+   "unit_index": 171,
+   "unit_sha256": "dc292d4149bca8d871eb916dd1bc6029aef9fd3d8d6ddce8e402ee62ced16a7f",
+   "start_line": 293,
+   "end_line": 293
+  },
+  "R-060": {
+   "corpus": "openshift",
+   "doc_id": "openshift:159",
+   "path": "openshift/runbooks/alerts/openshift-container-storage-operator/ODFCorePodRestarted.md",
+   "unit_index": 5,
+   "unit_sha256": "3fc083d7f4f771e2eb9f0f5b692a27221cd1073586e0d70347ae6357c2eb9cec",
+   "start_line": 10,
+   "end_line": 12
+  },
+  "R-061": {
+   "corpus": "openshift",
+   "doc_id": "openshift:114",
+   "path": "openshift/runbooks/alerts/network-observability-operator/NetObservLokiError.md",
+   "unit_index": 19,
+   "unit_sha256": "48f428c73c16ece0da6cdfc14b1b64c3d4f3a865027986fdbd1e914b78549e33",
+   "start_line": 35,
+   "end_line": 35
+  },
+  "R-062": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:9",
+   "path": "gitlab-com/runbooks/docs/ai-gateway/pre-launch-model-releases.md",
+   "unit_index": 39,
+   "unit_sha256": "af285295faeacfa77e223b4122b871fb2443ee281280cda9944c4c3539d19634",
+   "start_line": 82,
+   "end_line": 82
+  },
+  "R-063": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:179",
+   "path": "gitlab-com/runbooks/docs/duo/duo_license.md",
+   "unit_index": 4,
+   "unit_sha256": "037fdecae645d6ae7153cfa83fa82c59f9fac28b7d88f15e6e18ecd2f129c16e",
+   "start_line": 9,
+   "end_line": 9
+  },
+  "R-064": {
+   "corpus": "direct",
+   "doc_id": "1f34e98a0d9b0f23ff7d7b87caadb7598dd90e3c1064fe8a9d45759a16cac45b",
+   "path": "microsoft/skills/.github/plugins/microsoft-365-agents-toolkit/skills/declarative-agent-developer/SKILL.md",
+   "unit_index": 31,
+   "unit_sha256": "429ddac16456d8eba07ac424f47b12837d6d9bb525b58590b7c931a49bd0b6c8",
+   "start_line": 54,
+   "end_line": 54
+  },
+  "R-065": {
+   "corpus": "direct",
+   "doc_id": "32fb145f08a3309dec335410a5303a6457a97caa5d4629e203f3e6be18b4e01c",
+   "path": "github/awesome-copilot/instructions/aws-appsync.instructions.md",
+   "unit_index": 95,
+   "unit_sha256": "9184edfcdf077510e8644d9a4e9ea23aee83f72dfcb695821a5f1a70091b87ef",
+   "start_line": 135,
+   "end_line": 135
+  },
+  "R-066": {
+   "corpus": "openshift",
+   "doc_id": "openshift:102",
+   "path": "openshift/runbooks/alerts/machine-config-operator/MachineConfigDaemonPivotError.md",
+   "unit_index": 33,
+   "unit_sha256": "41ab3dce3a94acbc48d220d8485ad7e59df32044c1dfbe9cbf5789a9df779c82",
+   "start_line": 136,
+   "end_line": 138
+  },
+  "R-067": {
+   "corpus": "direct",
+   "doc_id": "97d7c086d79209ecf6962680d465eea35f0ab2464eafb1eca9143b23f4264d68",
+   "path": "hashicorp/agent-skills/plugins/terraform/skills/terraform-search-import/SKILL.md",
+   "unit_index": 64,
+   "unit_sha256": "ac1af70e0a3f1299b5c756f3c5713ee41ee3177571575bbb2cede023fa6d8e04",
+   "start_line": 324,
+   "end_line": 325
+  },
+  "R-068": {
+   "corpus": "direct",
+   "doc_id": "4ddce40bfa4d58f86d47abb7ec0cd69dd71a77715df858010d21300b2e862abd",
+   "path": "github/awesome-copilot/skills/java-springboot/SKILL.md",
+   "unit_index": 17,
+   "unit_sha256": "0f71d872ec4501cf642c70f264c8bd41eaed775ef0606aa914ae7dffc9b75ae4",
+   "start_line": 27,
+   "end_line": 27
+  },
+  "R-069": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:731",
+   "path": "gitlab-com/runbooks/docs/uncategorized/alerts/gcp_quota_limit.md",
+   "unit_index": 25,
+   "unit_sha256": "eb4967b370fad8e2118d6b30b5e57b10171e805f7943ae70e287ba0b41e02b8f",
+   "start_line": 28,
+   "end_line": 28
+  },
+  "R-070": {
+   "corpus": "direct",
+   "doc_id": "5dca6ad15ed6394257fb053bf41e41d5b16fb805dc1fe8ff003f2d55c8d13a3b",
+   "path": "getsentry/skills/skills/gha-security-review/SKILL.md",
+   "unit_index": 31,
+   "unit_sha256": "06a1558a1933ed046e81a18aa325a44db0541b601ea247b8d7a60573037bb623",
+   "start_line": 52,
+   "end_line": 52
+  },
+  "R-071": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:327",
+   "path": "gitlab-com/runbooks/docs/incidents/README.md",
+   "unit_index": 38,
+   "unit_sha256": "41a96d54ae39e082ab542b3b76f1b18380d06b8e17d8567dab507f388a95700d",
+   "start_line": 64,
+   "end_line": 66
+  },
+  "R-072": {
+   "corpus": "openshift",
+   "doc_id": "openshift:130",
+   "path": "openshift/runbooks/alerts/openshift-container-storage-operator/CephMdsCacheUsageHigh.md",
+   "unit_index": 5,
+   "unit_sha256": "2f0d8dbaf4af33c4ec1041947df2737940c2ba3940143244b4e7ca62873d205d",
+   "start_line": 9,
+   "end_line": 12
+  },
+  "R-073": {
+   "corpus": "direct",
+   "doc_id": "d548be5610d21cc33cb4f0f02d48ec3d6c419d9e58200aac78adec8f960350fa",
+   "path": "TerminalSkills/skills/skills/understand-explain/SKILL.md",
+   "unit_index": 71,
+   "unit_sha256": "c49fc2ffea7568ce59e5309fe7be405fdd81a9574decc2a360807688f164a785",
+   "start_line": 137,
+   "end_line": 137
+  },
+  "R-074": {
+   "corpus": "direct",
+   "doc_id": "26634fbe661d12d102b52cfd95a28225d5f9c9923bfb508e32e108b7a6a0be02",
+   "path": "TerminalSkills/skills/skills/consul/SKILL.md",
+   "unit_index": 22,
+   "unit_sha256": "b9ede014a3801c94e4d6eecb80a1a8ee902369e1367fe02129a2ae119674306b",
+   "start_line": 292,
+   "end_line": 292
+  },
+  "R-075": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:597",
+   "path": "gitlab-com/runbooks/docs/redis/kubernetes.md",
+   "unit_index": 26,
+   "unit_sha256": "76b97ba6af2a878fbeb5240486d82bc8e1d5e6bbf37361cfdf0f5f17b40191ce",
+   "start_line": 95,
+   "end_line": 95
+  },
+  "R-076": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:689",
+   "path": "gitlab-com/runbooks/docs/sscs/auth/email-based-one-time-passwords-otp.md",
+   "unit_index": 42,
+   "unit_sha256": "eb7ee6db0a3145ac18d3b1d4ffd72f2f878fe63454a537dc11542661da431acb",
+   "start_line": 75,
+   "end_line": 77
+  },
+  "R-077": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:93",
+   "path": "gitlab-com/runbooks/docs/ci-runners/linux/kubernetes-runner-managers.md",
+   "unit_index": 154,
+   "unit_sha256": "a539124b152f31766831ed715032e5eb409336ec64caae3aae4a70cb8f1a0115",
+   "start_line": 371,
+   "end_line": 372
+  },
+  "R-078": {
+   "corpus": "openshift",
+   "doc_id": "openshift:0",
+   "path": "openshift/runbooks/alerts/HighlyAvailableWorkloadIncorrectlySpread.md",
+   "unit_index": 4,
+   "unit_sha256": "d217446a837a572cc8775672a3151114c921c9851f5a092377c38fc02424fcac",
+   "start_line": 6,
+   "end_line": 8
+  },
+  "R-079": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:3",
+   "path": "gitlab-com/runbooks/docs/ai-active-context/README.md",
+   "unit_index": 18,
+   "unit_sha256": "1c942699c43546ce80590186a8c694b940c4d0af052207cb41486aaf3d057c5e",
+   "start_line": 35,
+   "end_line": 36
+  },
+  "R-080": {
+   "corpus": "direct",
+   "doc_id": "4f8df67cea19a93ee197638fc41bb4d18b127d8ca5120a2c77cdabd7a2055604",
+   "path": "github/awesome-copilot/instructions/agents.instructions.md",
+   "unit_index": 172,
+   "unit_sha256": "c08372f6124f7e3d58751f5ee124cce07cde4c203792002dd01d0d30507aa3fb",
+   "start_line": 416,
+   "end_line": 416
+  },
+  "R-081": {
+   "corpus": "direct",
+   "doc_id": "b34f2551c8a7685d64d303985f9cb8ea4baf16d5144c731e7a0f4c13d9df9001",
+   "path": "github/awesome-copilot/instructions/azure-naming.instructions.md",
+   "unit_index": 150,
+   "unit_sha256": "2308ae368e0c0a20b7d9b79a05bce9b8c0ed7d97b0f09d34e6c111fb4bd421fe",
+   "start_line": 249,
+   "end_line": 249
+  },
+  "R-082": {
+   "corpus": "openshift",
+   "doc_id": "openshift:278",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/VirtOperatorRESTErrorsBurst.md",
+   "unit_index": 19,
+   "unit_sha256": "475e15685d51ddb28f28953e2dd7c68b48a66dc8fe410d51aa70f1943758b4fb",
+   "start_line": 57,
+   "end_line": 58
+  },
+  "R-083": {
+   "corpus": "openshift",
+   "doc_id": "openshift:246",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/NoReadyVirtAPI.md",
+   "unit_index": 8,
+   "unit_sha256": "a677c3d7f73bf86b28a1bb9d3d33fe206c859c67655d973d138f62169f9ce031",
+   "start_line": 14,
+   "end_line": 16
+  },
+  "R-084": {
+   "corpus": "direct",
+   "doc_id": "9f2e5d18369c50d1f213f81f8b9041304030ab217e3c32228fecca5dac913d54",
+   "path": "TerminalSkills/skills/skills/coolify/SKILL.md",
+   "unit_index": 27,
+   "unit_sha256": "1a7c370d74f6459ed13634660120242b30c74e288151e621ad8cbb42ae335fa1",
+   "start_line": 298,
+   "end_line": 298
+  },
+  "R-085": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:228",
+   "path": "gitlab-com/runbooks/docs/frontend/ssh-maxstartups-breach.md",
+   "unit_index": 33,
+   "unit_sha256": "7ceb8249eb0d804af9983c7a67bbf7512d2e43d0b4076c02e1b1f7fb4d375a03",
+   "start_line": 63,
+   "end_line": 64
+  },
+  "R-086": {
+   "corpus": "openshift",
+   "doc_id": "openshift:177",
+   "path": "openshift/runbooks/alerts/openshift-container-storage-operator/StorageAutoScalerCRIsInvalid.md",
+   "unit_index": 6,
+   "unit_sha256": "981ea99ee30ac70d1ea469d654b5b673260d9986c960fcfe393035c3a2f5faab",
+   "start_line": 11,
+   "end_line": 11
+  },
+  "R-087": {
+   "corpus": "openshift",
+   "doc_id": "openshift:279",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/VirtOperatorRESTErrorsHigh.md",
+   "unit_index": 21,
+   "unit_sha256": "475e15685d51ddb28f28953e2dd7c68b48a66dc8fe410d51aa70f1943758b4fb",
+   "start_line": 58,
+   "end_line": 59
+  },
+  "R-088": {
+   "corpus": "openshift",
+   "doc_id": "openshift:45",
+   "path": "openshift/runbooks/alerts/cluster-logging-operator/CollectorHigh403ForbiddenResponseRate.md",
+   "unit_index": 3,
+   "unit_sha256": "06cadce8eba3a427372c34d8f058421301504ca6bc16c8ce6244717eecc0939c",
+   "start_line": 5,
+   "end_line": 8
+  },
+  "R-089": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:453",
+   "path": "gitlab-com/runbooks/docs/orbit/alerts/OrbitCircuitBreakerRejectRateHigh.md",
+   "unit_index": 30,
+   "unit_sha256": "33e4f56ce41e91f9d50512532b09d68abb92096b660554e3f270fd9a13334cfa",
+   "start_line": 62,
+   "end_line": 66
+  },
+  "R-090": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:171",
+   "path": "gitlab-com/runbooks/docs/duo-workflow-svc/alerts/DuoWorkflowSvcServiceCheckpointErrorsErrorSLOViolation.md",
+   "unit_index": 11,
+   "unit_sha256": "1c9c4cf4785f3c2863ea7815e65f41f5eef7c068bf9db5f1848c50a00ddf73a8",
+   "start_line": 11,
+   "end_line": 11
+  },
+  "R-091": {
+   "corpus": "direct",
+   "doc_id": "c4dc2e5656c563d7948128d968ab5d97e4a33a7f009de9def5a5036c49515bda",
+   "path": "trailofbits/skills/plugins/zeroize-audit/agents/4-report-assembler.md",
+   "unit_index": 127,
+   "unit_sha256": "a93636a80be500a18b71556375c4fb55f6089cafc55cb23ea8254516fab36fbb",
+   "start_line": 193,
+   "end_line": 193
+  },
+  "R-092": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:494",
+   "path": "gitlab-com/runbooks/docs/patroni/alerts/PatroniNoHealthyPrimary.md",
+   "unit_index": 9,
+   "unit_sha256": "e9132935402272f4125f0f2d27060d01e195d37d6fec0b0f307132edffa28651",
+   "start_line": 15,
+   "end_line": 16
+  },
+  "R-093": {
+   "corpus": "direct",
+   "doc_id": "08f219582b78cbdba3bd022b112d4ec8bfd7d58c3e72e17f3b9f4320bf3946c7",
+   "path": "TerminalSkills/skills/skills/tdd/SKILL.md",
+   "unit_index": 82,
+   "unit_sha256": "26f35d23b7df843c743122f9daca2feebaaa621980a09d6f45b7c4290aeadbbb",
+   "start_line": 187,
+   "end_line": 187
+  },
+  "R-094": {
+   "corpus": "direct",
+   "doc_id": "c808b94ce48e0dfc75837a84f41a613cd3b5798eeebe389db41a83e57c253026",
+   "path": "getsentry/skills/skills/pr-screenshots/SKILL.md",
+   "unit_index": 27,
+   "unit_sha256": "38d753a369df22ba57da49093079c48ccef9da8af1aa36ec289ab09059de2c8c",
+   "start_line": 41,
+   "end_line": 41
+  },
+  "R-095": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:186",
+   "path": "gitlab-com/runbooks/docs/elastic/alerts/ElasticsearchExporterClusterUnreachable.md",
+   "unit_index": 50,
+   "unit_sha256": "182e1f4a8d7fd85c28492b9cc5319a165d1858768d68673647a9cf1645be7a15",
+   "start_line": 116,
+   "end_line": 116
+  },
+  "R-096": {
+   "corpus": "openshift",
+   "doc_id": "openshift:156",
+   "path": "openshift/runbooks/alerts/openshift-container-storage-operator/NooBaaSystemCapacityWarning100.md",
+   "unit_index": 21,
+   "unit_sha256": "42d2f7e1410e7d1b6b3d66f5e33154794466ffb5aa7254ca3874c4fd23e4e1ef",
+   "start_line": 35,
+   "end_line": 35
+  },
+  "R-097": {
+   "corpus": "gitlab",
+   "doc_id": "gitlab:791",
+   "path": "gitlab-com/runbooks/docs/vault/vault.md",
+   "unit_index": 67,
+   "unit_sha256": "97539a6c5bb46bb6c376ba9137a7c0d9509e2266469f4595b8fee9e71f5af8f9",
+   "start_line": 128,
+   "end_line": 128
+  },
+  "R-098": {
+   "corpus": "direct",
+   "doc_id": "924dc51564c5380d0945688f339ff259c660a3137ecacbdf7939a3ffa199d77a",
+   "path": "trailofbits/skills/plugins/trailmark/skills/trailmark-structural/SKILL.md",
+   "unit_index": 28,
+   "unit_sha256": "5fb0405693d89268d0f507fbe0a20260fb2bb8ac3892574b557b50c7fffc2c7c",
+   "start_line": 64,
+   "end_line": 64
+  },
+  "R-099": {
+   "corpus": "openshift",
+   "doc_id": "openshift:158",
+   "path": "openshift/runbooks/alerts/openshift-container-storage-operator/NooBaaSystemCapacityWarning95.md",
+   "unit_index": 8,
+   "unit_sha256": "c2af549d632b8bb25467de13b8fd9108802b900366d726988999b24ee71f6d33",
+   "start_line": 13,
+   "end_line": 13
+  },
+  "R-100": {
+   "corpus": "openshift",
+   "doc_id": "openshift:46",
+   "path": "openshift/runbooks/alerts/cluster-logging-operator/CollectorNodeDown.md",
+   "unit_index": 9,
+   "unit_sha256": "9c8e5002f7eb87f1c294ced1a1a7c93813003a4785e258d9f22929e99cf33aa8",
+   "start_line": 21,
+   "end_line": 23
+  },
+  "R-101": {
+   "corpus": "openshift",
+   "doc_id": "openshift:211",
+   "path": "openshift/runbooks/alerts/openshift-virtualization-operator/HAControlPlaneDown.md",
+   "unit_index": 25,
+   "unit_sha256": "d39a3e2efd1a4621cafd1a93739c5ba87a6b93fa4639bfc7939cfca572f39381",
+   "start_line": 68,
+   "end_line": 68
+  },
+  "R-102": {
+   "corpus": "direct",
+   "doc_id": "9180aaa75503e96690a85f89cbd1e66c5536ea592a1a38b725c579f06c4c0477",
+   "path": "alirezarezvani/claude-skills/engineering/skills/chaos-engineering/SKILL.md",
+   "unit_index": 112,
+   "unit_sha256": "ab8cf59c3402556ac57857059203cec5b71a4b90a1051e7e54aca3ca4606d0c4",
+   "start_line": 228,
+   "end_line": 228
+  },
+  "R-103": {
+   "corpus": "direct",
+   "doc_id": "99274dca9277c30a65f7e74ab9bade3607fb18dba6307cd99d2e15068fe783cb",
+   "path": "trailofbits/skills/plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
+   "unit_index": 264,
+   "unit_sha256": "a62dc24abe53064361325b3e9d71c982b8a838c16d9fe90729a3a8dbbb446fb2",
+   "start_line": 377,
+   "end_line": 377
+  },
+  "R-104": {
+   "corpus": "direct",
+   "doc_id": "04aacd47aca0eae011460eb36680c6a67e6ecf5f8a22ac3da3699780a712c438",
+   "path": "github/awesome-copilot/agents/terraform-azure-implement.agent.md",
+   "unit_index": 11,
+   "unit_sha256": "504bd0a0563738274c4aad43f75f7ae11f040be66e47c364b2555efc3ea6c981",
+   "start_line": 19,
+   "end_line": 19
+  },
+  "R-105": {
+   "corpus": "openshift",
+   "doc_id": "openshift:94",
+   "path": "openshift/runbooks/alerts/cluster-version-operator/ClusterVersionOperatorDown.md",
+   "unit_index": 34,
+   "unit_sha256": "7799caa80151b7ae1a2a91958c805c06422fdcb2a18caa3d8c01d7230b72cb2e",
+   "start_line": 93,
+   "end_line": 93
+  }
+ }
+}

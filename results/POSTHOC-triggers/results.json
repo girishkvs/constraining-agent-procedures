@@ -1,0 +1,172 @@
+{
+ "configuration": "no_code_examples, sentence, broad",
+ "densities": {
+  "direct": {
+   "documents": 1495,
+   "prose_words": 817219,
+   "P": 4080,
+   "per_1000": 4.99,
+   "per_1000_without_cannot_or_avoid_only": 3.69,
+   "per_1000_never_do_not_must_not": 3.61,
+   "statements_containing": {
+    "never": 1488,
+    "do not": 1397,
+    "avoid": 666,
+    "cannot": 423,
+    "must not": 86,
+    "should not": 32,
+    "forbidden": 21,
+    "not allowed": 10,
+    "prohibited": 8,
+    "refuse to": 7
+   },
+   "share_containing": {
+    "never": 0.365,
+    "do not": 0.342,
+    "avoid": 0.163,
+    "cannot": 0.104,
+    "must not": 0.021,
+    "should not": 0.008,
+    "forbidden": 0.005,
+    "not allowed": 0.002,
+    "prohibited": 0.002,
+    "refuse to": 0.002
+   }
+  },
+  "agent_context": {
+   "documents": 1540,
+   "prose_words": 519578,
+   "P": 2403,
+   "per_1000": 4.62,
+   "per_1000_without_cannot_or_avoid_only": 3.2,
+   "per_1000_never_do_not_must_not": 3.05,
+   "statements_containing": {
+    "do not": 814,
+    "never": 706,
+    "avoid": 682,
+    "cannot": 78,
+    "must not": 71,
+    "should not": 37,
+    "forbidden": 24,
+    "prohibited": 14,
+    "not allowed": 4,
+    "refuse to": 3
+   },
+   "share_containing": {
+    "do not": 0.339,
+    "never": 0.294,
+    "avoid": 0.284,
+    "cannot": 0.032,
+    "must not": 0.03,
+    "should not": 0.015,
+    "forbidden": 0.01,
+    "prohibited": 0.006,
+    "not allowed": 0.002,
+    "refuse to": 0.001
+   },
+   "ratio_to_agent_procedures": {
+    "per_1000": 0.93,
+    "per_1000_without_cannot_or_avoid_only": 0.87,
+    "per_1000_never_do_not_must_not": 0.84
+   }
+  },
+  "gitlab": {
+   "documents": 833,
+   "prose_words": 461051,
+   "P": 799,
+   "per_1000": 1.73,
+   "per_1000_without_cannot_or_avoid_only": 1.04,
+   "per_1000_never_do_not_must_not": 0.94,
+   "statements_containing": {
+    "do not": 286,
+    "cannot": 243,
+    "never": 140,
+    "avoid": 81,
+    "should not": 40,
+    "must not": 9,
+    "refuse to": 4,
+    "forbidden": 2,
+    "not allowed": 1
+   },
+   "share_containing": {
+    "do not": 0.358,
+    "cannot": 0.304,
+    "never": 0.175,
+    "avoid": 0.101,
+    "should not": 0.05,
+    "must not": 0.011,
+    "refuse to": 0.005,
+    "forbidden": 0.003,
+    "not allowed": 0.001
+   },
+   "ratio_to_agent_procedures": {
+    "per_1000": 0.35,
+    "per_1000_without_cannot_or_avoid_only": 0.28,
+    "per_1000_never_do_not_must_not": 0.26
+   }
+  },
+  "openshift": {
+   "documents": 288,
+   "prose_words": 69469,
+   "P": 229,
+   "per_1000": 3.3,
+   "per_1000_without_cannot_or_avoid_only": 0.63,
+   "per_1000_never_do_not_must_not": 0.45,
+   "statements_containing": {
+    "cannot": 180,
+    "do not": 29,
+    "forbidden": 8,
+    "avoid": 7,
+    "should not": 3,
+    "must not": 2,
+    "refuse to": 1,
+    "not allowed": 1
+   },
+   "share_containing": {
+    "cannot": 0.786,
+    "do not": 0.127,
+    "forbidden": 0.035,
+    "avoid": 0.031,
+    "should not": 0.013,
+    "must not": 0.009,
+    "refuse to": 0.004,
+    "not allowed": 0.004
+   },
+   "ratio_to_agent_procedures": {
+    "per_1000": 0.66,
+    "per_1000_without_cannot_or_avoid_only": 0.17,
+    "per_1000_never_do_not_must_not": 0.12
+   }
+  }
+ },
+ "strict_reading_by_trigger": {
+  "never": {
+   "statements": 31,
+   "both_forbid": 24
+  },
+  "do not": {
+   "statements": 18,
+   "both_forbid": 16
+  },
+  "avoid": {
+   "statements": 14,
+   "both_forbid": 11
+  },
+  "cannot": {
+   "statements": 7,
+   "both_forbid": 2
+  },
+  "must not": {
+   "statements": 3,
+   "both_forbid": 3
+  }
+ },
+ "procedures_with_steps": {
+  "procedures_with_3_or_more_steps": 833,
+  "share_with_no_match": 0.28,
+  "top_tenth_share": 0.451,
+  "procedures_with_no_steps": 641,
+  "terminalskills_with_no_steps": 334,
+  "terminalskills": 521
+ }
+}

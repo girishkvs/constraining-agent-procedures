@@ -1,0 +1,60 @@
+{
+ "sealed_at": "2026-10-19T21:45:43-07:00",
+ "by_source": {
+  "gitlab": {
+   "statements": 35,
+   "both_instructs": 13,
+   "both_forbid": 7,
+   "both_require": 6,
+   "forbids_share": 0.2,
+   "forbids_wilson95": [
+    0.1,
+    0.359
+   ],
+   "agreement_forbids": 34,
+   "kappa_forbids": 0.929,
+   "reader_A_forbids": 8,
+   "reader_B_forbids": 7
+  },
+  "openshift": {
+   "statements": 35,
+   "both_instructs": 8,
+   "both_forbid": 1,
+   "both_require": 8,
+   "forbids_share": 0.029,
+   "forbids_wilson95": [
+    0.005,
+    0.145
+   ],
+   "agreement_forbids": 35,
+   "kappa_forbids": 1.0,
+   "reader_A_forbids": 1,
+   "reader_B_forbids": 1
+  },
+  "direct": {
+   "statements": 35,
+   "both_instructs": 26,
+   "both_forbid": 22,
+   "both_require": 9,
+   "forbids_share": 0.629,
+   "forbids_wilson95": [
+    0.463,
+    0.768
+   ],
+   "agreement_forbids": 34,
+   "kappa_forbids": 0.941,
+   "reader_A_forbids": 22,
+   "reader_B_forbids": 23
+  }
+ },
+ "overall_agreement_forbids": 103,
+ "overall_kappa_forbids": 0.958,
+ "openshift_forbids_share_as_counted": 0.019,
+ "ratio_to_agent": {
+  "gitlab_as_counted": 0.35,
+  "gitlab_forbidding_only": 0.11,
+  "openshift_without_sentence": 0.44,
+  "openshift_without_sentence_forbidding_only": 0.02,
+  "openshift_as_counted_forbidding_only": 0.02
+ }
+}

@@ -37,7 +37,8 @@ Every document is pinned to a commit. The publishers and selection rules were fi
 measurement; the selection is purposive, not a census. Only the entry file of each
 procedure is counted. Scripts and other files bundled with a skill are not included.
 Nothing in `corpus/` was installed or run for the counts. The agent runs in
-`results/POSTHOC-agent-runs/` ran one procedure, `git-cleanup`, on sandbox repositories.
+`results/POSTHOC-agent-runs/` and `results/POSTHOC-agent-runs-2/` ran one procedure,
+`git-cleanup`, on sandbox repositories.
 
 One GitLab filename contains a colon, which Windows cannot store. It is kept as
 `component_saturation_slo_out_of_bounds%3Aredis_memory.md`, and `MANIFEST.csv` keeps the
@@ -76,6 +77,9 @@ original file at its pinned commit, and no count changes.
 | OpenShift's repeated support-case sentence (80 of 229 matches) | `results/POSTHOC-openshift-sentence/` |
 | Sampling by explicit constraint against a uniform draw | `results/POSTHOC-sampling-test/` |
 | 24 agent runs of `git-cleanup` | `results/POSTHOC-agent-runs/` |
+| 36 more runs: without the standing instructions, and told not to stop | `results/POSTHOC-agent-runs-2/` |
+| Matches by trigger word, rates without *cannot* and *avoid*, and procedures with three or more steps | `results/POSTHOC-triggers/` |
+| Runbook matches read under the strict rubric | `results/POSTHOC-runbook-reading/` |
 
 Per-document counts for every corpus are in `results/*-document-results.csv.gz`.
 
@@ -109,7 +113,9 @@ the first two checks, which rewrite their reports in `results/`.
 | Compares stratified and uniform draws of 100 procedures | `python code/posthoc_sampling_test.py` | `reproduced/POSTHOC-sampling-test.json` |
 | Gives intervals for the corrected top-tenth share and the share that forbids something | `python code/posthoc_reading_intervals.py` | `reproduced/POSTHOC-reading-intervals.json` |
 | Counts OpenShift's repeated sentence and compares rates without it | `python code/posthoc_openshift_sentence.py` | `reproduced/POSTHOC-openshift-sentence.json` |
-| Builds the sandbox repositories for the agent runs | `python code/posthoc_agent_runs_setup.py '<runs json>' <folder>` | the repositories; the runs themselves need an agent harness (`results/POSTHOC-agent-runs/README.md`) |
+| Counts matches by trigger word and gives the figures for procedures with steps | `python code/posthoc_triggers.py` | `reproduced/POSTHOC-triggers.json` |
+| Rebuilds the runbook reading packet and scores the two readers | `python code/posthoc_runbook_reading.py` | `reproduced/POSTHOC-runbook-reading.json` |
+| Builds the sandbox repositories for the agent runs | `python code/posthoc_agent_runs_setup.py '<runs json>' <folder>` | the repositories; the runs themselves need an agent harness (`results/POSTHOC-agent-runs/README.md`, `results/POSTHOC-agent-runs-2/README.md`) |
 
 Run the measurement before the regression. The regression leaves out the four procedures
 with no prose, since length enters as log words. It made 999 bootstrap draws within
@@ -136,7 +142,8 @@ publisher; one could not be fitted, so the intervals use 998.
   measurement.
 
 These are counts of wording. They do not show whether any agent followed a rule; the agent
-runs in `results/POSTHOC-agent-runs/` show how such a check can be recorded.
+runs in `results/POSTHOC-agent-runs/` and `results/POSTHOC-agent-runs-2/` show how such a
+check can be recorded.
 
 ## Reading checks
 
